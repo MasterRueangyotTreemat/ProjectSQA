@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20181120 03:20:11.013" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<suite source="E:\ProjectsTeam\ProjectSQA\UAT001.robot" id="s1" name="UAT001">
+<test id="s1-t1" name="Testing TC01 Success">
+<kw name="Open Event Registration Page" library="resources">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${REGISTER URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20181120 03:20:11.743" level="INFO">Opening browser 'chrome' to base url 'http://localhost/AtomGame/public/register'.</msg>
+<status status="PASS" endtime="20181120 03:20:24.019" starttime="20181120 03:20:11.742"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20181120 03:20:25.148" starttime="20181120 03:20:24.019"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly ``url``.</doc>
+<arguments>
+<arg>${REGISTER URL}</arg>
+</arguments>
+<msg timestamp="20181120 03:20:25.247" level="INFO">Current location is 'http://localhost/AtomGame/public/register'.</msg>
+<status status="PASS" endtime="20181120 03:20:25.248" starttime="20181120 03:20:25.149"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20181120 03:20:25.251" starttime="20181120 03:20:25.249"></status>
+</kw>
+<status status="PASS" endtime="20181120 03:20:25.252" starttime="20181120 03:20:11.741"></status>
+</kw>
+<kw name="Input Register Success form" library="resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181120 03:20:25.256" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20181120 03:20:25.448" starttime="20181120 03:20:25.255"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="pages-nav-list0"]/li[1]/a</arg>
+</arguments>
+<msg timestamp="20181120 03:20:25.448" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[1]/a'.</msg>
+<status status="PASS" endtime="20181120 03:20:26.662" starttime="20181120 03:20:25.448"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="ShowGender"]/div[1]/label</arg>
+</arguments>
+<msg timestamp="20181120 03:20:26.662" level="INFO">Clicking element '//*[@id="ShowGender"]/div[1]/label'.</msg>
+<status status="PASS" endtime="20181120 03:20:26.814" starttime="20181120 03:20:26.662"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181120 03:20:26.815" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<status status="PASS" endtime="20181120 03:20:27.022" starttime="20181120 03:20:26.814"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+<arg>${title name}</arg>
+</arguments>
+<msg timestamp="20181120 03:20:27.022" level="INFO">Selecting options from selection list '//*[@id="prename"]' by value P001.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181120 03:20:27.490" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-26.png"&gt;&lt;img src="selenium-screenshot-26.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20181120 03:20:27.490" starttime="20181120 03:20:27.128"></status>
+</kw>
+<msg timestamp="20181120 03:20:27.494" level="FAIL">NoSuchElementException: Message: Cannot locate option with value: P001
+</msg>
+<status status="FAIL" endtime="20181120 03:20:27.494" starttime="20181120 03:20:27.022"></status>
+</kw>
+<status status="FAIL" endtime="20181120 03:20:27.495" starttime="20181120 03:20:25.253"></status>
+</kw>
+<status status="FAIL" endtime="20181120 03:20:27.495" critical="yes" starttime="20181120 03:20:11.739">NoSuchElementException: Message: Cannot locate option with value: P001
+</status>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="FAIL" endtime="20181120 03:20:27.504" starttime="20181120 03:20:11.019"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="UAT001" pass="0">UAT001</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
