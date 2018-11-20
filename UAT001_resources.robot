@@ -4,6 +4,7 @@ Library     Selenium2Library
 *** Variables ***
 ${SERVER}    localhost
 ${BROWSER}    chrome
+${HOME URL}    http://${SERVER}/AtomGame/public/home
 ${REGISTER URL}    http://${SERVER}/AtomGame/public/register
 ${TITLE NAME}    P001
 ${FULL NAME}    Somnut Naja
@@ -25,11 +26,10 @@ ${DELAY}    0.05
 
 *** Keywords ***
 TC001 : Open Event Registration Page
-    Open Browser    ${REGISTER URL}    ${BROWSER} 
+    Open Browser    ${HOME URL}    ${BROWSER} 
     Maximize Browser Window
     Set Selenium Speed    ${DELAY} 
-    Location Should Be     ${REGISTER URL}
-    Wait Until Page Contains    ลงทะเบียนเข้าร่วมงาน
+    Location Should Be     ${HOME URL}
 
 
 TC002 : Input Register Success With Id Card  

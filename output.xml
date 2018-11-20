@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20181121 03:10:24.609">
 <suite id="s1" name="UAT001" source="D:\1work\year3\SQA\project\ProjectSQA\UAT001.robot">
+=======
+<robot generated="20181121 03:11:54.125" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<suite source="d:\SQA\ProjectSQA\UAT003.robot" id="s1" name="UAT003">
+>>>>>>> 7c2ba25006c1629230776fef22f8873a7651b0d3
 <test id="s1-t1" name="TC001 : Open Event Registration Page">
-<kw name="TC001 : Open Event Registration Page" library="UAT001_resources">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
-<arg>${REGISTER URL}</arg>
+<arg>${WELCOME URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20181121 03:10:24.781" level="INFO">Opening browser 'chrome' to base url 'http://localhost/AtomGame/public/register'.</msg>
 <status status="PASS" starttime="20181121 03:10:24.780" endtime="20181121 03:10:28.912"></status>
 </kw>
@@ -2840,10 +2845,30 @@
 </arguments>
 <msg timestamp="20181121 03:13:20.910" level="INFO">Typing text '12345678' into text field 'inputCPassword'.</msg>
 <status status="PASS" starttime="20181121 03:13:20.910" endtime="20181121 03:13:21.250"></status>
+=======
+<msg timestamp="20181121 03:11:54.449" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/AtomGame/public/home'.</msg>
+<status status="PASS" endtime="20181121 03:11:59.571" starttime="20181121 03:11:54.448"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20181121 03:12:00.748" starttime="20181121 03:11:59.581"></status>
+</kw>
+<status status="PASS" endtime="20181121 03:12:00.758" critical="yes" starttime="20181121 03:11:54.446"></status>
+</test>
+<test id="s1-t2" name="TC002 : Login Success:">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="loginBtn"]</arg>
+</arguments>
+<msg timestamp="20181121 03:12:00.762" level="INFO">Clicking element '//*[@id="loginBtn"]'.</msg>
+<status status="PASS" endtime="20181121 03:12:01.105" starttime="20181121 03:12:00.762"></status>
+>>>>>>> 7c2ba25006c1629230776fef22f8873a7651b0d3
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
+<<<<<<< HEAD
 <arg>ลงทะเบียน</arg>
 </arguments>
 <msg timestamp="20181121 03:13:21.250" level="INFO">Clicking button 'ลงทะเบียน'.</msg>
@@ -2861,9 +2886,14 @@
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>ลงทะเบียนสำเร็จ</arg>
+=======
+<arg>login</arg>
+>>>>>>> 7c2ba25006c1629230776fef22f8873a7651b0d3
 </arguments>
+<msg timestamp="20181121 03:12:01.111" level="INFO">Clicking button 'login'.</msg>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<<<<<<< HEAD
 <msg timestamp="20181121 03:13:27.129" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
 <status status="PASS" starttime="20181121 03:13:26.634" endtime="20181121 03:13:27.129"></status>
 </kw>
@@ -2884,11 +2914,37 @@
 <total>
 <stat pass="3" fail="10">Critical Tests</stat>
 <stat pass="3" fail="10">All Tests</stat>
+=======
+<msg timestamp="20181121 03:12:01.963" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-52.png"&gt;&lt;img src="selenium-screenshot-52.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20181121 03:12:01.963" starttime="20181121 03:12:01.260"></status>
+</kw>
+<msg timestamp="20181121 03:12:01.967" level="FAIL">ElementNotVisibleException: Message: element not interactable
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181121 03:12:01.968" starttime="20181121 03:12:01.111"></status>
+</kw>
+<status status="FAIL" endtime="20181121 03:12:01.968" critical="yes" starttime="20181121 03:12:00.761">ElementNotVisibleException: Message: element not interactable
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<status status="FAIL" endtime="20181121 03:12:01.974" starttime="20181121 03:11:54.130"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="1">Critical Tests</stat>
+<stat fail="1" pass="1">All Tests</stat>
+>>>>>>> 7c2ba25006c1629230776fef22f8873a7651b0d3
 </total>
 <tag>
 </tag>
 <suite>
+<<<<<<< HEAD
 <stat pass="3" fail="10" id="s1" name="UAT001">UAT001</stat>
+=======
+<stat fail="1" id="s1" name="UAT003" pass="1">UAT003</stat>
+>>>>>>> 7c2ba25006c1629230776fef22f8873a7651b0d3
 </suite>
 </statistics>
 <errors>
