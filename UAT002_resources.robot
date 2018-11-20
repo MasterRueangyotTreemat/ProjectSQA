@@ -21,11 +21,13 @@ ${EMAIL}    testuat@gmail.com
 ${USERNAME}    porinut
 ${PASSWORD}    12345678
 ${REPEAT PASSWORD}    12345678
+${DELAY}    0.05
 
 *** Keywords ***
 TC001 : Open Event Registration Page
     Open Browser    ${REGISTER URL}    ${BROWSER} 
     Maximize Browser Window
+    Set Selenium Speed    ${DELAY} 
     Location Should Be     ${REGISTER URL}
     Wait Until Page Contains    ลงทะเบียนเข้าร่วมงาน
 
@@ -205,7 +207,6 @@ TC008 : Input Register Success With Passport
   Click Element    //*[@id="ShowGender"]/div[1]/label 
   Click Element    //*[@id="prename"]
   Select From List By Value    //*[@id="prename"]    ${title name}
-  Wait Until Element Is Visible    //*[@id="prename"]    4s
   Input Text    inputfullname    ${full name}
   Press Key    xpath=//input[@id='inputBD']    ${birthday}
   Click Element    //*[@id="ShowIDcardNPass"]/div[3]/label
@@ -233,7 +234,6 @@ TC009 : Input Register Success With Passport No Birthday
   Click Element    //*[@id="ShowGender"]/div[1]/label 
   Click Element    //*[@id="prename"]
   Select From List By Value    //*[@id="prename"]    ${title name}
-  Wait Until Element Is Visible    //*[@id="prename"]    4s
   Input Text    inputfullname    ${full name}
   Press Key    xpath=//input[@id='inputBD']    ${empty}
   Click Element    //*[@id="ShowIDcardNPass"]/div[3]/label
@@ -261,7 +261,6 @@ TC010 : Input Register Success With Passport No Studetn Id
   Click Element    //*[@id="ShowGender"]/div[1]/label 
   Click Element    //*[@id="prename"]
   Select From List By Value    //*[@id="prename"]    ${title name}
-  Wait Until Element Is Visible    //*[@id="prename"]    4s
   Input Text    inputfullname    ${full name}
   Press Key    xpath=//input[@id='inputBD']    ${birthday}
   Click Element    //*[@id="ShowIDcardNPass"]/div[3]/label
@@ -289,7 +288,6 @@ TC011 : Input Register Success With Passport No Parent Phone Number
   Click Element    //*[@id="ShowGender"]/div[1]/label 
   Click Element    //*[@id="prename"]
   Select From List By Value    //*[@id="prename"]    ${title name}
-  Wait Until Element Is Visible    //*[@id="prename"]    4s
   Input Text    inputfullname    ${full name}
   Press Key    xpath=//input[@id='inputBD']    ${birthday}
   Click Element    //*[@id="ShowIDcardNPass"]/div[3]/label
@@ -317,7 +315,6 @@ TC012 : Input Register Success With Passport No Facebook
   Click Element    //*[@id="ShowGender"]/div[1]/label 
   Click Element    //*[@id="prename"]
   Select From List By Value    //*[@id="prename"]    ${title name}
-  Wait Until Element Is Visible    //*[@id="prename"]    4s
   Input Text    inputfullname    ${full name}
   Press Key    xpath=//input[@id='inputBD']    ${birthday}
   Click Element    //*[@id="ShowIDcardNPass"]/div[3]/label
@@ -345,7 +342,6 @@ TC013 : Input Register Success With Passport No Birthday No Studetn Id No Parent
   Click Element    //*[@id="ShowGender"]/div[1]/label 
   Click Element    //*[@id="prename"]
   Select From List By Value    //*[@id="prename"]    ${title name}
-  Wait Until Element Is Visible    //*[@id="prename"]    4s
   Input Text    inputfullname    ${full name}
   Press Key    xpath=//input[@id='inputBD']    ${empty}
   Click Element    //*[@id="ShowIDcardNPass"]/div[3]/label
