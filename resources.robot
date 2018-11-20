@@ -2,46 +2,47 @@
 Library     Selenium2Library
 
 *** Variables ***
-${SERVER}			localhost
-${BROWSER}			chrome
-${REGISTER URL}		http://${SERVER}/AtomGame/public/register
-${DELAY}			0
-${TITLE NAME}		P001
-${FULL NAME}		Somnut Naja
-${BIRTHDAY}			12/31/1997
-${ID CARD}		1409901718605
-${STUDENT ID}		593020804-3
-${TELEPHONE NUMBER}			0812345678
-${PARENT PHONE NUMBER}		0898765432
-${FACEBOOK}			https://www.facebook.com/NutNinlaong
-${IMAGE}			D://SQA/Project/profile.jpg
-${TYPE OF ATTENDEES}		VT
-${UNIVERSITY}		มหาวิทยาลัยขอนแก่น
-${EMAIL}			testuat@gmail.com
-${USERNAME}			porinut
-${PASSWORD}			12345678
-${REPEAT PASSWORD}	12345678
+${SERVER}    localhost
+${BROWSER}    chrome
+${REGISTER URL}    http://${SERVER}/AtomGame/public/register
+${TITLE NAME}    P001
+${FULL NAME}    Somnut Naja
+${BIRTHDAY}    12/31/1997
+${ID CARD}    1409901718605
+${STUDENT ID}    593020804-3
+${TELEPHONE NUMBER}    0812345678
+${PARENT PHONE NUMBER}    0898765432
+${FACEBOOK}    https://www.facebook.com/NutNinlaong
+${IMAGE}    C://Users/Mr'Nut/Desktop/ProjectSQA/web.jpg
+${TYPE OF ATTENDEES}    VT
+${UNIVERSITY}    มหาวิทยาลัยขอนแก่น
+${EMAIL}    testuat@gmail.com
+${USERNAME}    porinut
+${PASSWORD}    12345678
+${REPEAT PASSWORD}    12345678
 
 
 *** Keywords ***
 TC001 : Open Event Registration Page
     Open Browser    ${REGISTER URL}    ${BROWSER} 
     Maximize Browser Window
-    Location Should Be    ${REGISTER URL}
-    Set Selenium Speed    ${DELAY}
-  
-TC002 : Register Success:
+    Location Should Be     ${REGISTER URL}
+
+
+TC002 : Register Success : 
 Input Register Success form 
   [Arguments]    ${title name}    ${full name}    ${birthday}    ${id card}    ${student id}    ${telephone number}    ${parent phone number}    ${facebook}    ${image}    ${type of attendees}    ${university}    ${email}    ${username}    ${password}     ${repeat password}     
   Click Element    //*[@id="side-main-menu"]/li[2]/a
   Click Element    //*[@id="pages-nav-list0"]/li[1]/a
   Click Element    //*[@id="ShowGender"]/div[1]/label 
   Click Element    //*[@id="prename"]
-  Select From List By Value     //*[@id="prename"]    ${title name}
+  Select From List By Value    //*[@id="prename"]    ${title name}
   Input Text    inputfullname    ${full name}
   Press Key    xpath=//input[@id='inputBD']    ${birthday}
   Click Element    //*[@id="ShowIDcardNPass"]/div[1]/label
+  Wait Until Element Is Visible    //*[@id="IDcard"]    4s
   Input Text    IDcard    ${id card}
+   Input Text    IDcard    ${id card}
   Input Text    inputSTD    ${student id}
   Input Text    tell    ${telephone number}
   Input Text    inputTelephoneP    ${parent phone number}
@@ -54,4 +55,6 @@ Input Register Success form
   Input Text    inputPassword    ${password}
   Input Text    inputCPassword    ${repeat password}
   Click Button    ลงทะเบียน
-  Location Should Contain    ${WELCOME REG} 
+  Location Should Contain    ${REGISTER URL}
+  Wait Until Page Contains    ลงทะเบียนสำเร็จ
+
