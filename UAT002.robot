@@ -1,5 +1,5 @@
 *** Settings ***
-Resource          UAT001_resources.robot
+Resource          UAT002_resources.robot
 
 *** Test Cases ***
 TC001 : Open Event Registration Page
