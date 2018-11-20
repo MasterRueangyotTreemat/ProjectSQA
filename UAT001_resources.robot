@@ -21,7 +21,6 @@ ${USERNAME}    porinut
 ${PASSWORD}    12345678
 ${REPEAT PASSWORD}    12345678
 
-
 *** Keywords ***
 TC001 : Open Event Registration Page
     Open Browser    ${REGISTER URL}    ${BROWSER} 
