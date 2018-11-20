@@ -29,7 +29,7 @@ TC001 : Open Event Registration Page
     Location Should Be     ${REGISTER URL}
 
 
-TC002 : Register Success : 
+TC002 : Register Success  
 Input Register Success form 
   [Arguments]    ${title name}    ${full name}    ${birthday}    ${id card}    ${student id}    ${telephone number}    ${parent phone number}    ${facebook}    ${image}    ${type of attendees}    ${university}    ${email}    ${username}    ${password}     ${repeat password}     
   Click Element    //*[@id="side-main-menu"]/li[2]/a
