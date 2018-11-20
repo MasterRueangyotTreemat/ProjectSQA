@@ -4,8 +4,7 @@ Resource          UAT001_resources.robot
 *** Test Cases ***
 TC001 : Open Event Registration Page
     TC001 : Open Event Registration Page
-<<<<<<< HEAD
-
+    
 TC002 : Register Success With Id Card 
     TC002 : Input Register Success With Id Card     ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${ID CARD}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD}     
 
@@ -23,6 +22,8 @@ TC006 : Register Success With Id Card No Facebook
 
 TC007 : Register Success With Id Card No Birthday No Studetn Id No Parent Phone Number No Facebook
     TC007 : Input Register Success With Id Card No Birthday No Studetn Id No Parent Phone Number No Facebook    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${ID CARD}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD}     
+
+
 
 TC008 : Register Success With Passport
     TC008 : Input Register Success With Passport     ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${PASSPORT}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD}     
@@ -42,9 +43,3 @@ TC012 : Register Success With Passport No Facebook
 TC013 : Register Success With Passport No Birthday No Studetn Id No Parent Phone Number No Facebook
     TC013 : Input Register Success With Passport No Birthday No Studetn Id No Parent Phone Number No Facebook    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${PASSPORT}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD}
     [Teardown]    Close Browser
-=======
-TC002 : Register Success 
-    TC002 : Input Register Success No Birthday    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${ID CARD}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD}     
-    Close Browser
-    hinoom
->>>>>>> 2918ef116f73297be4bafbf88bd5d11ee6b6bc26
