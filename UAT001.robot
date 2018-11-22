@@ -42,7 +42,3 @@ TC013 : Register Success With Passport No Birthday No Studetn Id No Parent Phone
     TC013 : Input Register Success With Passport No Birthday No Studetn Id No Parent Phone Number No Facebook    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${PASSPORT}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD}
     [Teardown]    Close Browser
 
-TC002 : Register Success 
-    TC002 : Input Register Success No Birthday    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${ID CARD}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD}     
-    [Teardown]     Close Browser
-    

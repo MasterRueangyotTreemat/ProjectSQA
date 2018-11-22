@@ -841,7 +841,7 @@ TC032 : Input Register No Success With Passport Invalid Password
   Wait Until Page Contains    ลงทะเบียนสำเร็จ
 
 TC033 : Input Register No Success With Passport Invalid Phone
-[Arguments]    ${title name}    ${full name}    ${birthday}    ${passport}    ${student id}    ${telephone number}    ${parent phone number}    ${facebook}    ${image}    ${type of attendees}    ${university}    ${email}    ${username}    ${password}     ${repeat password}     
+  [Arguments]    ${title name}    ${full name}    ${birthday}    ${passport}    ${student id}    ${telephone number}    ${parent phone number}    ${facebook}    ${image}    ${type of attendees}    ${university}    ${email}    ${username}    ${password}     ${repeat password}     
   Click Element    //*[@id="prename"]
   Select From List By Value    //*[@id="prename"]    ${title name}
   Input Text    inputfullname    ${full name}
