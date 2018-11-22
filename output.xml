@@ -1,49 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<robot generated="20181121 03:36:13.669" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<robot generated="20181123 03:41:08.586" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
 <suite source="E:\ProjectsTeam\ProjectSQA\UAT002.robot" id="s1" name="UAT002">
 <test id="s1-t1" name="TC001 : Open Event Registration Page">
 <kw name="TC001 : Open Event Registration Page" library="UAT002_resources">
-=======
-<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20181121 04:38:05.341">
-<suite id="s1" name="UAT003" source="D:\1work\year3\SQA\project\ProjectSQA\UAT003.robot">
-<test id="s1-t1" name="TC001 : Open Event Registration Page">
->>>>>>> 84522b695871d8d56d69feaaaf569848ce915ea5
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
-<arg>${WELCOME URL}</arg>
+<arg>${HOME URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<<<<<<< HEAD
-<msg timestamp="20181121 03:36:14.365" level="INFO">Opening browser 'chrome' to base url 'http://localhost/AtomGame/public/home'.</msg>
-<status status="PASS" endtime="20181121 03:36:24.897" starttime="20181121 03:36:14.364"></status>
+<msg timestamp="20181123 03:41:08.937" level="INFO">Opening browser 'chrome' to base url 'http://localhost/AtomGame/public/home'.</msg>
+<status status="PASS" endtime="20181123 03:41:16.349" starttime="20181123 03:41:08.937"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20181121 03:36:26.150" starttime="20181121 03:36:24.898"></status>
+<status status="PASS" endtime="20181123 03:41:17.536" starttime="20181123 03:41:16.349"></status>
 </kw>
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>${DELAY}</arg>
 </arguments>
-<status status="PASS" endtime="20181121 03:36:26.150" starttime="20181121 03:36:26.150"></status>
+<status status="PASS" endtime="20181123 03:41:17.536" starttime="20181123 03:41:17.536"></status>
 </kw>
 <kw name="Location Should Be" library="Selenium2Library">
 <doc>Verifies that current URL is exactly ``url``.</doc>
 <arguments>
 <arg>${HOME URL}</arg>
 </arguments>
-<msg timestamp="20181121 03:36:26.212" level="INFO">Current location is 'http://localhost/AtomGame/public/home'.</msg>
-<status status="PASS" endtime="20181121 03:36:26.212" starttime="20181121 03:36:26.151"></status>
+<msg timestamp="20181123 03:41:17.618" level="INFO">Current location is 'http://localhost/AtomGame/public/home'.</msg>
+<status status="PASS" endtime="20181123 03:41:17.618" starttime="20181123 03:41:17.537"></status>
 </kw>
-<status status="PASS" endtime="20181121 03:36:26.212" starttime="20181121 03:36:14.363"></status>
+<status status="PASS" endtime="20181123 03:41:17.618" starttime="20181123 03:41:08.936"></status>
 </kw>
-<status status="PASS" endtime="20181121 03:36:26.214" critical="yes" starttime="20181121 03:36:14.361"></status>
+<status status="PASS" endtime="20181123 03:41:17.632" critical="yes" starttime="20181123 03:41:08.935"></status>
 </test>
-<test id="s1-t2" name="TC002 : Register Success With Id Card">
-<kw name="TC002 : Input Register Success With Id Card" library="UAT002_resources">
+<test id="s1-t2" name="TC002 : Register No Success With Id Card Empty Gender">
+<kw name="TC002 : Input Register No Success With Id Card Empty Gender" library="UAT002_resources">
 <arguments>
 <arg>${TITLE NAME}</arg>
 <arg>${FULL NAME}</arg>
@@ -61,27 +54,26 @@
 <arg>${PASSWORD}</arg>
 <arg>${REPEAT PASSWORD}</arg>
 </arguments>
-<kw name="Select From List By Value" library="Selenium2Library">
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="prename"]</arg>
-<arg>${title name}</arg>
 </arguments>
-<msg timestamp="20181121 03:36:26.225" level="INFO">Selecting options from selection list '//*[@id="prename"]' by value P001.</msg>
+<msg timestamp="20181123 03:41:17.662" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181121 03:36:27.253" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181121 03:36:27.253" starttime="20181121 03:36:26.345"></status>
+<msg timestamp="20181123 03:41:18.550" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20181123 03:41:18.550" starttime="20181123 03:41:17.788"></status>
 </kw>
-<msg timestamp="20181121 03:36:27.259" level="FAIL">List with locator '//*[@id="prename"]' not found.</msg>
-<status status="FAIL" endtime="20181121 03:36:27.259" starttime="20181121 03:36:26.224"></status>
+<msg timestamp="20181123 03:41:18.555" level="FAIL">Element with locator '//*[@id="prename"]' not found.</msg>
+<status status="FAIL" endtime="20181123 03:41:18.555" starttime="20181123 03:41:17.662"></status>
 </kw>
-<status status="FAIL" endtime="20181121 03:36:27.259" starttime="20181121 03:36:26.221"></status>
+<status status="FAIL" endtime="20181123 03:41:18.555" starttime="20181123 03:41:17.660"></status>
 </kw>
-<status status="FAIL" endtime="20181121 03:36:27.265" critical="yes" starttime="20181121 03:36:26.219">List with locator '//*[@id="prename"]' not found.</status>
+<status status="FAIL" endtime="20181123 03:41:18.556" critical="yes" starttime="20181123 03:41:17.658">Element with locator '//*[@id="prename"]' not found.</status>
 </test>
-<test id="s1-t3" name="TC003 : Register Success With Id Card No Birthday">
-<kw name="TC003 : Input Register Success With Id Card No Birthday" library="UAT002_resources">
+<test id="s1-t3" name="TC003 : Register No Success With Id Card Empty Title Name">
+<kw name="TC003 : Input Register No Success With Id Card Empty Title Name" library="UAT002_resources">
 <arguments>
 <arg>${TITLE NAME}</arg>
 <arg>${FULL NAME}</arg>
@@ -104,32 +96,104 @@
 <arguments>
 <arg>//*[@id="side-main-menu"]/li[2]/a</arg>
 </arguments>
-<msg timestamp="20181121 03:36:27.275" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
-<status status="PASS" endtime="20181121 03:36:27.584" starttime="20181121 03:36:27.274"></status>
+<msg timestamp="20181123 03:41:18.568" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20181123 03:41:18.839" starttime="20181123 03:41:18.567"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="pages-nav-list0"]/li[1]/a</arg>
 </arguments>
-<msg timestamp="20181121 03:36:27.584" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[1]/a'.</msg>
-<status status="PASS" endtime="20181121 03:36:29.070" starttime="20181121 03:36:27.584"></status>
+<msg timestamp="20181123 03:41:18.839" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[1]/a'.</msg>
+<status status="PASS" endtime="20181123 03:41:20.250" starttime="20181123 03:41:18.839"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="ShowGender"]/div[1]/label</arg>
 </arguments>
-<msg timestamp="20181121 03:36:29.072" level="INFO">Clicking element '//*[@id="ShowGender"]/div[1]/label'.</msg>
-<status status="PASS" endtime="20181121 03:36:29.372" starttime="20181121 03:36:29.071"></status>
+<msg timestamp="20181123 03:41:20.250" level="INFO">Clicking element '//*[@id="ShowGender"]/div[1]/label'.</msg>
+<status status="PASS" endtime="20181123 03:41:20.497" starttime="20181123 03:41:20.250"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="prename"]</arg>
 </arguments>
-<msg timestamp="20181121 03:36:29.373" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
-<status status="PASS" endtime="20181121 03:36:29.834" starttime="20181121 03:36:29.373"></status>
+<msg timestamp="20181123 03:41:20.497" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<status status="PASS" endtime="20181123 03:41:20.836" starttime="20181123 03:41:20.497"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+<arg>${empty}</arg>
+</arguments>
+<msg timestamp="20181123 03:41:20.837" level="INFO">Selecting options from selection list '//*[@id="prename"]' by value .</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:21.584" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20181123 03:41:21.585" starttime="20181123 03:41:21.182"></status>
+</kw>
+<msg timestamp="20181123 03:41:21.588" level="FAIL">NoSuchElementException: Message: Cannot locate option with value: 
+</msg>
+<status status="FAIL" endtime="20181123 03:41:21.588" starttime="20181123 03:41:20.836"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:21.589" starttime="20181123 03:41:18.565"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:21.596" critical="yes" starttime="20181123 03:41:18.562">NoSuchElementException: Message: Cannot locate option with value: 
+</status>
+</test>
+<test id="s1-t4" name="TC004 : Register No Success With Id Card Empty Full Name">
+<kw name="TC004 : Input Register No Success With Id Card Empty Full Name" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181123 03:41:21.615" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20181123 03:41:21.883" starttime="20181123 03:41:21.615"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="pages-nav-list0"]/li[1]/a</arg>
+</arguments>
+<msg timestamp="20181123 03:41:21.885" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[1]/a'.</msg>
+<status status="PASS" endtime="20181123 03:41:22.697" starttime="20181123 03:41:21.884"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="ShowGender"]/div[1]/label</arg>
+</arguments>
+<msg timestamp="20181123 03:41:22.697" level="INFO">Clicking element '//*[@id="ShowGender"]/div[1]/label'.</msg>
+<status status="PASS" endtime="20181123 03:41:22.912" starttime="20181123 03:41:22.697"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181123 03:41:22.913" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<status status="PASS" endtime="20181123 03:41:23.192" starttime="20181123 03:41:22.912"></status>
 </kw>
 <kw name="Select From List By Value" library="Selenium2Library">
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
@@ -137,65 +201,41 @@
 <arg>//*[@id="prename"]</arg>
 <arg>${title name}</arg>
 </arguments>
-<msg timestamp="20181121 03:36:29.834" level="INFO">Selecting options from selection list '//*[@id="prename"]' by value P001.</msg>
-<status status="PASS" endtime="20181121 03:36:30.437" starttime="20181121 03:36:29.834"></status>
-=======
-<msg timestamp="20181121 04:38:05.503" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/AtomGame/public/home'.</msg>
-<status status="PASS" starttime="20181121 04:38:05.503" endtime="20181121 04:38:09.586"></status>
+<msg timestamp="20181123 03:41:23.195" level="INFO">Selecting options from selection list '//*[@id="prename"]' by value P001.</msg>
+<status status="PASS" endtime="20181123 03:41:23.729" starttime="20181123 03:41:23.194"></status>
 </kw>
-<kw name="Maximize Browser Window" library="Selenium2Library">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20181121 04:38:09.587" endtime="20181121 04:38:10.720"></status>
-</kw>
-<status status="PASS" starttime="20181121 04:38:05.502" endtime="20181121 04:38:10.721" critical="yes"></status>
-</test>
-<test id="s1-t2" name="TC002 : Login Success:">
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
-<arg>//*[@id="loginBtn"]</arg>
+<arg>//*[@id="prename"]</arg>
+<arg>4s</arg>
 </arguments>
-<msg timestamp="20181121 04:38:10.724" level="INFO">Clicking element '//*[@id="loginBtn"]'.</msg>
-<status status="PASS" starttime="20181121 04:38:10.724" endtime="20181121 04:38:10.958"></status>
->>>>>>> 84522b695871d8d56d69feaaaf569848ce915ea5
-</kw>
-<kw name="Double Click Element" library="Selenium2Library">
-<doc>Double click element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="Username"]</arg>
-</arguments>
-<<<<<<< HEAD
-<status status="PASS" endtime="20181121 03:36:30.681" starttime="20181121 03:36:30.437"></status>
-=======
-<msg timestamp="20181121 04:38:10.959" level="INFO">Double clicking element '//*[@id="Username"]'.</msg>
-<status status="PASS" starttime="20181121 04:38:10.958" endtime="20181121 04:38:11.038"></status>
->>>>>>> 84522b695871d8d56d69feaaaf569848ce915ea5
+<status status="PASS" endtime="20181123 03:41:23.883" starttime="20181123 03:41:23.729"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
-<<<<<<< HEAD
 <arg>inputfullname</arg>
-<arg>${full name}</arg>
+<arg>${empty}</arg>
 </arguments>
-<msg timestamp="20181121 03:36:30.681" level="INFO">Typing text 'Somnut Naja' into text field 'inputfullname'.</msg>
-<status status="PASS" endtime="20181121 03:36:31.291" starttime="20181121 03:36:30.681"></status>
+<msg timestamp="20181123 03:41:23.883" level="INFO">Typing text '' into text field 'inputfullname'.</msg>
+<status status="PASS" endtime="20181123 03:41:24.216" starttime="20181123 03:41:23.883"></status>
 </kw>
 <kw name="Press Key" library="Selenium2Library">
 <doc>Simulates user pressing key on element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//input[@id='inputBD']</arg>
-<arg>${empty}</arg>
+<arg>${birthday}</arg>
 </arguments>
-<status status="PASS" endtime="20181121 03:36:31.568" starttime="20181121 03:36:31.291"></status>
+<status status="PASS" endtime="20181123 03:41:24.477" starttime="20181123 03:41:24.217"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="ShowIDcardNPass"]/div[1]/label</arg>
 </arguments>
-<msg timestamp="20181121 03:36:31.569" level="INFO">Clicking element '//*[@id="ShowIDcardNPass"]/div[1]/label'.</msg>
-<status status="PASS" endtime="20181121 03:36:31.838" starttime="20181121 03:36:31.568"></status>
+<msg timestamp="20181123 03:41:24.477" level="INFO">Clicking element '//*[@id="ShowIDcardNPass"]/div[1]/label'.</msg>
+<status status="PASS" endtime="20181123 03:41:24.762" starttime="20181123 03:41:24.477"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element ``locator`` is visible.</doc>
@@ -203,7 +243,7 @@
 <arg>//*[@id="IDcard"]</arg>
 <arg>4s</arg>
 </arguments>
-<status status="PASS" endtime="20181121 03:36:32.062" starttime="20181121 03:36:31.838"></status>
+<status status="PASS" endtime="20181123 03:41:25.036" starttime="20181123 03:41:24.762"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -211,8 +251,8 @@
 <arg>IDcard</arg>
 <arg>${id card}</arg>
 </arguments>
-<msg timestamp="20181121 03:36:32.064" level="INFO">Typing text '1409901718605' into text field 'IDcard'.</msg>
-<status status="PASS" endtime="20181121 03:36:32.805" starttime="20181121 03:36:32.063"></status>
+<msg timestamp="20181123 03:41:25.037" level="INFO">Typing text '1409901718605' into text field 'IDcard'.</msg>
+<status status="PASS" endtime="20181123 03:41:25.700" starttime="20181123 03:41:25.036"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -220,8 +260,8 @@
 <arg>inputSTD</arg>
 <arg>${student id}</arg>
 </arguments>
-<msg timestamp="20181121 03:36:32.807" level="INFO">Typing text '593020804-3' into text field 'inputSTD'.</msg>
-<status status="PASS" endtime="20181121 03:36:33.246" starttime="20181121 03:36:32.806"></status>
+<msg timestamp="20181123 03:41:25.700" level="INFO">Typing text '593020804-3' into text field 'inputSTD'.</msg>
+<status status="PASS" endtime="20181123 03:41:26.084" starttime="20181123 03:41:25.700"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -229,8 +269,8 @@
 <arg>tell</arg>
 <arg>${telephone number}</arg>
 </arguments>
-<msg timestamp="20181121 03:36:33.247" level="INFO">Typing text '0812345678' into text field 'tell'.</msg>
-<status status="PASS" endtime="20181121 03:36:33.703" starttime="20181121 03:36:33.246"></status>
+<msg timestamp="20181123 03:41:26.084" level="INFO">Typing text '0812345678' into text field 'tell'.</msg>
+<status status="PASS" endtime="20181123 03:41:26.507" starttime="20181123 03:41:26.084"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -238,8 +278,8 @@
 <arg>inputTelephoneP</arg>
 <arg>${parent phone number}</arg>
 </arguments>
-<msg timestamp="20181121 03:36:33.705" level="INFO">Typing text '0898765432' into text field 'inputTelephoneP'.</msg>
-<status status="PASS" endtime="20181121 03:36:34.145" starttime="20181121 03:36:33.704"></status>
+<msg timestamp="20181123 03:41:26.507" level="INFO">Typing text '0898765432' into text field 'inputTelephoneP'.</msg>
+<status status="PASS" endtime="20181123 03:41:26.903" starttime="20181123 03:41:26.507"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -247,8 +287,8 @@
 <arg>inputFacebook</arg>
 <arg>${facebook}</arg>
 </arguments>
-<msg timestamp="20181121 03:36:34.145" level="INFO">Typing text 'https://www.facebook.com/NutNinlaong' into text field 'inputFacebook'.</msg>
-<status status="PASS" endtime="20181121 03:36:34.850" starttime="20181121 03:36:34.145"></status>
+<msg timestamp="20181123 03:41:26.903" level="INFO">Typing text 'https://www.facebook.com/NutNinlaong' into text field 'inputFacebook'.</msg>
+<status status="PASS" endtime="20181123 03:41:27.499" starttime="20181123 03:41:26.903"></status>
 </kw>
 <kw name="Choose File" library="Selenium2Library">
 <doc>Inputs the ``file_path`` into file input field ``locator``.</doc>
@@ -258,27 +298,18 @@
 </arguments>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181121 03:36:34.857" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" endtime="20181121 03:36:34.858" starttime="20181121 03:36:34.851"></status>
+<msg timestamp="20181123 03:41:27.919" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20181123 03:41:27.919" starttime="20181123 03:41:27.499"></status>
 </kw>
-<msg timestamp="20181121 03:36:34.858" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<msg timestamp="20181121 03:36:34.861" level="FAIL">ValueError: File 'C://Users/Mr'Nut/Desktop/ProjectSQA/web.jpg' does not exist on the local file system.</msg>
-<status status="FAIL" endtime="20181121 03:36:34.862" starttime="20181121 03:36:34.850"></status>
+<msg timestamp="20181123 03:41:27.920" level="FAIL">ValueError: File 'E:ProjectsTeamProjectSQAweb.JPG' does not exist on the local file system.</msg>
+<status status="FAIL" endtime="20181123 03:41:27.920" starttime="20181123 03:41:27.499"></status>
 </kw>
-<status status="FAIL" endtime="20181121 03:36:34.862" starttime="20181121 03:36:27.272"></status>
+<status status="FAIL" endtime="20181123 03:41:27.920" starttime="20181123 03:41:21.612"></status>
 </kw>
-<status status="FAIL" endtime="20181121 03:36:34.862" critical="yes" starttime="20181121 03:36:27.270">ValueError: File 'C://Users/Mr'Nut/Desktop/ProjectSQA/web.jpg' does not exist on the local file system.</status>
+<status status="FAIL" endtime="20181123 03:41:27.921" critical="yes" starttime="20181123 03:41:21.611">ValueError: File 'E:ProjectsTeamProjectSQAweb.JPG' does not exist on the local file system.</status>
 </test>
-<test id="s1-t4" name="TC004 : Register Success With Id Card No Studetn Id">
-<kw name="TC004 : Input Register Success With Id Card No Studetn Id" library="UAT002_resources">
+<test id="s1-t5" name="TC005 : Register No Success With Id Card Empty ID card">
+<kw name="TC005 : Input Register No Success With Id Card Empty ID card" library="UAT002_resources">
 <arguments>
 <arg>${TITLE NAME}</arg>
 <arg>${FULL NAME}</arg>
@@ -301,38 +332,148 @@ from unknown error: web view not found
 <arguments>
 <arg>//*[@id="side-main-menu"]/li[2]/a</arg>
 </arguments>
-<msg timestamp="20181121 03:36:34.873" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<msg timestamp="20181123 03:41:27.927" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20181123 03:41:28.249" starttime="20181123 03:41:27.926"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="pages-nav-list0"]/li[1]/a</arg>
+</arguments>
+<msg timestamp="20181123 03:41:28.249" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[1]/a'.</msg>
+<status status="PASS" endtime="20181123 03:41:29.021" starttime="20181123 03:41:28.249"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="ShowGender"]/div[1]/label</arg>
+</arguments>
+<msg timestamp="20181123 03:41:29.022" level="INFO">Clicking element '//*[@id="ShowGender"]/div[1]/label'.</msg>
+<status status="PASS" endtime="20181123 03:41:29.237" starttime="20181123 03:41:29.021"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181123 03:41:29.237" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<status status="PASS" endtime="20181123 03:41:29.469" starttime="20181123 03:41:29.237"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+<arg>${title name}</arg>
+</arguments>
+<msg timestamp="20181123 03:41:29.470" level="INFO">Selecting options from selection list '//*[@id="prename"]' by value P001.</msg>
+<status status="PASS" endtime="20181123 03:41:29.946" starttime="20181123 03:41:29.469"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+<arg>4s</arg>
+</arguments>
+<status status="PASS" endtime="20181123 03:41:30.090" starttime="20181123 03:41:29.947"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>inputfullname</arg>
+<arg>${full name}</arg>
+</arguments>
+<msg timestamp="20181123 03:41:30.091" level="INFO">Typing text 'Somnut Naja' into text field 'inputfullname'.</msg>
+<status status="PASS" endtime="20181123 03:41:30.561" starttime="20181123 03:41:30.091"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='inputBD']</arg>
+<arg>${birthday}</arg>
+</arguments>
+<status status="PASS" endtime="20181123 03:41:30.823" starttime="20181123 03:41:30.561"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="ShowIDcardNPass"]/div[1]/label</arg>
+</arguments>
+<msg timestamp="20181123 03:41:30.824" level="INFO">Clicking element '//*[@id="ShowIDcardNPass"]/div[1]/label'.</msg>
+<status status="PASS" endtime="20181123 03:41:31.023" starttime="20181123 03:41:30.824"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[@id="IDcard"]</arg>
+<arg>4s</arg>
+</arguments>
+<status status="PASS" endtime="20181123 03:41:31.174" starttime="20181123 03:41:31.023"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>IDcard</arg>
+<arg>${empty}</arg>
+</arguments>
+<msg timestamp="20181123 03:41:31.174" level="INFO">Typing text '' into text field 'IDcard'.</msg>
+<status status="PASS" endtime="20181123 03:41:31.475" starttime="20181123 03:41:31.174"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>inputSTD</arg>
+<arg>${student id}</arg>
+</arguments>
+<msg timestamp="20181123 03:41:31.475" level="INFO">Typing text '593020804-3' into text field 'inputSTD'.</msg>
+<status status="PASS" endtime="20181123 03:41:31.880" starttime="20181123 03:41:31.475"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>tell</arg>
+<arg>${telephone number}</arg>
+</arguments>
+<msg timestamp="20181123 03:41:31.880" level="INFO">Typing text '0812345678' into text field 'tell'.</msg>
+<status status="PASS" endtime="20181123 03:41:32.294" starttime="20181123 03:41:31.880"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>inputTelephoneP</arg>
+<arg>${parent phone number}</arg>
+</arguments>
+<msg timestamp="20181123 03:41:32.294" level="INFO">Typing text '0898765432' into text field 'inputTelephoneP'.</msg>
+<status status="PASS" endtime="20181123 03:41:32.627" starttime="20181123 03:41:32.294"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>inputFacebook</arg>
+<arg>${facebook}</arg>
+</arguments>
+<msg timestamp="20181123 03:41:32.628" level="INFO">Typing text 'https://www.facebook.com/NutNinlaong' into text field 'inputFacebook'.</msg>
+<status status="PASS" endtime="20181123 03:41:33.293" starttime="20181123 03:41:32.627"></status>
+</kw>
+<kw name="Choose File" library="Selenium2Library">
+<doc>Inputs the ``file_path`` into file input field ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='inputImg']</arg>
+<arg>${image}</arg>
+</arguments>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181121 03:36:34.882" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" endtime="20181121 03:36:34.882" starttime="20181121 03:36:34.875"></status>
+<msg timestamp="20181123 03:41:33.662" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20181123 03:41:33.662" starttime="20181123 03:41:33.294"></status>
 </kw>
-<msg timestamp="20181121 03:36:34.882" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<msg timestamp="20181121 03:36:34.892" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" endtime="20181121 03:36:34.893" starttime="20181121 03:36:34.873"></status>
+<msg timestamp="20181123 03:41:33.663" level="FAIL">ValueError: File 'E:ProjectsTeamProjectSQAweb.JPG' does not exist on the local file system.</msg>
+<status status="FAIL" endtime="20181123 03:41:33.664" starttime="20181123 03:41:33.293"></status>
 </kw>
-<status status="FAIL" endtime="20181121 03:36:34.893" starttime="20181121 03:36:34.867"></status>
+<status status="FAIL" endtime="20181123 03:41:33.664" starttime="20181123 03:41:27.925"></status>
 </kw>
-<status status="FAIL" endtime="20181121 03:36:34.894" critical="yes" starttime="20181121 03:36:34.865">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</status>
+<status status="FAIL" endtime="20181123 03:41:33.665" critical="yes" starttime="20181123 03:41:27.924">ValueError: File 'E:ProjectsTeamProjectSQAweb.JPG' does not exist on the local file system.</status>
 </test>
-<test id="s1-t5" name="TC005 : Register Success With Id Card No Parent Phone Number">
-<kw name="TC005 : Input Register Success With Id Card No Parent Phone Number" library="UAT002_resources">
+<test id="s1-t6" name="TC006 : Register No Success With Id Card Empty Telephone Number">
+<kw name="TC006 : Input Register No Success With Id Card Empty Telephone Number" library="UAT002_resources">
 <arguments>
 <arg>${TITLE NAME}</arg>
 <arg>${FULL NAME}</arg>
@@ -355,38 +496,104 @@ from unknown error: web view not found
 <arguments>
 <arg>//*[@id="side-main-menu"]/li[2]/a</arg>
 </arguments>
-<msg timestamp="20181121 03:36:34.901" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<msg timestamp="20181123 03:41:33.675" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20181123 03:41:33.910" starttime="20181123 03:41:33.675"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="pages-nav-list0"]/li[1]/a</arg>
+</arguments>
+<msg timestamp="20181123 03:41:33.912" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[1]/a'.</msg>
+<status status="PASS" endtime="20181123 03:41:34.688" starttime="20181123 03:41:33.911"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="ShowGender"]/div[1]/label</arg>
+</arguments>
+<msg timestamp="20181123 03:41:34.688" level="INFO">Clicking element '//*[@id="ShowGender"]/div[1]/label'.</msg>
+<status status="PASS" endtime="20181123 03:41:34.908" starttime="20181123 03:41:34.688"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181123 03:41:34.908" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<status status="PASS" endtime="20181123 03:41:35.223" starttime="20181123 03:41:34.908"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+<arg>${title name}</arg>
+</arguments>
+<msg timestamp="20181123 03:41:35.224" level="INFO">Selecting options from selection list '//*[@id="prename"]' by value P001.</msg>
+<status status="PASS" endtime="20181123 03:41:35.742" starttime="20181123 03:41:35.223"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+<arg>4s</arg>
+</arguments>
+<status status="PASS" endtime="20181123 03:41:35.877" starttime="20181123 03:41:35.743"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>inputfullname</arg>
+<arg>${full name}</arg>
+</arguments>
+<msg timestamp="20181123 03:41:35.877" level="INFO">Typing text 'Somnut Naja' into text field 'inputfullname'.</msg>
+<status status="PASS" endtime="20181123 03:41:36.369" starttime="20181123 03:41:35.877"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='inputBD']</arg>
+<arg>${birthday}</arg>
+</arguments>
+<status status="PASS" endtime="20181123 03:41:36.519" starttime="20181123 03:41:36.369"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="ShowIDcardNPass"]/div[1]/label</arg>
+</arguments>
+<msg timestamp="20181123 03:41:36.520" level="INFO">Clicking element '//*[@id="ShowIDcardNPass"]/div[1]/label'.</msg>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181121 03:36:34.907" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+<msg timestamp="20181123 03:41:36.552" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
+  (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
 </msg>
-<status status="FAIL" endtime="20181121 03:36:35.144" starttime="20181121 03:36:34.902"></status>
+<status status="FAIL" endtime="20181123 03:41:36.552" starttime="20181123 03:41:36.536"></status>
 </kw>
-<msg timestamp="20181121 03:36:35.144" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+<msg timestamp="20181123 03:41:36.552" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
+  (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
 </msg>
-<msg timestamp="20181121 03:36:35.161" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+<msg timestamp="20181123 03:41:36.560" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
+  (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
 </msg>
-<status status="FAIL" endtime="20181121 03:36:35.161" starttime="20181121 03:36:34.901"></status>
+<status status="FAIL" endtime="20181123 03:41:36.560" starttime="20181123 03:41:36.519"></status>
 </kw>
-<status status="FAIL" endtime="20181121 03:36:35.161" starttime="20181121 03:36:34.899"></status>
+<status status="FAIL" endtime="20181123 03:41:36.560" starttime="20181123 03:41:33.672"></status>
 </kw>
-<status status="FAIL" endtime="20181121 03:36:35.168" critical="yes" starttime="20181121 03:36:34.897">NoSuchWindowException: Message: no such window: target window already closed
+<status status="FAIL" endtime="20181123 03:41:36.561" critical="yes" starttime="20181123 03:41:33.670">NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
+  (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
 </status>
 </test>
-<test id="s1-t6" name="TC006 : Register Success With Id Card No Facebook">
-<kw name="TC006 : Input Register Success With Id Card No Facebook" library="UAT002_resources">
+<test id="s1-t7" name="TC007 : Register No Success With Id Card Empty Profile Image">
+<kw name="TC007 : Input Register No Success With Id Card Empty Profile Image" library="UAT002_resources">
 <arguments>
 <arg>${TITLE NAME}</arg>
 <arg>${FULL NAME}</arg>
@@ -409,57 +616,38 @@ from unknown error: web view not found
 <arguments>
 <arg>//*[@id="side-main-menu"]/li[2]/a</arg>
 </arguments>
-<msg timestamp="20181121 03:36:35.177" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<msg timestamp="20181123 03:41:36.569" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181121 03:36:35.185" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+<msg timestamp="20181123 03:41:36.583" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
+  (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
 </msg>
-<status status="FAIL" endtime="20181121 03:36:35.185" starttime="20181121 03:36:35.180"></status>
+<status status="FAIL" endtime="20181123 03:41:36.583" starttime="20181123 03:41:36.571"></status>
 </kw>
-<msg timestamp="20181121 03:36:35.185" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+<msg timestamp="20181123 03:41:36.583" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
+  (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
 </msg>
-<msg timestamp="20181121 03:36:35.207" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+<msg timestamp="20181123 03:41:36.596" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-=======
-<arg>Username</arg>
-<arg>porinut</arg>
-</arguments>
-<msg timestamp="20181121 04:38:11.039" level="INFO">Typing text 'porinut' into text field 'Username'.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181121 04:38:11.910" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20181121 04:38:11.118" endtime="20181121 04:38:11.910"></status>
-</kw>
-<msg timestamp="20181121 04:38:11.913" level="FAIL">InvalidElementStateException: Message: invalid element state: Element is not currently interactable and may not be manipulated
->>>>>>> 84522b695871d8d56d69feaaaf569848ce915ea5
-  (Session info: chrome=70.0.3538.102)
+  (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
 </msg>
-<<<<<<< HEAD
-<status status="FAIL" endtime="20181121 03:36:35.208" starttime="20181121 03:36:35.177"></status>
+<status status="FAIL" endtime="20181123 03:41:36.596" starttime="20181123 03:41:36.569"></status>
 </kw>
-<status status="FAIL" endtime="20181121 03:36:35.208" starttime="20181121 03:36:35.174"></status>
+<status status="FAIL" endtime="20181123 03:41:36.596" starttime="20181123 03:41:36.567"></status>
 </kw>
-<status status="FAIL" endtime="20181121 03:36:35.209" critical="yes" starttime="20181121 03:36:35.173">NoSuchWindowException: Message: no such window: target window already closed
+<status status="FAIL" endtime="20181123 03:41:36.600" critical="yes" starttime="20181123 03:41:36.566">NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-=======
-<status status="FAIL" starttime="20181121 04:38:11.039" endtime="20181121 04:38:11.913"></status>
-</kw>
-<status status="FAIL" starttime="20181121 04:38:10.723" endtime="20181121 04:38:11.914" critical="yes">InvalidElementStateException: Message: invalid element state: Element is not currently interactable and may not be manipulated
->>>>>>> 84522b695871d8d56d69feaaaf569848ce915ea5
-  (Session info: chrome=70.0.3538.102)
+  (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
 </status>
 </test>
-<<<<<<< HEAD
-<test id="s1-t7" name="TC007 : Register Success With Id Card No Birthday No Studetn Id No Parent Phone Number No Facebook">
-<kw name="TC007 : Input Register Success With Id Card No Birthday No Studetn Id No Parent Phone Number No Facebook" library="UAT002_resources">
+<test id="s1-t8" name="TC008 : Register No Success With Id Card Empty type of attendees">
+<kw name="TC008 : Input Register No Success With Id Card Empty type of attendees" library="UAT002_resources">
 <arguments>
 <arg>${TITLE NAME}</arg>
 <arg>${FULL NAME}</arg>
@@ -482,366 +670,38 @@ from unknown error: web view not found
 <arguments>
 <arg>//*[@id="side-main-menu"]/li[2]/a</arg>
 </arguments>
-<msg timestamp="20181121 03:36:35.218" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<msg timestamp="20181123 03:41:36.668" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181121 03:36:35.224" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+<msg timestamp="20181123 03:41:36.676" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
+  (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
 </msg>
-<status status="FAIL" endtime="20181121 03:36:35.224" starttime="20181121 03:36:35.220"></status>
+<status status="FAIL" endtime="20181123 03:41:36.676" starttime="20181123 03:41:36.670"></status>
 </kw>
-<msg timestamp="20181121 03:36:35.224" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+<msg timestamp="20181123 03:41:36.677" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
+  (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
 </msg>
-<msg timestamp="20181121 03:36:35.247" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+<msg timestamp="20181123 03:41:36.687" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
+  (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
 </msg>
-<status status="FAIL" endtime="20181121 03:36:35.247" starttime="20181121 03:36:35.218"></status>
+<status status="FAIL" endtime="20181123 03:41:36.687" starttime="20181123 03:41:36.668"></status>
 </kw>
-<status status="FAIL" endtime="20181121 03:36:35.247" starttime="20181121 03:36:35.216"></status>
+<status status="FAIL" endtime="20181123 03:41:36.688" starttime="20181123 03:41:36.661"></status>
 </kw>
-<status status="FAIL" endtime="20181121 03:36:35.247" critical="yes" starttime="20181121 03:36:35.214">NoSuchWindowException: Message: no such window: target window already closed
+<status status="FAIL" endtime="20181123 03:41:36.688" critical="yes" starttime="20181123 03:41:36.656">NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
+  (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
 </status>
 </test>
-<test id="s1-t8" name="TC008 : Register Success With Passport">
-<kw name="TC008 : Input Register Success With Passport" library="UAT002_resources">
-<arguments>
-<arg>${TITLE NAME}</arg>
-<arg>${FULL NAME}</arg>
-<arg>${BIRTHDAY}</arg>
-<arg>${PASSPORT}</arg>
-<arg>${STUDENT ID}</arg>
-<arg>${TELEPHONE NUMBER}</arg>
-<arg>${PARENT PHONE NUMBER}</arg>
-<arg>${FACEBOOK}</arg>
-<arg>${IMAGE}</arg>
-<arg>${TYPE OF ATTENDEES}</arg>
-<arg>${UNIVERSITY}</arg>
-<arg>${EMAIL}</arg>
-<arg>${USERNAME}</arg>
-<arg>${PASSWORD}</arg>
-<arg>${REPEAT PASSWORD}</arg>
-</arguments>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
-</arguments>
-<msg timestamp="20181121 03:36:35.254" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181121 03:36:35.260" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" endtime="20181121 03:36:35.260" starttime="20181121 03:36:35.256"></status>
-</kw>
-<msg timestamp="20181121 03:36:35.261" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<msg timestamp="20181121 03:36:35.265" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" endtime="20181121 03:36:35.265" starttime="20181121 03:36:35.253"></status>
-</kw>
-<status status="FAIL" endtime="20181121 03:36:35.266" starttime="20181121 03:36:35.251"></status>
-</kw>
-<status status="FAIL" endtime="20181121 03:36:35.267" critical="yes" starttime="20181121 03:36:35.250">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</status>
-</test>
-<test id="s1-t9" name="TC009 : Register Success With Passport No Birthday">
-<kw name="TC009 : Input Register Success With Passport No Birthday" library="UAT002_resources">
-<arguments>
-<arg>${TITLE NAME}</arg>
-<arg>${FULL NAME}</arg>
-<arg>${BIRTHDAY}</arg>
-<arg>${PASSPORT}</arg>
-<arg>${STUDENT ID}</arg>
-<arg>${TELEPHONE NUMBER}</arg>
-<arg>${PARENT PHONE NUMBER}</arg>
-<arg>${FACEBOOK}</arg>
-<arg>${IMAGE}</arg>
-<arg>${TYPE OF ATTENDEES}</arg>
-<arg>${UNIVERSITY}</arg>
-<arg>${EMAIL}</arg>
-<arg>${USERNAME}</arg>
-<arg>${PASSWORD}</arg>
-<arg>${REPEAT PASSWORD}</arg>
-</arguments>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
-</arguments>
-<msg timestamp="20181121 03:36:35.278" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181121 03:36:35.284" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" endtime="20181121 03:36:35.284" starttime="20181121 03:36:35.280"></status>
-</kw>
-<msg timestamp="20181121 03:36:35.284" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<msg timestamp="20181121 03:36:35.288" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" endtime="20181121 03:36:35.288" starttime="20181121 03:36:35.277"></status>
-</kw>
-<status status="FAIL" endtime="20181121 03:36:35.288" starttime="20181121 03:36:35.273"></status>
-</kw>
-<status status="FAIL" endtime="20181121 03:36:35.289" critical="yes" starttime="20181121 03:36:35.271">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</status>
-</test>
-<test id="s1-t10" name="TC010 : Register Success With Passport No Studetn Id">
-<kw name="TC010 : Input Register Success With Passport No Studetn Id" library="UAT002_resources">
-<arguments>
-<arg>${TITLE NAME}</arg>
-<arg>${FULL NAME}</arg>
-<arg>${BIRTHDAY}</arg>
-<arg>${PASSPORT}</arg>
-<arg>${STUDENT ID}</arg>
-<arg>${TELEPHONE NUMBER}</arg>
-<arg>${PARENT PHONE NUMBER}</arg>
-<arg>${FACEBOOK}</arg>
-<arg>${IMAGE}</arg>
-<arg>${TYPE OF ATTENDEES}</arg>
-<arg>${UNIVERSITY}</arg>
-<arg>${EMAIL}</arg>
-<arg>${USERNAME}</arg>
-<arg>${PASSWORD}</arg>
-<arg>${REPEAT PASSWORD}</arg>
-</arguments>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
-</arguments>
-<msg timestamp="20181121 03:36:35.295" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181121 03:36:35.302" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" endtime="20181121 03:36:35.302" starttime="20181121 03:36:35.297"></status>
-</kw>
-<msg timestamp="20181121 03:36:35.302" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<msg timestamp="20181121 03:36:35.307" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" endtime="20181121 03:36:35.307" starttime="20181121 03:36:35.295"></status>
-</kw>
-<status status="FAIL" endtime="20181121 03:36:35.307" starttime="20181121 03:36:35.293"></status>
-</kw>
-<status status="FAIL" endtime="20181121 03:36:35.308" critical="yes" starttime="20181121 03:36:35.291">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</status>
-</test>
-<test id="s1-t11" name="TC011 : Register Success With Passport No Parent Phone Number">
-<kw name="TC011 : Input Register Success With Passport No Parent Phone Number" library="UAT002_resources">
-<arguments>
-<arg>${TITLE NAME}</arg>
-<arg>${FULL NAME}</arg>
-<arg>${BIRTHDAY}</arg>
-<arg>${PASSPORT}</arg>
-<arg>${STUDENT ID}</arg>
-<arg>${TELEPHONE NUMBER}</arg>
-<arg>${PARENT PHONE NUMBER}</arg>
-<arg>${FACEBOOK}</arg>
-<arg>${IMAGE}</arg>
-<arg>${TYPE OF ATTENDEES}</arg>
-<arg>${UNIVERSITY}</arg>
-<arg>${EMAIL}</arg>
-<arg>${USERNAME}</arg>
-<arg>${PASSWORD}</arg>
-<arg>${REPEAT PASSWORD}</arg>
-</arguments>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
-</arguments>
-<msg timestamp="20181121 03:36:35.315" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181121 03:36:35.325" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" endtime="20181121 03:36:35.326" starttime="20181121 03:36:35.317"></status>
-</kw>
-<msg timestamp="20181121 03:36:35.326" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<msg timestamp="20181121 03:36:35.329" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" endtime="20181121 03:36:35.330" starttime="20181121 03:36:35.315"></status>
-</kw>
-<status status="FAIL" endtime="20181121 03:36:35.330" starttime="20181121 03:36:35.313"></status>
-</kw>
-<status status="FAIL" endtime="20181121 03:36:35.330" critical="yes" starttime="20181121 03:36:35.312">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</status>
-</test>
-<test id="s1-t12" name="TC012 : Register Success With Passport No Facebook">
-<kw name="TC012 : Input Register Success With Passport No Facebook" library="UAT002_resources">
-<arguments>
-<arg>${TITLE NAME}</arg>
-<arg>${FULL NAME}</arg>
-<arg>${BIRTHDAY}</arg>
-<arg>${PASSPORT}</arg>
-<arg>${STUDENT ID}</arg>
-<arg>${TELEPHONE NUMBER}</arg>
-<arg>${PARENT PHONE NUMBER}</arg>
-<arg>${FACEBOOK}</arg>
-<arg>${IMAGE}</arg>
-<arg>${TYPE OF ATTENDEES}</arg>
-<arg>${UNIVERSITY}</arg>
-<arg>${EMAIL}</arg>
-<arg>${USERNAME}</arg>
-<arg>${PASSWORD}</arg>
-<arg>${REPEAT PASSWORD}</arg>
-</arguments>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
-</arguments>
-<msg timestamp="20181121 03:36:35.337" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181121 03:36:35.344" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" endtime="20181121 03:36:35.344" starttime="20181121 03:36:35.339"></status>
-</kw>
-<msg timestamp="20181121 03:36:35.344" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<msg timestamp="20181121 03:36:35.350" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" endtime="20181121 03:36:35.350" starttime="20181121 03:36:35.337"></status>
-</kw>
-<status status="FAIL" endtime="20181121 03:36:35.350" starttime="20181121 03:36:35.335"></status>
-</kw>
-<status status="FAIL" endtime="20181121 03:36:35.351" critical="yes" starttime="20181121 03:36:35.333">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</status>
-</test>
-<test id="s1-t13" name="TC013 : Register Success With Passport No Birthday No Studetn Id No Parent Phone Number No Facebook">
-<kw name="TC013 : Input Register Success With Passport No Birthday No Studetn Id No Parent Phone Number No Facebook" library="UAT002_resources">
-<arguments>
-<arg>${TITLE NAME}</arg>
-<arg>${FULL NAME}</arg>
-<arg>${BIRTHDAY}</arg>
-<arg>${PASSPORT}</arg>
-<arg>${STUDENT ID}</arg>
-<arg>${TELEPHONE NUMBER}</arg>
-<arg>${PARENT PHONE NUMBER}</arg>
-<arg>${FACEBOOK}</arg>
-<arg>${IMAGE}</arg>
-<arg>${TYPE OF ATTENDEES}</arg>
-<arg>${UNIVERSITY}</arg>
-<arg>${EMAIL}</arg>
-<arg>${USERNAME}</arg>
-<arg>${PASSWORD}</arg>
-<arg>${REPEAT PASSWORD}</arg>
-</arguments>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
-</arguments>
-<msg timestamp="20181121 03:36:35.357" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181121 03:36:35.369" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" endtime="20181121 03:36:35.369" starttime="20181121 03:36:35.358"></status>
-</kw>
-<msg timestamp="20181121 03:36:35.370" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<msg timestamp="20181121 03:36:35.380" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" endtime="20181121 03:36:35.381" starttime="20181121 03:36:35.357"></status>
-</kw>
-<status status="FAIL" endtime="20181121 03:36:35.382" starttime="20181121 03:36:35.356"></status>
-</kw>
-<kw type="teardown" name="Close Browser" library="Selenium2Library">
-<doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20181121 03:36:37.693" starttime="20181121 03:36:35.384"></status>
-</kw>
-<status status="FAIL" endtime="20181121 03:36:37.694" critical="yes" starttime="20181121 03:36:35.354">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
-</status>
-</test>
-<test id="s1-t14" name="TC002 : Register Success">
-<kw name="TC002 : Input Register Success No Birthday">
+<test id="s1-t9" name="TC009 : Register No Success With Id Card Empty University">
+<kw name="TC009 : Input Register No Success With Id Card Empty University" library="UAT002_resources">
 <arguments>
 <arg>${TITLE NAME}</arg>
 <arg>${FULL NAME}</arg>
@@ -859,98 +719,1455 @@ from unknown error: web view not found
 <arg>${PASSWORD}</arg>
 <arg>${REPEAT PASSWORD}</arg>
 </arguments>
-<msg timestamp="20181121 03:36:37.708" level="FAIL">No keyword with name 'TC002 : Input Register Success No Birthday' found.</msg>
-<status status="FAIL" endtime="20181121 03:36:37.708" starttime="20181121 03:36:37.708"></status>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181123 03:41:36.696" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:36.714" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:36.715" starttime="20181123 03:41:36.700"></status>
 </kw>
-<kw type="teardown" name="Close Browser" library="Selenium2Library">
-<doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20181121 03:36:37.710" starttime="20181121 03:36:37.709"></status>
+<msg timestamp="20181123 03:41:36.715" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:36.722" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:36.722" starttime="20181123 03:41:36.695"></status>
 </kw>
-<status status="FAIL" endtime="20181121 03:36:37.710" critical="yes" starttime="20181121 03:36:37.699">No keyword with name 'TC002 : Input Register Success No Birthday' found.</status>
+<status status="FAIL" endtime="20181123 03:41:36.723" starttime="20181123 03:41:36.693"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:36.724" critical="yes" starttime="20181123 03:41:36.692">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</status>
 </test>
-<status status="FAIL" endtime="20181121 03:36:37.717" starttime="20181121 03:36:13.673"></status>
+<test id="s1-t10" name="TC010 : Register No Success With Id Card Empty E-mail">
+<kw name="TC010 : Input Register No Success With Id Card Empty E-mail" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181123 03:41:36.735" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:36.745" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:36.746" starttime="20181123 03:41:36.740"></status>
+</kw>
+<msg timestamp="20181123 03:41:36.746" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:36.753" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:36.753" starttime="20181123 03:41:36.734"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:36.753" starttime="20181123 03:41:36.731"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:36.755" critical="yes" starttime="20181123 03:41:36.729">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-t11" name="TC011 : Register No Success With Id Card Empty Username">
+<kw name="TC011 : Input Register No Success With Id Card Empty Username" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181123 03:41:36.765" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:36.778" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:36.778" starttime="20181123 03:41:36.768"></status>
+</kw>
+<msg timestamp="20181123 03:41:36.778" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:36.783" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:36.784" starttime="20181123 03:41:36.765"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:36.784" starttime="20181123 03:41:36.762"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:36.785" critical="yes" starttime="20181123 03:41:36.761">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-t12" name="TC012 : Register No Success With Id Card Empty Password">
+<kw name="TC012 : Input Register No Success With Id Card Empty Password" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181123 03:41:36.809" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:36.823" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:36.824" starttime="20181123 03:41:36.811"></status>
+</kw>
+<msg timestamp="20181123 03:41:36.824" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:36.832" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:36.833" starttime="20181123 03:41:36.809"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:36.833" starttime="20181123 03:41:36.806"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:36.833" critical="yes" starttime="20181123 03:41:36.804">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-t13" name="TC013 : Register No Success With Id Card Empty Repeat Password">
+<kw name="TC013 : Input Register No Success With Id Card Empty Repeat Password" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181123 03:41:36.852" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:36.862" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:36.863" starttime="20181123 03:41:36.857"></status>
+</kw>
+<msg timestamp="20181123 03:41:36.863" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:36.873" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:36.873" starttime="20181123 03:41:36.852"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:36.873" starttime="20181123 03:41:36.849"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:36.874" critical="yes" starttime="20181123 03:41:36.846">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-t14" name="TC014 : Register No Success With Id Card Empty Last Name">
+<kw name="TC014 : Input Register No Success With Id Card Empty Last Name" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181123 03:41:36.886" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:36.900" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:36.901" starttime="20181123 03:41:36.892"></status>
+</kw>
+<msg timestamp="20181123 03:41:36.901" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:36.906" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:36.906" starttime="20181123 03:41:36.886"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:36.907" starttime="20181123 03:41:36.883"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:36.909" critical="yes" starttime="20181123 03:41:36.879">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-t15" name="TC015 : Register No Success With Id Card Invalid Birthday">
+<kw name="TC015 : Input Register No Success With Id Card Invalid Birthday" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181123 03:41:36.920" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:36.933" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:36.933" starttime="20181123 03:41:36.926"></status>
+</kw>
+<msg timestamp="20181123 03:41:36.933" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:36.939" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:36.939" starttime="20181123 03:41:36.919"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:36.939" starttime="20181123 03:41:36.916"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:36.940" critical="yes" starttime="20181123 03:41:36.914">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-t16" name="TC016 : Register No Success With Id Card Invalid Password">
+<kw name="TC016 : Input Register No Success With Id Card Invalid Password" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181123 03:41:36.948" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:36.963" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:36.963" starttime="20181123 03:41:36.958"></status>
+</kw>
+<msg timestamp="20181123 03:41:36.964" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:36.982" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:36.983" starttime="20181123 03:41:36.948"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:36.983" starttime="20181123 03:41:36.945"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:36.984" critical="yes" starttime="20181123 03:41:36.944">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-t17" name="TC017 : Register No Success With Id Card Invalid Phone">
+<kw name="TC017 : Input Register No Success With Id Card Invalid Phone" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181123 03:41:36.991" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:37.001" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.001" starttime="20181123 03:41:36.994"></status>
+</kw>
+<msg timestamp="20181123 03:41:37.001" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.015" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.016" starttime="20181123 03:41:36.991"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.019" starttime="20181123 03:41:36.989"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.021" critical="yes" starttime="20181123 03:41:36.987">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-t18" name="TC018 : Register No Success With Passport Empty Gender">
+<kw name="TC018 : Input Register No Success With Passport Empty Gender" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181123 03:41:37.034" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:37.042" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.043" starttime="20181123 03:41:37.037"></status>
+</kw>
+<msg timestamp="20181123 03:41:37.043" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.050" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.050" starttime="20181123 03:41:37.034"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.050" starttime="20181123 03:41:37.030"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.051" critical="yes" starttime="20181123 03:41:37.026">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-t19" name="TC019 : Register No Success With Passport Empty Title Name">
+<kw name="TC019 : Input Register No Success With Passport Empty Title Name" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181123 03:41:37.058" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:37.065" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.065" starttime="20181123 03:41:37.060"></status>
+</kw>
+<msg timestamp="20181123 03:41:37.065" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.070" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.071" starttime="20181123 03:41:37.058"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.071" starttime="20181123 03:41:37.056"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.072" critical="yes" starttime="20181123 03:41:37.054">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-t20" name="TC020 : Register No Success With Passport Empty Full Name">
+<kw name="TC020 : Input Register No Success With Passport Empty Full Name" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181123 03:41:37.078" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:37.085" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.085" starttime="20181123 03:41:37.080"></status>
+</kw>
+<msg timestamp="20181123 03:41:37.085" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.095" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.096" starttime="20181123 03:41:37.078"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.096" starttime="20181123 03:41:37.076"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.101" critical="yes" starttime="20181123 03:41:37.075">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-t21" name="TC021 : Register No Success With Passport Empty Passport">
+<kw name="TC021 : Input Register No Success With Passport Empty Passport" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181123 03:41:37.109" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:37.117" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.117" starttime="20181123 03:41:37.111"></status>
+</kw>
+<msg timestamp="20181123 03:41:37.117" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.126" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.126" starttime="20181123 03:41:37.109"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.126" starttime="20181123 03:41:37.107"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.127" critical="yes" starttime="20181123 03:41:37.105">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-t22" name="TC022 : Register No Success With Passport Empty Telephone Number">
+<kw name="TC022 : Input Register No Success With Passport Empty Telephone Number" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181123 03:41:37.135" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:37.149" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.149" starttime="20181123 03:41:37.138"></status>
+</kw>
+<msg timestamp="20181123 03:41:37.149" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.154" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.155" starttime="20181123 03:41:37.135"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.155" starttime="20181123 03:41:37.132"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.156" critical="yes" starttime="20181123 03:41:37.130">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-t23" name="TC023 : Register No Success With Passport Empty Profile Image">
+<kw name="TC023 : Input Register No Success With Passport Empty Profile Image" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181123 03:41:37.165" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:37.173" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.173" starttime="20181123 03:41:37.167"></status>
+</kw>
+<msg timestamp="20181123 03:41:37.173" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.181" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.182" starttime="20181123 03:41:37.165"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.182" starttime="20181123 03:41:37.161"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.184" critical="yes" starttime="20181123 03:41:37.159">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-t24" name="TC024 : Register No Success With Passport Empty type of attendees">
+<kw name="TC024 : Input Register No Success With Passport Empty type of attendees" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181123 03:41:37.192" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:37.205" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.205" starttime="20181123 03:41:37.194"></status>
+</kw>
+<msg timestamp="20181123 03:41:37.205" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.213" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.213" starttime="20181123 03:41:37.192"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.213" starttime="20181123 03:41:37.189"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.213" critical="yes" starttime="20181123 03:41:37.188">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-t25" name="TC025 : Register No Success With Passport Empty University">
+<kw name="TC025 : Input Register No Success With Passport Empty University" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181123 03:41:37.224" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:37.234" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.234" starttime="20181123 03:41:37.226"></status>
+</kw>
+<msg timestamp="20181123 03:41:37.235" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.250" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.250" starttime="20181123 03:41:37.223"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.250" starttime="20181123 03:41:37.221"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.254" critical="yes" starttime="20181123 03:41:37.220">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-t26" name="TC026 : Register No Success With Passport Empty E-mail">
+<kw name="TC026 : Input Register No Success With Passport Empty E-mail" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181123 03:41:37.264" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:37.274" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.274" starttime="20181123 03:41:37.268"></status>
+</kw>
+<msg timestamp="20181123 03:41:37.274" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.279" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.279" starttime="20181123 03:41:37.264"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.280" starttime="20181123 03:41:37.260"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.283" critical="yes" starttime="20181123 03:41:37.259">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-t27" name="TC027 : Register No Success With Passport Empty Username">
+<kw name="TC027 : Input Register No Success With Passport Empty Username" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181123 03:41:37.293" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:37.303" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.303" starttime="20181123 03:41:37.296"></status>
+</kw>
+<msg timestamp="20181123 03:41:37.303" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.309" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.309" starttime="20181123 03:41:37.292"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.309" starttime="20181123 03:41:37.290"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.310" critical="yes" starttime="20181123 03:41:37.289">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-t28" name="TC028 : Register No Success With Passport Empty Password">
+<kw name="TC028 : Input Register No Success With Passport Empty Password" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181123 03:41:37.318" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:37.327" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.327" starttime="20181123 03:41:37.322"></status>
+</kw>
+<msg timestamp="20181123 03:41:37.327" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.332" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.332" starttime="20181123 03:41:37.318"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.333" starttime="20181123 03:41:37.315"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.333" critical="yes" starttime="20181123 03:41:37.314">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-t29" name="TC029 : Register No Success With Passport Empty Repeat Password">
+<kw name="TC029 : Input Register No Success With Passport Empty Repeat Password" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181123 03:41:37.345" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:37.362" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.362" starttime="20181123 03:41:37.357"></status>
+</kw>
+<msg timestamp="20181123 03:41:37.362" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.370" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.370" starttime="20181123 03:41:37.345"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.370" starttime="20181123 03:41:37.339"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.372" critical="yes" starttime="20181123 03:41:37.337">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-t30" name="TC030 : Register No Success With Passport Empty Last Name">
+<kw name="TC030 : Input Register No Success With Passport Empty Last Name" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181123 03:41:37.383" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:37.391" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.391" starttime="20181123 03:41:37.385"></status>
+</kw>
+<msg timestamp="20181123 03:41:37.391" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.395" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.395" starttime="20181123 03:41:37.383"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.395" starttime="20181123 03:41:37.381"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.397" critical="yes" starttime="20181123 03:41:37.379">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-t31" name="TC031 : Register No Success With Passport Invalid Birthday">
+<kw name="TC031 : Input Register No Success With Passport Invalid Birthday" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181123 03:41:37.419" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:37.433" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.433" starttime="20181123 03:41:37.423"></status>
+</kw>
+<msg timestamp="20181123 03:41:37.434" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.437" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.438" starttime="20181123 03:41:37.418"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.438" starttime="20181123 03:41:37.416"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.439" critical="yes" starttime="20181123 03:41:37.415">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-t32" name="TC032 : Register No Success With Passport Invalid Password">
+<kw name="TC032 : Input Register No Success With Passport Invalid Password" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181123 03:41:37.447" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 03:41:37.456" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.457" starttime="20181123 03:41:37.451"></status>
+</kw>
+<msg timestamp="20181123 03:41:37.457" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.465" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181123 03:41:37.465" starttime="20181123 03:41:37.446"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.465" starttime="20181123 03:41:37.444"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.466" critical="yes" starttime="20181123 03:41:37.443">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-t33" name="TC033 : Register No Success With Passport Invalid Phone">
+<kw name="TC033 : Input Register No Success With Passport Invalid Phone" library="UAT002_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<msg timestamp="20181123 03:41:37.492" level="FAIL">Keyword 'UAT002_resources.TC033 : Input Register No Success With Passport Invalid Phone' expected 0 arguments, got 15.</msg>
+<status status="FAIL" endtime="20181123 03:41:37.493" starttime="20181123 03:41:37.487"></status>
+</kw>
+<status status="FAIL" endtime="20181123 03:41:37.493" critical="yes" starttime="20181123 03:41:37.486">Keyword 'UAT002_resources.TC033 : Input Register No Success With Passport Invalid Phone' expected 0 arguments, got 15.</status>
+</test>
+<status status="FAIL" endtime="20181123 03:41:37.500" starttime="20181123 03:41:08.590"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="13" pass="1">Critical Tests</stat>
-<stat fail="13" pass="1">All Tests</stat>
-=======
-<status status="FAIL" starttime="20181121 04:38:05.343" endtime="20181121 04:38:11.916"></status>
-</suite>
-<statistics>
-<total>
-<stat pass="1" fail="1">Critical Tests</stat>
-<stat pass="1" fail="1">All Tests</stat>
->>>>>>> 84522b695871d8d56d69feaaaf569848ce915ea5
+<stat fail="32" pass="1">Critical Tests</stat>
+<stat fail="32" pass="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<<<<<<< HEAD
-<stat fail="13" id="s1" name="UAT002" pass="1">UAT002</stat>
+<stat fail="32" id="s1" name="UAT002" pass="1">UAT002</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20181121 03:36:34.858" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+<msg timestamp="20181123 03:41:36.552" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
+  (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
 </msg>
-<msg timestamp="20181121 03:36:34.882" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+<msg timestamp="20181123 03:41:36.583" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
+  (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
 </msg>
-<msg timestamp="20181121 03:36:35.144" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+<msg timestamp="20181123 03:41:36.677" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
+  (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
 </msg>
-<msg timestamp="20181121 03:36:35.185" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+<msg timestamp="20181123 03:41:36.715" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
+  (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
 </msg>
-<msg timestamp="20181121 03:36:35.224" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+<msg timestamp="20181123 03:41:36.746" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
+  (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
 </msg>
-<msg timestamp="20181121 03:36:35.261" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+<msg timestamp="20181123 03:41:36.778" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
+  (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
 </msg>
-<msg timestamp="20181121 03:36:35.284" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+<msg timestamp="20181123 03:41:36.824" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
+  (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
 </msg>
-<msg timestamp="20181121 03:36:35.302" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+<msg timestamp="20181123 03:41:36.863" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
+  (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
 </msg>
-<msg timestamp="20181121 03:36:35.326" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+<msg timestamp="20181123 03:41:36.901" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
+  (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
 </msg>
-<msg timestamp="20181121 03:36:35.344" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+<msg timestamp="20181123 03:41:36.933" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
+  (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
 </msg>
-<msg timestamp="20181121 03:36:35.370" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+<msg timestamp="20181123 03:41:36.964" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=70.0.3538.102)
+  (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
 </msg>
-=======
-<stat pass="1" fail="1" id="s1" name="UAT003">UAT003</stat>
-</suite>
-</statistics>
-<errors>
->>>>>>> 84522b695871d8d56d69feaaaf569848ce915ea5
+<msg timestamp="20181123 03:41:37.001" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.043" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.065" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.085" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.117" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.149" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.173" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.205" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.235" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.274" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.303" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.327" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.362" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.391" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.434" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181123 03:41:37.457" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64)
+</msg>
 </errors>
 </robot>
