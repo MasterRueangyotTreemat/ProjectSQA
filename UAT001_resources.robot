@@ -15,7 +15,11 @@ ${STUDENT ID}    593020804-3
 ${TELEPHONE NUMBER}    0812345678
 ${PARENT PHONE NUMBER}    0898765432
 ${FACEBOOK}    https://www.facebook.com/NutNinlaong
+<<<<<<< HEAD
 ${IMAGE}    d://SQA/Pic.jpg 
+=======
+${IMAGE}    D:/1work/year3/SQA/project/ProjectSQA/web.jpg
+>>>>>>> 8a508a3b69ec8b40d19b845bcc4ca1b6e98e1baa
 ${TYPE OF ATTENDEES}    VT
 ${UNIVERSITY}    มหาวิทยาลัยขอนแก่น
 ${EMAIL}    testuat@gmail.com
@@ -30,7 +34,6 @@ TC001 : Open Event Registration Page
     Maximize Browser Window
     Set Selenium Speed    ${DELAY} 
     Location Should Be     ${HOME URL}
-
 
 TC002 : Input Register Success With Id Card  
   [Arguments]    ${title name}    ${full name}    ${birthday}    ${id card}    ${student id}    ${telephone number}    ${parent phone number}    ${facebook}    ${image}    ${type of attendees}    ${university}    ${email}    ${username}    ${password}     ${repeat password}     

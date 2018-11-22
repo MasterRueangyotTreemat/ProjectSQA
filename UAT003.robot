@@ -16,11 +16,13 @@ TC001 : Open Event Registration Page
   Maximize Browser Window
   
 TC002 : Login Success:
+
   Click Element    //*[@id="loginBtn"]
   Click Element    //*[@id="Username"]
   Input Text    Username    porinut 
   Click Element    //*[@id="Password"]
   Input Text    Password    12345678
+  
   Click Button    login
   
 
