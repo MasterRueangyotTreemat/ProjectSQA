@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20181121 04:38:05.341">
+<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20181123 04:35:35.699">
 <suite id="s1" name="UAT003" source="D:\1work\year3\SQA\project\ProjectSQA\UAT003.robot">
 <test id="s1-t1" name="TC001 : Open Event Registration Page">
 <kw name="Open Browser" library="Selenium2Library">
@@ -8,14 +8,14 @@
 <arg>${WELCOME URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20181121 04:38:05.503" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/AtomGame/public/home'.</msg>
-<status status="PASS" starttime="20181121 04:38:05.503" endtime="20181121 04:38:09.586"></status>
+<msg timestamp="20181123 04:35:35.883" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/AtomGame/public/home'.</msg>
+<status status="PASS" starttime="20181123 04:35:35.882" endtime="20181123 04:35:40.189"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20181121 04:38:09.587" endtime="20181121 04:38:10.720"></status>
+<status status="PASS" starttime="20181123 04:35:40.190" endtime="20181123 04:35:41.326"></status>
 </kw>
-<status status="PASS" starttime="20181121 04:38:05.502" endtime="20181121 04:38:10.721" critical="yes"></status>
+<status status="PASS" starttime="20181123 04:35:35.882" endtime="20181123 04:35:41.329" critical="yes"></status>
 </test>
 <test id="s1-t2" name="TC002 : Login Success:">
 <kw name="Click Element" library="Selenium2Library">
@@ -23,16 +23,16 @@
 <arguments>
 <arg>//*[@id="loginBtn"]</arg>
 </arguments>
-<msg timestamp="20181121 04:38:10.724" level="INFO">Clicking element '//*[@id="loginBtn"]'.</msg>
-<status status="PASS" starttime="20181121 04:38:10.724" endtime="20181121 04:38:10.958"></status>
+<msg timestamp="20181123 04:35:41.332" level="INFO">Clicking element '//*[@id="loginBtn"]'.</msg>
+<status status="PASS" starttime="20181123 04:35:41.332" endtime="20181123 04:35:41.617"></status>
 </kw>
 <kw name="Double Click Element" library="Selenium2Library">
 <doc>Double click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="Username"]</arg>
 </arguments>
-<msg timestamp="20181121 04:38:10.959" level="INFO">Double clicking element '//*[@id="Username"]'.</msg>
-<status status="PASS" starttime="20181121 04:38:10.958" endtime="20181121 04:38:11.038"></status>
+<msg timestamp="20181123 04:35:41.622" level="INFO">Double clicking element '//*[@id="Username"]'.</msg>
+<status status="PASS" starttime="20181123 04:35:41.622" endtime="20181123 04:35:41.715"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -40,34 +40,47 @@
 <arg>Username</arg>
 <arg>porinut</arg>
 </arguments>
-<msg timestamp="20181121 04:38:11.039" level="INFO">Typing text 'porinut' into text field 'Username'.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181121 04:38:11.910" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20181121 04:38:11.118" endtime="20181121 04:38:11.910"></status>
+<msg timestamp="20181123 04:35:41.715" level="INFO">Typing text 'porinut' into text field 'Username'.</msg>
+<status status="PASS" starttime="20181123 04:35:41.715" endtime="20181123 04:35:41.963"></status>
 </kw>
-<msg timestamp="20181121 04:38:11.913" level="FAIL">InvalidElementStateException: Message: invalid element state: Element is not currently interactable and may not be manipulated
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" starttime="20181121 04:38:11.039" endtime="20181121 04:38:11.913"></status>
+<kw name="Double Click Element" library="Selenium2Library">
+<doc>Double click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="Password"]</arg>
+</arguments>
+<msg timestamp="20181123 04:35:41.964" level="INFO">Double clicking element '//*[@id="Password"]'.</msg>
+<status status="PASS" starttime="20181123 04:35:41.964" endtime="20181123 04:35:42.040"></status>
 </kw>
-<status status="FAIL" starttime="20181121 04:38:10.723" endtime="20181121 04:38:11.914" critical="yes">InvalidElementStateException: Message: invalid element state: Element is not currently interactable and may not be manipulated
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
-</status>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>Password</arg>
+<arg>12345678</arg>
+</arguments>
+<msg timestamp="20181123 04:35:42.040" level="INFO">Typing text '12345678' into text field 'Password'.</msg>
+<status status="PASS" starttime="20181123 04:35:42.040" endtime="20181123 04:35:42.179"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>login</arg>
+</arguments>
+<msg timestamp="20181123 04:35:42.179" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" starttime="20181123 04:35:42.179" endtime="20181123 04:35:43.247"></status>
+</kw>
+<status status="PASS" starttime="20181123 04:35:41.331" endtime="20181123 04:35:43.248" critical="yes"></status>
 </test>
-<status status="FAIL" starttime="20181121 04:38:05.343" endtime="20181121 04:38:11.916"></status>
+<status status="PASS" starttime="20181123 04:35:35.701" endtime="20181123 04:35:43.252"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="1">Critical Tests</stat>
-<stat pass="1" fail="1">All Tests</stat>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="1" id="s1" name="UAT003">UAT003</stat>
+<stat pass="2" fail="0" id="s1" name="UAT003">UAT003</stat>
 </suite>
 </statistics>
 <errors>
