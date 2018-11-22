@@ -15,7 +15,7 @@ ${STUDENT ID}    593020804-3
 ${TELEPHONE NUMBER}    0812345678
 ${PARENT PHONE NUMBER}    0898765432
 ${FACEBOOK}    https://www.facebook.com/NutNinlaong
-${IMAGE}    E:\ProjectsTeam\ProjectSQA\web.JPG
+${IMAGE}    E:/ProjectsTeam/ProjectSQA/web.JPG
 ${TYPE OF ATTENDEES}    VT
 ${UNIVERSITY}    มหาวิทยาลัยขอนแก่น
 ${EMAIL}    testuat@gmail.com
@@ -684,7 +684,7 @@ TC026 : Input Register No Success With Passport Empty E-mail
   Input Text    tell    ${telephone number}
   Input Text    inputTelephoneP    ${parent phone number}
   Input Text    inputFacebook    ${facebook}
-  Choose File    xpath=//input[@id='inputImg']    ${image}
+  Choose File     xpath=//input[@id='inputImg']    ${image}
   Select From List By Value     //*[@id="inputType"]    ${type of attendees}
   Select From List By Value     //*[@id="inputUNS"]    ${university}
   Input Text    E-mail    ${empty}
