@@ -13,6 +13,7 @@ ${ID CARD}    1409901718605
 ${PASSPORT}    AA7505011
 ${STUDENT ID}    593020804-3
 ${TELEPHONE NUMBER}    0812345678
+${INVALID TELEPHONE NUMBER}    01234
 ${PARENT PHONE NUMBER}    0898765432
 ${FACEBOOK}    https://www.facebook.com/NutNinlaong
 ${IMAGE}    D:/1work/year3/SQA/project/ProjectSQA/web.jpg
@@ -25,14 +26,14 @@ ${REPEAT PASSWORD}    12345678
 ${DELAY}    0.05
 
 *** Keywords ***
-TC001 : Open Event Registration Page
+Open Event Registration Page
     Open Browser    ${HOME URL}    ${BROWSER} 
     Maximize Browser Window
     Set Selenium Speed    ${DELAY} 
     Location Should Be     ${HOME URL}
 
 
-TC002 : Input Register Success With Id Card  
+Input Register Page
   [Arguments]    ${title name}    ${full name}    ${birthday}    ${id card}    ${student id}    ${telephone number}    ${parent phone number}    ${facebook}    ${image}    ${type of attendees}    ${university}    ${email}    ${username}    ${password}     ${repeat password}     
   Click Element    //*[@id="side-main-menu"]/li[2]/a
   Click Element    //*[@id="pages-nav-list0"]/li[1]/a
