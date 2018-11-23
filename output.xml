@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <robot generated="20181121 04:42:28.284" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
 <suite source="C:\Users\Mr'Nut\Desktop\ProjectSQA\UAT003.robot" id="s1" name="UAT003">
+=======
+<robot generated="20181123 04:34:12.725" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<suite source="D:\SQA\ProjectSQA\UAT003.robot" id="s1" name="UAT003">
+>>>>>>> 1afa6cdc846035fe1c9ac4aac27ec936a71a0f70
 <test id="s1-t1" name="TC001 : Open Event Registration Page">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -8,6 +13,7 @@
 <arg>${WELCOME URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20181121 04:42:28.514" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/AtomGame/public/home'.</msg>
 <status status="PASS" endtime="20181121 04:42:33.543" starttime="20181121 04:42:28.513"></status>
 </kw>
@@ -16,6 +22,23 @@
 <status status="PASS" endtime="20181121 04:42:34.668" starttime="20181121 04:42:33.544"></status>
 </kw>
 <status status="PASS" endtime="20181121 04:42:34.668" critical="yes" starttime="20181121 04:42:28.510"></status>
+=======
+<msg timestamp="20181123 04:34:13.043" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/AtomGame/public/home'.</msg>
+<status status="PASS" endtime="20181123 04:34:18.041" starttime="20181123 04:34:13.043"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20181123 04:34:18.049" starttime="20181123 04:34:18.049"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20181123 04:34:19.260" starttime="20181123 04:34:18.050"></status>
+</kw>
+<status status="PASS" endtime="20181123 04:34:19.261" critical="yes" starttime="20181123 04:34:13.041"></status>
+>>>>>>> 1afa6cdc846035fe1c9ac4aac27ec936a71a0f70
 </test>
 <test id="s1-t2" name="TC002 : Login Success:">
 <kw name="Click Element" library="Selenium2Library">
@@ -23,16 +46,26 @@
 <arguments>
 <arg>//*[@id="loginBtn"]</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20181121 04:42:34.678" level="INFO">Clicking element '//*[@id="loginBtn"]'.</msg>
 <status status="PASS" endtime="20181121 04:42:34.932" starttime="20181121 04:42:34.678"></status>
+=======
+<msg timestamp="20181123 04:34:19.268" level="INFO">Clicking element '//*[@id="loginBtn"]'.</msg>
+<status status="PASS" endtime="20181123 04:34:19.673" starttime="20181123 04:34:19.267"></status>
+>>>>>>> 1afa6cdc846035fe1c9ac4aac27ec936a71a0f70
 </kw>
-<kw name="Double Click Element" library="Selenium2Library">
-<doc>Double click element identified by ``locator``.</doc>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="Username"]</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20181121 04:42:34.933" level="INFO">Double clicking element '//*[@id="Username"]'.</msg>
 <status status="PASS" endtime="20181121 04:42:35.018" starttime="20181121 04:42:34.932"></status>
+=======
+<msg timestamp="20181123 04:34:19.674" level="INFO">Clicking element '//*[@id="Username"]'.</msg>
+<status status="PASS" endtime="20181123 04:34:19.944" starttime="20181123 04:34:19.673"></status>
+>>>>>>> 1afa6cdc846035fe1c9ac4aac27ec936a71a0f70
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -40,6 +73,7 @@
 <arg>Username</arg>
 <arg>porinut</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20181121 04:42:35.019" level="INFO">Typing text 'porinut' into text field 'Username'.</msg>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
@@ -63,11 +97,114 @@
 <total>
 <stat fail="1" pass="1">Critical Tests</stat>
 <stat fail="1" pass="1">All Tests</stat>
+=======
+<msg timestamp="20181123 04:34:19.946" level="INFO">Typing text 'porinut' into text field 'Username'.</msg>
+<status status="PASS" endtime="20181123 04:34:20.303" starttime="20181123 04:34:19.946"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="Password"]</arg>
+</arguments>
+<msg timestamp="20181123 04:34:20.304" level="INFO">Clicking element '//*[@id="Password"]'.</msg>
+<status status="PASS" endtime="20181123 04:34:20.518" starttime="20181123 04:34:20.303"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>Password</arg>
+<arg>12345678</arg>
+</arguments>
+<msg timestamp="20181123 04:34:20.520" level="INFO">Typing text '12345678' into text field 'Password'.</msg>
+<status status="PASS" endtime="20181123 04:34:20.860" starttime="20181123 04:34:20.519"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>login</arg>
+</arguments>
+<msg timestamp="20181123 04:34:20.861" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" endtime="20181123 04:34:22.352" starttime="20181123 04:34:20.860"></status>
+</kw>
+<status status="PASS" endtime="20181123 04:34:22.352" critical="yes" starttime="20181123 04:34:19.266"></status>
+</test>
+<test id="s1-t3" name="TC003 : Open Register Sports and Athletics Competition Page:">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181123 04:34:22.357" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20181123 04:34:22.604" starttime="20181123 04:34:22.356"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="pages-nav-list0"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181123 04:34:22.605" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20181123 04:34:23.609" starttime="20181123 04:34:22.604"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="ShowFormat"]/label[1]</arg>
+</arguments>
+<msg timestamp="20181123 04:34:23.610" level="INFO">Clicking element '//*[@id="ShowFormat"]/label[1]'.</msg>
+<status status="PASS" endtime="20181123 04:34:23.844" starttime="20181123 04:34:23.609"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="ShowGender"]/label[2]</arg>
+</arguments>
+<msg timestamp="20181123 04:34:23.846" level="INFO">Clicking element '//*[@id="ShowGender"]/label[2]'.</msg>
+<status status="PASS" endtime="20181123 04:34:24.088" starttime="20181123 04:34:23.845"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>//*[@id="inputName"]</arg>
+<arg>S2019003</arg>
+</arguments>
+<msg timestamp="20181123 04:34:24.089" level="INFO">Selecting options from selection list '//*[@id="inputName"]' by value S2019003.</msg>
+<status status="PASS" endtime="20181123 04:34:24.606" starttime="20181123 04:34:24.088"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>//*[@id="inputREAL"]</arg>
+<arg>T</arg>
+</arguments>
+<msg timestamp="20181123 04:34:24.607" level="INFO">Selecting options from selection list '//*[@id="inputREAL"]' by value T.</msg>
+<status status="PASS" endtime="20181123 04:34:25.126" starttime="20181123 04:34:24.606"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>เพิ่ม</arg>
+</arguments>
+<msg timestamp="20181123 04:34:25.127" level="INFO">Clicking button 'เพิ่ม'.</msg>
+<status status="PASS" endtime="20181123 04:34:26.475" starttime="20181123 04:34:25.127"></status>
+</kw>
+<status status="PASS" endtime="20181123 04:34:26.475" critical="yes" starttime="20181123 04:34:22.355"></status>
+</test>
+<status status="PASS" endtime="20181123 04:34:26.478" starttime="20181123 04:34:12.729"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="3">Critical Tests</stat>
+<stat fail="0" pass="3">All Tests</stat>
+>>>>>>> 1afa6cdc846035fe1c9ac4aac27ec936a71a0f70
 </total>
 <tag>
 </tag>
 <suite>
+<<<<<<< HEAD
 <stat fail="1" id="s1" name="UAT003" pass="1">UAT003</stat>
+=======
+<stat fail="0" id="s1" name="UAT003" pass="3">UAT003</stat>
+>>>>>>> 1afa6cdc846035fe1c9ac4aac27ec936a71a0f70
 </suite>
 </statistics>
 <errors>

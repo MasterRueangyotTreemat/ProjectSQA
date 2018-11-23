@@ -16,8 +16,8 @@ ${TELEPHONE NUMBER}    0812345678
 ${INVALID TELEPHONE NUMBER}    01234
 ${PARENT PHONE NUMBER}    0898765432
 ${FACEBOOK}    https://www.facebook.com/NutNinlaong
-${IMAGE}    D:/1work/year3/SQA/project/ProjectSQA/web.jpg
-${TYPE OF ATTENDEES}    VT
+${IMAGE}    d://SQA/Pic.jpg 
+${TYPE OF ATTENDEES}    SA
 ${UNIVERSITY}    มหาวิทยาลัยขอนแก่น
 ${EMAIL}    testuat@gmail.com
 ${USERNAME}    porinut
@@ -32,8 +32,12 @@ Open Event Registration Page
     Set Selenium Speed    ${DELAY} 
     Location Should Be     ${HOME URL}
 
+<<<<<<< HEAD
 
 Input Register Page
+=======
+TC002 : Input Register Success With Id Card  
+>>>>>>> 1afa6cdc846035fe1c9ac4aac27ec936a71a0f70
   [Arguments]    ${title name}    ${full name}    ${birthday}    ${id card}    ${student id}    ${telephone number}    ${parent phone number}    ${facebook}    ${image}    ${type of attendees}    ${university}    ${email}    ${username}    ${password}     ${repeat password}     
   Click Element    //*[@id="side-main-menu"]/li[2]/a
   Click Element    //*[@id="pages-nav-list0"]/li[1]/a
