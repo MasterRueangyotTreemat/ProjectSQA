@@ -9,6 +9,7 @@ ${REGISTER URL}    http://${SERVER}/AtomGame/public/register
 ${TITLE NAME}    P001
 ${FULL NAME}    Somnut Naja
 ${BIRTHDAY}    12/31/1997
+${ROLE PLAYER}    T
 ${VALID ID CARD}    1409901718605
 ${INVALID ID CARD}    14099017
 ${ID CARD PATH}    //*[@id="ShowIDcardNPass"]/div[1]/label

@@ -19,10 +19,17 @@ TC002 : Open Register Sports and Athletics Competition Page
     Click Element    //*[@id="pages-nav-list0"]/li[2]/a
     Wait Until Page Contains    ลงทะเบียนแข่งขันกีฬาและกิจกรรม 
 
-TC003 : Check Register Sports and Athletics Competition No 
-Empty All But Enter :
+TC003 : Check Register Sports and Athletics Competition No Success 1: Empty All But Enter :
     Click Button    add
-    Wait Until Page Contains    กรุณาเลือกรูปแบบการแข่งขัน
+    Wait Until Page Contains    ${Empty All But Enter}
+
+TC004 : Check Register Sports and Athletics Competition No Success 2: Choose Sport Role Only But Enter 1 :
+    Click Element    //*[@id="inputREAL"]
+    Select From List By Value    //*[@id="inputREAL"]    ${ROLE PLAYER}
+    Click Button    add
+    Wait Until Page Contains    ${Empty All But Enter}
+
+
 
 
     
