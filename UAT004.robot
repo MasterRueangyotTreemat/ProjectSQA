@@ -21,13 +21,13 @@ TC002 : Open Register Sports and Athletics Competition Page
 
 TC003 : Check Register Sports and Athletics Competition No Success 1: Empty All But Enter:
     Click Button    add
-    Wait Until Page Contains    ${ERROR PLEASE SELECT SPORTS}
+    Wait Until Page Contains    ${ERROR PLEASE SELECT A COMPETITION TYPE}
 
 TC004 : Check Register Sports and Athletics Competition No Success 2: Choose Sport Role Only But Enter 1:
     Click Element    //*[@id="inputREAL"]
     Select From List By Value    //*[@id="inputREAL"]    ${ON GROUND PLAYER}
     Click Button    add
-    Wait Until Page Contains    ${ERROR PLEASE SELECT SPORTS}
+    Wait Until Page Contains    ${ERROR PLEASE SELECT A COMPETITION TYPE}
 
 TC005 : Check Register Sports and Athletics Competition No Success 3: Choose Sport Role Only But Enter 2:
     Click Element    //*[@id="inputREAL"]
@@ -35,14 +35,14 @@ TC005 : Check Register Sports and Athletics Competition No Success 3: Choose Spo
     #Select From List By Value    //*[@id="inputREAL"]    ${ALTERNATE}
     Select From List By Value    //*[@id="inputREAL"]    ${ALTERNATE}
     Click Button    add
-    Wait Until Page Contains    ${ERROR PLEASE SELECT SPORTS}
+    Wait Until Page Contains    ${ERROR PLEASE SELECT A COMPETITION TYPE}
 
 TC006 : Check Register Sports and Athletics Competition No Success 4: Choose Sport Match Type Male Only But Enter 1: 
     #Click Element    //*[@id="inputREAL"]
     #Select From List By Value    //*[@id="inputREAL"]    ${ALTERNATE}
     Click Element    //*[@id="ShowGender"]/label[2]
     Click Button    add
-    Wait Until Page Contains    ${ERROR PLEASE SELECT SPORTS}
+    Wait Until Page Contains    ${ERROR PLEASE SELECT A COMPETITION TYPE}
 
 TC007 : Check Register Sports and Athletics Competition No Success 5: Choose Sport Match Type Male And Role But Enter 2: 
     Click Element    //*[@id="ShowGender"]/label[2]
@@ -50,7 +50,7 @@ TC007 : Check Register Sports and Athletics Competition No Success 5: Choose Spo
     Select From List By Value    //*[@id="inputREAL"]    ${ON GROUND PLAYER}
     #Select From List By Value    //*[@id="inputREAL"]    ${ALTERNATE}
     Click Button    add
-    Wait Until Page Contains    ${ERROR PLEASE SELECT SPORTS}
+    Wait Until Page Contains    ${ERROR PLEASE SELECT A COMPETITION TYPE}
 
 TC008 : Check Register Sports and Athletics Competition No Success 6: Choose Sport Match Type Male And Role But Enter 3: 
     Click Element    //*[@id="ShowGender"]/label[2]
@@ -58,7 +58,7 @@ TC008 : Check Register Sports and Athletics Competition No Success 6: Choose Spo
     #Select From List By Value    //*[@id="inputREAL"]    ${ON GROUND PLAYER}
     Select From List By Value    //*[@id="inputREAL"]    ${ALTERNATE}
     Click Button    add
-    Wait Until Page Contains    ${ERROR PLEASE SELECT SPORTS}
+    Wait Until Page Contains    ${ERROR PLEASE SELECT A COMPETITION TYPE}
 
 TC009 : Check Register Sports and Athletics Competition No Success 7: Choose Sport Match Type All Only But Enter 1:
     Click Element    //*[@id="ShowGender"]/label[3]
@@ -66,7 +66,7 @@ TC009 : Check Register Sports and Athletics Competition No Success 7: Choose Spo
     #Select From List By Value    //*[@id="inputREAL"]    ${ON GROUND PLAYER}
     #Select From List By Value    //*[@id="inputREAL"]    ${ALTERNATE}
     Click Button    add
-    Wait Until Page Contains    ${ERROR PLEASE SELECT SPORTS}
+    Wait Until Page Contains    ${ERROR PLEASE SELECT A COMPETITION TYPE}
 
 TC010 : Check Register Sports and Athletics Competition No Success 8: Choose Sport Match Type All And Role But Enter 2:
     Click Element    //*[@id="ShowGender"]/label[3]
@@ -74,7 +74,7 @@ TC010 : Check Register Sports and Athletics Competition No Success 8: Choose Spo
     Select From List By Value    //*[@id="inputREAL"]    ${ON GROUND PLAYER}
     #Select From List By Value    //*[@id="inputREAL"]    ${ALTERNATE}
     Click Button    add
-    Wait Until Page Contains    ${ERROR PLEASE SELECT SPORTS}
+    Wait Until Page Contains    ${ERROR PLEASE SELECT A COMPETITION TYPE}
 
 TC011 : Check Register Sports and Athletics Competition No Success 9: Choose Sport Match Type All And Role But Enter 3:
     Click Element    //*[@id="ShowGender"]/label[3]
@@ -82,7 +82,7 @@ TC011 : Check Register Sports and Athletics Competition No Success 9: Choose Spo
     #Select From List By Value    //*[@id="inputREAL"]    ${ON GROUND PLAYER}
     Select From List By Value    //*[@id="inputREAL"]    ${ALTERNATE}
     Click Button    add
-    Wait Until Page Contains    ${ERROR PLEASE SELECT SPORTS}
+    Wait Until Page Contains    ${ERROR PLEASE SELECT A COMPETITION TYPE}
 
 TC012 : Check Register Sports and Athletics Competition No Success 10: Choose Sport Match Format Sports And Athletics And Match Type Male But Enter 1:
     Click Element    //*[@id="ShowFormat"]/label[1]
@@ -216,6 +216,107 @@ TC022 : Check Register Sports and Athletics Competition No Success 20: Choose Sp
     #Select From List By Value    //*[@id="inputREAL"]    ${ALTERNATE}
     Click Button    add
     Wait Until Page Contains    ${ERROR PLEASE SELECT A ROLE}
+
+TC023 : Check Register Sports and Athletics Competition No Success 21: Choose Sport Match Format Activities Only But Enter 
+    Click Element    //*[@id="side-main-menu"]/li[2]/a
+    Click Element    //*[@id="pages-nav-list0"]/li[2]/a
+    Click Element    //*[@id="ShowFormat"]/label[2]
+    #Click Element    //*[@id="ShowGender"]/label[2]
+    #Click Element    //*[@id="ShowGender"]/label[3]
+    #Click Element    //*[@id="inputName"]
+    #Select From List By Value    //*[@id="inputName"]    ${RUN 200 M}
+    #Click Element    //*[@id="inputREAL"]
+    #Select From List By Value    //*[@id="inputREAL"]    ${ON GROUND PLAYER}
+    #Select From List By Value    //*[@id="inputREAL"]    ${ALTERNATE}
+    Click Button    add
+    Wait Until Page Contains    ${ERROR PLEASE SELECT A COMPETITION TYPE}
+
+TC024 : Check Register Sports and Athletics Competition No Success 22: Choose Sport Match Format Activities And Role But Enter 1:
+    Click Element    //*[@id="side-main-menu"]/li[2]/a
+    Click Element    //*[@id="pages-nav-list0"]/li[2]/a
+    Click Element    //*[@id="ShowFormat"]/label[2]
+    #Click Element    //*[@id="ShowGender"]/label[2]
+    #Click Element    //*[@id="ShowGender"]/label[3]
+    #Click Element    //*[@id="inputName"]
+    #Select From List By Value    //*[@id="inputName"]    ${RUN 200 M}
+    Click Element    //*[@id="inputREAL"]
+    #Select From List By Value    //*[@id="inputREAL"]    ${ON GROUND PLAYER}
+    Select From List By Value    //*[@id="inputREAL"]    ${ALTERNATE}
+    Click Button    add
+    Wait Until Page Contains    ${ERROR PLEASE SELECT A COMPETITION TYPE}
+
+TC025 : Check Register Sports and Athletics Competition No Success 23: 
+    Click Element    //*[@id="side-main-menu"]/li[2]/a
+    Click Element    //*[@id="pages-nav-list0"]/li[2]/a
+    Click Element    //*[@id="ShowFormat"]/label[2]
+    Click Element    //*[@id="ShowGender"]/label[2]
+    #Click Element    //*[@id="ShowGender"]/label[3]
+    #Click Element    //*[@id="inputName"]
+    #Select From List By Value    //*[@id="inputName"]    ${RUN 200 M}
+    #Click Element    //*[@id="inputREAL"]
+    #Select From List By Value    //*[@id="inputREAL"]    ${ON GROUND PLAYER}
+    #Select From List By Value    //*[@id="inputREAL"]    ${ALTERNATE}
+    Click Button    add
+    Wait Until Page Contains    ${ERROR PLEASE SELECT A COMPETITION}
+
+TC026 : Check Register Sports and Athletics Competition No Success 24: 
+    Click Element    //*[@id="side-main-menu"]/li[2]/a
+    Click Element    //*[@id="pages-nav-list0"]/li[2]/a
+    Click Element    //*[@id="ShowFormat"]/label[2]
+    #Click Element    //*[@id="ShowGender"]/label[2]
+    Click Element    //*[@id="ShowGender"]/label[3]
+    Click Element    //*[@id="inputName"]
+    Select From List By Value    //*[@id="inputName"]    ${BOY GIRL AND BOMB AMBASSADOR OF SCIENCE STAR}
+    #Click Element    //*[@id="inputREAL"]
+    #Select From List By Value    //*[@id="inputREAL"]    ${ON GROUND PLAYER}
+    #Select From List By Value    //*[@id="inputREAL"]    ${ALTERNATE}
+    Click Button    add
+    Wait Until Page Contains    ${ERROR PLEASE SELECT A ROLE}
+
+TC027 : Check Register Sports and Athletics Competition No Success 25: 
+    Click Element    //*[@id="side-main-menu"]/li[2]/a
+    Click Element    //*[@id="pages-nav-list0"]/li[2]/a
+    Click Element    //*[@id="ShowFormat"]/label[2]
+    #Click Element    //*[@id="ShowGender"]/label[2]
+    Click Element    //*[@id="ShowGender"]/label[3]
+    Click Element    //*[@id="inputName"]
+    Select From List By Value    //*[@id="inputName"]    ${RUMWOMG}
+    #Click Element    //*[@id="inputREAL"]
+    #Select From List By Value    //*[@id="inputREAL"]    ${ON GROUND PLAYER}
+    #Select From List By Value    //*[@id="inputREAL"]    ${ALTERNATE}
+    Click Button    add
+    Wait Until Page Contains    ${ERROR PLEASE SELECT A ROLE}
+
+TC028 : Check Register Sports and Athletics Competition No Success 26: 
+    Click Element    //*[@id="side-main-menu"]/li[2]/a
+    Click Element    //*[@id="pages-nav-list0"]/li[2]/a
+    Click Element    //*[@id="ShowFormat"]/label[2]
+    Click Element    //*[@id="ShowGender"]/label[2]
+    #Click Element    //*[@id="ShowGender"]/label[3]
+    #Click Element    //*[@id="inputName"]
+    #Select From List By Value    //*[@id="inputName"]    ${RUMWOMG}
+    Click Element    //*[@id="inputREAL"]
+    Select From List By Value    //*[@id="inputREAL"]    ${ON GROUND PLAYER}
+    #Select From List By Value    //*[@id="inputREAL"]    ${ALTERNATE}
+    Click Button    add
+    Wait Until Page Contains    ${NO TITLE IN THE CATEGORY AND FORMAT YOU SELECTED}
+    Wait Until Page Contains    ${ERROR PLEASE SELECT A COMPETITION}
+
+TC029 : Check Register Sports and Athletics Competition No Success 227: 
+    Click Element    //*[@id="side-main-menu"]/li[2]/a
+    Click Element    //*[@id="pages-nav-list0"]/li[2]/a
+    Click Element    //*[@id="ShowFormat"]/label[2]
+    Click Element    //*[@id="ShowGender"]/label[2]
+    #Click Element    //*[@id="ShowGender"]/label[3]
+    #Click Element    //*[@id="inputName"]
+    #Select From List By Value    //*[@id="inputName"]    ${RUMWOMG}
+    Click Element    //*[@id="inputREAL"]
+    #Select From List By Value    //*[@id="inputREAL"]    ${ON GROUND PLAYER}
+    Select From List By Value    //*[@id="inputREAL"]    ${ALTERNATE}
+    Click Button    add
+    Wait Until Page Contains    ${NO TITLE IN THE CATEGORY AND FORMAT YOU SELECTED}
+    Wait Until Page Contains    ${ERROR PLEASE SELECT A COMPETITION}
+
 
 
 

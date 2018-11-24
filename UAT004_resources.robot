@@ -58,7 +58,7 @@ ${ERROR MESSAGE EMPTY REPEAT PASSWORD}
 ${ERROR MESSAGE EMPTY LASTNAME}    ชื่อ - นามสกุล ต้องเป็นตัวอักษรที่ไม่ใช่ตัวเลข และมีวรรคระหว่างชื่อกับนามสกุล
 ${ERROR MESSAGE INVALID PASSWORD}     Password ต้องประกอบด้วยตัวเลขหรือตัวอักษร 8-14 หลัก
 ${ERROR MESSAGE INVALID PHONE}    เบอร์โทรติดต่อต้องอยู่ในรูปแบบตัวเลข 10 หลัก และสามารถมีขีด (-) ได้ หลังหลักที่ 3 และหลักที่ 6
-${ERROR PLEASE SELECT SPORTS}    กรุณาเลือกรูปแบบการแข่งขัน
+${ERROR PLEASE SELECT A COMPETITION TYPE}    กรุณาเลือกประเภทการแข่งขัน
 ${ERROR PLEASE SELECT A COMPETITION}    กรุณาเลือกชื่อรายการแข่งขัน
 ${NO TITLE IN THE CATEGORY AND FORMAT YOU SELECTED}    ไม่มีชื่อรายการแข่งขันในประเภทและรูปแบบที่ท่านเลือก
 ${ERROR PLEASE SELECT A ROLE}    กรุณาเลือกบทบาท
@@ -67,6 +67,8 @@ ${BADMINTON}    S2019006
 ${SESPAK MUZZLE}    S2019007
 ${FUTSAL}    S2019013
 ${RUN 200 M}    S2019015
+${BOY GIRL AND BOMB AMBASSADOR OF SCIENCE STAR}    S2019005
+${RUMWOMG}    S2019017
 
 *** Keywords ***
 Open Event Registration Page
