@@ -14,8 +14,7 @@ Donate Detail Success
     Maximize Browser Window
     Click Element    //*[@id="side-main-menu"]/li[6]/a
     Click Element    //*[@id="pages-nav-list3"]/li[1]/a/div/div
-    Select Window    Title=Untitled
-    Select Window    link=Untitled
+    Select Window  url=${DONATE DETAIL}
     Page Should Contain Element    ${DONATE DETAIL}
     Location Should Be     ${DONATE DETAIL}
     [Teardown]  Close Browser

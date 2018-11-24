@@ -28,7 +28,7 @@ ${USERNAME}    porinut
 ${PASSWORD}    12345678
 ${INVALID PASSWORD}    1234
 ${REPEAT PASSWORD}    12345678
-${DELAY}    0.05
+${DELAY}    0.1
 ${R1}    //*[@id="ShowReceipt"]/div/div[1]/label 
 ${R2}    //*[@id="ShowReceipt"]/div/div[2]/label
 ${SUCCESS MESSAGE VERIFY DATA}    ยืนยันข้อมูลและหลักฐานการบริจาคสำเร็จ ทางคณะผู้จัดงานจะทำการตรวจสอบหลักฐานการบริจาคของท่านและติดต่อกลับไปเมื่อการตรวจสอบเสร็จสิ้น
@@ -41,6 +41,7 @@ ${ERROR MESSAGE EMPTY DONATION DAY}     กรุณาเลือกวัน�
 ${ERROR MESSAGE EMPTY TELEPHONE NUMBER}     เบอร์โทรติดต่อต้องอยู่ในรูปแบบตัวเลข 10 หลัก และสามารถมีขีด (-) ได้ หลังหลักที่ 3 และหลักที่ 6
 ${ERROR MESSAGE DONATION CHANNEL}    กรุณากรอกช่องทางการบริจาค
 ${ERROR MESSAGE DONATION AMOUNT}    กรุณากรอกมูลค่าหรือจำนวนเงินที่บริจาค
+${ERROR MESSAGE DONATION AMOUNT HAVE TO MORE THAN ZERO}    มูลล่าต้องเป็นจำนวนที่มากกว่า 0 บาท
 ${ERROR MESSAGE EMPTY PICTURE OF DONATION}     กรุณาเลือกรูปภาพ
 ${ERROR MESSAGE EMPTY EMAIL}     กรุณากรอก E-mail
 ${ERROR MESSAGE INVALID EMAIL}    E-mail ของท่านใช้งานไม่ได้ ต้องอยู่ในรูปแบบของ E-mail ที่ใช้งานได้เท่านั้น
@@ -75,19 +76,4 @@ Input Donor Success
   Input Text   //*[@id="inputDAm"]    ${donation amount}    
   Choose File    //*[@id="inputImgD"]    ${picture of donation}
   Choose File    //*[@id="inputImgL"]    ${logo of organization} 
-  RECEIVE A RECEIPT DIRECTLY FROM ACCOUNTING FACULTY OF SCIENCE
-  RECEIVE RECEIPT BY SHIPMENT
-  RECEIVE RECEIPT BY SHIPMENT NO ADDRESS
   
-RECEIVE A RECEIPT DIRECTLY FROM ACCOUNTING FACULTY OF SCIENCE   
-  Click Element   //*[@id="ShowReceipt"]/div/div[1]/label 
-  Click Element    xpath=(//button[@type='submit'])[2]
-
-RECEIVE RECEIPT BY SHIPMENT
-  Click Element   //*[@id="ShowReceipt"]/div/div[2]/label
-  Input Text    //*[@id="address"]    ${receive receipt by shipment textarea} 
-  Click Element    xpath=(//button[@type='submit'])[2]
-  
-RECEIVE RECEIPT BY SHIPMENT NO ADDRESS
-  Click Element   //*[@id="ShowReceipt"]/div/div[2]/label
-  Click Element    xpath=(//button[@type='submit'])[2]
