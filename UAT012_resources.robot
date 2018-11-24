@@ -19,7 +19,10 @@ ${PICTURE OF DONATION}     E:/ProjectsTeam/ProjectSQA/web.JPG
 ${LOGO OF ORGANIZATION}     E:/ProjectsTeam/ProjectSQA/web.JPG
 ${RECEIVE RECEIPT BY SHIPMENT TEXTAREA}     ห้อง 214 หอ16 มหาวิทยาลัยขอนแก่น ตำบลในเมือง อำเภอเมือง จังหวัดขอนแก่น 40002
 ${TELEPHONE NUMBER}    0812345678
-${INVALID TELEPHONE NUMBER}    081234
+${INVALID TELEPHONE NUMBER NOT EXCEED}     081234567
+${INVALID TELEPHONE NUMBER EXCEED}    08123456789
+${INVALID TELEPHONE NUMBER NOT NUMBER}    Number
+${INVALID TELEPHONE NUMBER NOT ORDER DASH}    08123-456-78
 ${EMAIL}    testuat@gmail.com
 ${USERNAME}    porinut
 ${PASSWORD}    12345678
@@ -32,7 +35,9 @@ ${SUCCESS MESSAGE VERIFY DATA}    ยืนยันข้อมูลและ�
 ${ERROR MESSAGE EMPTY GENDER}    กรุณาเลือกเพศและเลือกคำนำหน้า
 ${ERROR MESSAGE EMPTY TITLE NAME}    กรุณาเลือกคำนำหน้าชื่อ
 ${ERROR MESSAGE EMPTY FULL NAME}     กรุณากรอก ชื่อ - นามสกุล
-${ERROR MESSAGE EMPTY BIRTHDAY}     กรุณาเลือกวันที่บริจาค
+${ERROR MESSAGE NO LASTNAME}    ชื่อ - นามสกุล ต้องเป็นตัวอักษรที่ไม่ใช่ตัวเลข และมีวรรคระหว่างชื่อกับนามสกุล
+${ERROR MESSAGE EMPTY ORGANIZATION NAME}     กรุณากรอกชื่อมหาวิทยาลัยหรือองค์กร
+${ERROR MESSAGE EMPTY DONATION DAY}     กรุณาเลือกวันที่บริจาค
 ${ERROR MESSAGE EMPTY TELEPHONE NUMBER}     เบอร์โทรติดต่อต้องอยู่ในรูปแบบตัวเลข 10 หลัก และสามารถมีขีด (-) ได้ หลังหลักที่ 3 และหลักที่ 6
 ${ERROR MESSAGE DONATION CHANNEL}    กรุณากรอกช่องทางการบริจาค
 ${ERROR MESSAGE DONATION AMOUNT}    กรุณากรอกมูลค่าหรือจำนวนเงินที่บริจาค
@@ -43,6 +48,7 @@ ${ERROR MESSAGE EMPTY LASTNAME}    ชื่อ - นามสกุล ต้�
 ${ERROR MESSAGE INVALID PASSWORD}     Password ต้องประกอบด้วยตัวเลขหรือตัวอักษร 8-14 หลัก
 ${ERROR MESSAGE INVALID PHONE}    เบอร์โทรติดต่อต้องอยู่ในรูปแบบตัวเลข 10 หลัก และสามารถมีขีด (-) ได้ หลังหลักที่ 3 และหลักที่ 6
 ${ERROR MESSAGE EMPTY RECEIVE RECEIPT BY ON-CARRIER}    กรุณาเลือกการรับใบเสร็จ
+${ERROR MESSAGE EMPTY RECEIVE RECEIPT BY ON-CARRIER NO ADDRESS}    กรุณากรอกที่อยู่สำหรับการจัดส่งใบเสร็จ
 
 
 *** Keywords ***
@@ -71,6 +77,7 @@ Input Donor Success
   Choose File    //*[@id="inputImgL"]    ${logo of organization} 
   RECEIVE A RECEIPT DIRECTLY FROM ACCOUNTING FACULTY OF SCIENCE
   RECEIVE RECEIPT BY SHIPMENT
+  RECEIVE RECEIPT BY SHIPMENT NO ADDRESS
   
 RECEIVE A RECEIPT DIRECTLY FROM ACCOUNTING FACULTY OF SCIENCE   
   Click Element   //*[@id="ShowReceipt"]/div/div[1]/label 
@@ -79,4 +86,8 @@ RECEIVE A RECEIPT DIRECTLY FROM ACCOUNTING FACULTY OF SCIENCE
 RECEIVE RECEIPT BY SHIPMENT
   Click Element   //*[@id="ShowReceipt"]/div/div[2]/label
   Input Text    //*[@id="address"]    ${receive receipt by shipment textarea} 
+  Click Element    xpath=(//button[@type='submit'])[2]
+  
+RECEIVE RECEIPT BY SHIPMENT NO ADDRESS
+  Click Element   //*[@id="ShowReceipt"]/div/div[2]/label
   Click Element    xpath=(//button[@type='submit'])[2]

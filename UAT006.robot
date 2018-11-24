@@ -36,4 +36,4 @@ TC005 : Login Fail : ( Empty Username )
   Click Button    login
   Wait Until Page Contains    กรุณากรอก Username
 
-TC006 : Login Fail : ( Empty Username )
+TC006 : Login Fail : ( Empty Password )
