@@ -43,7 +43,7 @@ Open Event Registration Page
   Location Should Be     ${HOME URL}
 
 Input Login Success
-  [Arguments]    ${username}   ${password}   
+  [Arguments]    ${username}   ${password}   ${SHOW NAME}
   Click Element    //*[@id="loginBtn"]
   Click Element    //*[@id="Username"]
   Input Text    Username    ${username}
@@ -52,8 +52,7 @@ Input Login Success
   Click Button    login
 
 Input Register Sports and Athletics Competition Page
-  [Arguments]    ${SHOW NAME}
-  Wait Until Page Contains    ${SHOW NAME}
+  [Arguments]    ${SHOW REGISTER PAGE}
   Click Element    //*[@id="side-main-menu"]/li[2]/a
   Click Element    //*[@id="pages-nav-list0"]/li[2]/a
   

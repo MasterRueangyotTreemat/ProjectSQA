@@ -6,10 +6,13 @@ TC001 : Open Event Registration Page
   Open Event Registration Page
   
 TC002 : Login Success:
-  Input Login Success    ${USERNAME}   ${PASSWORD}    
+  Input Login Success    ${USERNAME}   ${PASSWORD}    ${SHOW NAME}
+  Wait Until Page Contains    ${SHOW NAME}  
 
 TC003 : Input Register Sports and Athletics Competition Page :
-  Input Register Sports and Athletics Competition Page    ${SHOW NAME}
+  Input Register Sports and Athletics Competition Page    ${SHOW REGISTER PAGE}
+  Wait Until Page Contains    ${SHOW REGISTER PAGE}
+  Location Should Be    ${REGISTER URL}
 
 TC004 : Input Register Football Success :
   Input Register Football Success    ${REGISTER URL}    ${SPORT}    ${GENDER_MALE}    ${FOOTBALL}    ${ON GROUND PLAYER}     ${SHOW REGISTER SUCCSESS}
