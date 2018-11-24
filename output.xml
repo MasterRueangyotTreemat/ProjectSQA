@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20181125 06:57:03.660" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<suite source="C:\Users\Mr'Nut\Desktop\ProjectSQA\UAT007.robot" id="s1" name="UAT007">
+<test id="s1-t1" name="TC01 : Open Home Page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${HOME URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20181125 06:57:03.892" level="INFO">Opening browser 'chrome' to base url 'http://localhost/AtomGame/public/home'.</msg>
+<status status="PASS" endtime="20181125 06:57:08.300" starttime="20181125 06:57:03.892"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20181125 06:57:09.421" starttime="20181125 06:57:08.301"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20181125 06:57:09.423" starttime="20181125 06:57:09.422"></status>
+</kw>
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains ``expected``.</doc>
+<arguments>
+<arg>http://localhost/AtomGame/public/home</arg>
+</arguments>
+<msg timestamp="20181125 06:57:09.487" level="INFO">Current location contains 'http://localhost/AtomGame/public/home'.</msg>
+<status status="PASS" endtime="20181125 06:57:09.487" starttime="20181125 06:57:09.425"></status>
+</kw>
+<status status="PASS" endtime="20181125 06:57:09.491" critical="yes" starttime="20181125 06:57:03.891"></status>
+</test>
+<test id="s1-t2" name="TC02 : Login">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181125 06:57:09.497" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20181125 06:57:09.814" starttime="20181125 06:57:09.496"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="pages-nav-list0"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181125 06:57:09.815" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20181125 06:57:10.054" starttime="20181125 06:57:09.814"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="Username"]</arg>
+</arguments>
+<msg timestamp="20181125 06:57:10.056" level="INFO">Clicking element '//*[@id="Username"]'.</msg>
+<status status="PASS" endtime="20181125 06:57:10.366" starttime="20181125 06:57:10.055"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>Username</arg>
+<arg>porinut</arg>
+</arguments>
+<msg timestamp="20181125 06:57:10.366" level="INFO">Typing text 'porinut' into text field 'Username'.</msg>
+<status status="PASS" endtime="20181125 06:57:10.700" starttime="20181125 06:57:10.366"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="Password"]</arg>
+</arguments>
+<msg timestamp="20181125 06:57:10.701" level="INFO">Clicking element '//*[@id="Password"]'.</msg>
+<status status="PASS" endtime="20181125 06:57:10.900" starttime="20181125 06:57:10.700"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>Password</arg>
+<arg>12345678</arg>
+</arguments>
+<msg timestamp="20181125 06:57:10.900" level="INFO">Typing text '12345678' into text field 'Password'.</msg>
+<status status="PASS" endtime="20181125 06:57:11.274" starttime="20181125 06:57:10.900"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>login</arg>
+</arguments>
+<msg timestamp="20181125 06:57:11.275" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" endtime="20181125 06:57:12.596" starttime="20181125 06:57:11.275"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>ผู้เข้าใช้งาน Somnut Ninlaong ได้เข้าสู่ระบบ</arg>
+</arguments>
+<status status="PASS" endtime="20181125 06:57:12.676" starttime="20181125 06:57:12.596"></status>
+</kw>
+<status status="PASS" endtime="20181125 06:57:12.676" critical="yes" starttime="20181125 06:57:09.495"></status>
+</test>
+<test id="s1-t3" name="TC03 : Edit Image Profile">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="notifications"]/img</arg>
+</arguments>
+<msg timestamp="20181125 06:57:12.680" level="INFO">Clicking element '//*[@id="notifications"]/img'.</msg>
+<status status="PASS" endtime="20181125 06:57:12.904" starttime="20181125 06:57:12.680"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>http://localhost/AtomGame/public/editProfile</arg>
+</arguments>
+<msg timestamp="20181125 06:57:12.905" level="INFO">Opening url 'http://localhost/AtomGame/public/editProfile'</msg>
+<status status="PASS" endtime="20181125 06:57:13.517" starttime="20181125 06:57:12.904"></status>
+</kw>
+<kw name="Choose File" library="Selenium2Library">
+<doc>Inputs the ``file_path`` into file input field ``locator``.</doc>
+<arguments>
+<arg>//*[@id="inputImg"]</arg>
+<arg>C:/Users/Mr'Nut/Desktop/ProjectSQA/web.jpg</arg>
+</arguments>
+<status status="PASS" endtime="20181125 06:57:13.682" starttime="20181125 06:57:13.517"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>บันทึก</arg>
+</arguments>
+<msg timestamp="20181125 06:57:13.683" level="INFO">Clicking button 'บันทึก'.</msg>
+<status status="PASS" endtime="20181125 06:57:14.945" starttime="20181125 06:57:13.683"></status>
+</kw>
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains ``expected``.</doc>
+<arguments>
+<arg>${EDITPROFILE URL}</arg>
+</arguments>
+<msg timestamp="20181125 06:57:15.007" level="INFO">Current location contains 'http://localhost/AtomGame/public/profile'.</msg>
+<status status="PASS" endtime="20181125 06:57:15.007" starttime="20181125 06:57:14.946"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>แก้ไขข้อมูลส่วนตัวสำเร็จ</arg>
+</arguments>
+<status status="PASS" endtime="20181125 06:57:15.098" starttime="20181125 06:57:15.007"></status>
+</kw>
+<status status="PASS" endtime="20181125 06:57:15.098" critical="yes" starttime="20181125 06:57:12.679"></status>
+</test>
+<test id="s1-t4" name="TC04 : Edit Name Titile Profile">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="notifications"]/img</arg>
+</arguments>
+<msg timestamp="20181125 06:57:15.101" level="INFO">Clicking element '//*[@id="notifications"]/img'.</msg>
+<status status="PASS" endtime="20181125 06:57:15.304" starttime="20181125 06:57:15.101"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>http://localhost/AtomGame/public/editProfile</arg>
+</arguments>
+<msg timestamp="20181125 06:57:15.305" level="INFO">Opening url 'http://localhost/AtomGame/public/editProfile'</msg>
+<status status="PASS" endtime="20181125 06:57:15.809" starttime="20181125 06:57:15.304"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181125 06:57:15.813" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<status status="PASS" endtime="20181125 06:57:16.075" starttime="20181125 06:57:15.813"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+<arg>${title name}</arg>
+</arguments>
+<msg timestamp="20181125 06:57:16.076" level="INFO">Selecting options from selection list '//*[@id="prename"]' by value P001.</msg>
+<status status="PASS" endtime="20181125 06:57:16.451" starttime="20181125 06:57:16.076"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>บันทึก</arg>
+</arguments>
+<msg timestamp="20181125 06:57:16.452" level="INFO">Clicking button 'บันทึก'.</msg>
+<status status="PASS" endtime="20181125 06:57:17.516" starttime="20181125 06:57:16.451"></status>
+</kw>
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains ``expected``.</doc>
+<arguments>
+<arg>${EDITPROFILE URL}</arg>
+</arguments>
+<msg timestamp="20181125 06:57:17.572" level="INFO">Current location contains 'http://localhost/AtomGame/public/profile'.</msg>
+<status status="PASS" endtime="20181125 06:57:17.573" starttime="20181125 06:57:17.516"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>แก้ไขข้อมูลส่วนตัวสำเร็จ</arg>
+</arguments>
+<status status="PASS" endtime="20181125 06:57:17.637" starttime="20181125 06:57:17.574"></status>
+</kw>
+<status status="PASS" endtime="20181125 06:57:17.638" critical="yes" starttime="20181125 06:57:15.100"></status>
+</test>
+<test id="s1-t5" name="TC05 : Edit Full Name Profile">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="notifications"]/img</arg>
+</arguments>
+<msg timestamp="20181125 06:57:17.641" level="INFO">Clicking element '//*[@id="notifications"]/img'.</msg>
+<status status="PASS" endtime="20181125 06:57:17.831" starttime="20181125 06:57:17.641"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>http://localhost/AtomGame/public/editProfile</arg>
+</arguments>
+<msg timestamp="20181125 06:57:17.832" level="INFO">Opening url 'http://localhost/AtomGame/public/editProfile'</msg>
+<status status="PASS" endtime="20181125 06:57:18.317" starttime="20181125 06:57:17.831"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>inputfullname</arg>
+<arg>Somnut Ninlaong</arg>
+</arguments>
+<msg timestamp="20181125 06:57:18.318" level="INFO">Typing text 'Somnut Ninlaong' into text field 'inputfullname'.</msg>
+<status status="PASS" endtime="20181125 06:57:18.732" starttime="20181125 06:57:18.317"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>บันทึก</arg>
+</arguments>
+<msg timestamp="20181125 06:57:18.732" level="INFO">Clicking button 'บันทึก'.</msg>
+<status status="PASS" endtime="20181125 06:57:19.640" starttime="20181125 06:57:18.732"></status>
+</kw>
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains ``expected``.</doc>
+<arguments>
+<arg>${EDITPROFILE URL}</arg>
+</arguments>
+<msg timestamp="20181125 06:57:19.701" level="INFO">Current location contains 'http://localhost/AtomGame/public/profile'.</msg>
+<status status="PASS" endtime="20181125 06:57:19.701" starttime="20181125 06:57:19.640"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>แก้ไขข้อมูลส่วนตัวสำเร็จ</arg>
+</arguments>
+<status status="PASS" endtime="20181125 06:57:19.779" starttime="20181125 06:57:19.701"></status>
+</kw>
+<status status="PASS" endtime="20181125 06:57:19.779" critical="yes" starttime="20181125 06:57:17.640"></status>
+</test>
+<test id="s1-t6" name="TC06 : Edit Birthday Profile">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="notifications"]/img</arg>
+</arguments>
+<msg timestamp="20181125 06:57:19.783" level="INFO">Clicking element '//*[@id="notifications"]/img'.</msg>
+<status status="PASS" endtime="20181125 06:57:19.956" starttime="20181125 06:57:19.783"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>http://localhost/AtomGame/public/editProfile</arg>
+</arguments>
+<msg timestamp="20181125 06:57:19.957" level="INFO">Opening url 'http://localhost/AtomGame/public/editProfile'</msg>
+<status status="PASS" endtime="20181125 06:57:20.412" starttime="20181125 06:57:19.956"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='inputBD']</arg>
+<arg>05/26/2540</arg>
+</arguments>
+<status status="PASS" endtime="20181125 06:57:20.692" starttime="20181125 06:57:20.413"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>บันทึก</arg>
+</arguments>
+<msg timestamp="20181125 06:57:20.693" level="INFO">Clicking button 'บันทึก'.</msg>
+<status status="PASS" endtime="20181125 06:57:21.617" starttime="20181125 06:57:20.692"></status>
+</kw>
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains ``expected``.</doc>
+<arguments>
+<arg>${EDITPROFILE URL}</arg>
+</arguments>
+<msg timestamp="20181125 06:57:21.675" level="INFO">Current location contains 'http://localhost/AtomGame/public/profile'.</msg>
+<status status="PASS" endtime="20181125 06:57:21.675" starttime="20181125 06:57:21.617"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>แก้ไขข้อมูลส่วนตัวสำเร็จ</arg>
+</arguments>
+<status status="PASS" endtime="20181125 06:57:21.739" starttime="20181125 06:57:21.675"></status>
+</kw>
+<status status="PASS" endtime="20181125 06:57:21.739" critical="yes" starttime="20181125 06:57:19.782"></status>
+</test>
+<test id="s1-t7" name="TC07 : Edit Student Id Profil">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="notifications"]/img</arg>
+</arguments>
+<msg timestamp="20181125 06:57:21.744" level="INFO">Clicking element '//*[@id="notifications"]/img'.</msg>
+<status status="PASS" endtime="20181125 06:57:21.916" starttime="20181125 06:57:21.743"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>http://localhost/AtomGame/public/editProfile</arg>
+</arguments>
+<msg timestamp="20181125 06:57:21.917" level="INFO">Opening url 'http://localhost/AtomGame/public/editProfile'</msg>
+<status status="PASS" endtime="20181125 06:57:22.508" starttime="20181125 06:57:21.916"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>inputSTD</arg>
+<arg>593456789-0</arg>
+</arguments>
+<msg timestamp="20181125 06:57:22.509" level="INFO">Typing text '593456789-0' into text field 'inputSTD'.</msg>
+<status status="PASS" endtime="20181125 06:57:22.812" starttime="20181125 06:57:22.508"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>บันทึก</arg>
+</arguments>
+<msg timestamp="20181125 06:57:22.813" level="INFO">Clicking button 'บันทึก'.</msg>
+<status status="PASS" endtime="20181125 06:57:23.685" starttime="20181125 06:57:22.813"></status>
+</kw>
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains ``expected``.</doc>
+<arguments>
+<arg>${EDITPROFILE URL}</arg>
+</arguments>
+<msg timestamp="20181125 06:57:23.743" level="INFO">Current location contains 'http://localhost/AtomGame/public/profile'.</msg>
+<status status="PASS" endtime="20181125 06:57:23.743" starttime="20181125 06:57:23.685"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>แก้ไขข้อมูลส่วนตัวสำเร็จ</arg>
+</arguments>
+<status status="PASS" endtime="20181125 06:57:23.807" starttime="20181125 06:57:23.744"></status>
+</kw>
+<status status="PASS" endtime="20181125 06:57:23.807" critical="yes" starttime="20181125 06:57:21.742"></status>
+</test>
+<test id="s1-t8" name="TC08 : Edit Telephone Number Profile">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="notifications"]/img</arg>
+</arguments>
+<msg timestamp="20181125 06:57:23.811" level="INFO">Clicking element '//*[@id="notifications"]/img'.</msg>
+<status status="PASS" endtime="20181125 06:57:23.985" starttime="20181125 06:57:23.811"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>http://localhost/AtomGame/public/editProfile</arg>
+</arguments>
+<msg timestamp="20181125 06:57:23.986" level="INFO">Opening url 'http://localhost/AtomGame/public/editProfile'</msg>
+<status status="PASS" endtime="20181125 06:57:24.426" starttime="20181125 06:57:23.986"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>tell</arg>
+<arg>0987654321</arg>
+</arguments>
+<msg timestamp="20181125 06:57:24.427" level="INFO">Typing text '0987654321' into text field 'tell'.</msg>
+<status status="PASS" endtime="20181125 06:57:24.751" starttime="20181125 06:57:24.426"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>บันทึก</arg>
+</arguments>
+<msg timestamp="20181125 06:57:24.751" level="INFO">Clicking button 'บันทึก'.</msg>
+<status status="PASS" endtime="20181125 06:57:25.680" starttime="20181125 06:57:24.751"></status>
+</kw>
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains ``expected``.</doc>
+<arguments>
+<arg>${EDITPROFILE URL}</arg>
+</arguments>
+<msg timestamp="20181125 06:57:25.735" level="INFO">Current location contains 'http://localhost/AtomGame/public/profile'.</msg>
+<status status="PASS" endtime="20181125 06:57:25.735" starttime="20181125 06:57:25.681"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>แก้ไขข้อมูลส่วนตัวสำเร็จ</arg>
+</arguments>
+<status status="PASS" endtime="20181125 06:57:25.799" starttime="20181125 06:57:25.736"></status>
+</kw>
+<status status="PASS" endtime="20181125 06:57:25.800" critical="yes" starttime="20181125 06:57:23.810"></status>
+</test>
+<test id="s1-t9" name="TC09 : Edit Parent Phone Number Profile">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="notifications"]/img</arg>
+</arguments>
+<msg timestamp="20181125 06:57:25.803" level="INFO">Clicking element '//*[@id="notifications"]/img'.</msg>
+<status status="PASS" endtime="20181125 06:57:25.981" starttime="20181125 06:57:25.803"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>http://localhost/AtomGame/public/editProfile</arg>
+</arguments>
+<msg timestamp="20181125 06:57:25.981" level="INFO">Opening url 'http://localhost/AtomGame/public/editProfile'</msg>
+<status status="PASS" endtime="20181125 06:57:26.426" starttime="20181125 06:57:25.981"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>inputTelephoneP</arg>
+<arg>0887654321</arg>
+</arguments>
+<msg timestamp="20181125 06:57:26.427" level="INFO">Typing text '0887654321' into text field 'inputTelephoneP'.</msg>
+<status status="PASS" endtime="20181125 06:57:26.740" starttime="20181125 06:57:26.426"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>บันทึก</arg>
+</arguments>
+<msg timestamp="20181125 06:57:26.741" level="INFO">Clicking button 'บันทึก'.</msg>
+<status status="PASS" endtime="20181125 06:57:27.643" starttime="20181125 06:57:26.740"></status>
+</kw>
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains ``expected``.</doc>
+<arguments>
+<arg>${EDITPROFILE URL}</arg>
+</arguments>
+<msg timestamp="20181125 06:57:27.704" level="INFO">Current location contains 'http://localhost/AtomGame/public/profile'.</msg>
+<status status="PASS" endtime="20181125 06:57:27.704" starttime="20181125 06:57:27.644"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>แก้ไขข้อมูลส่วนตัวสำเร็จ</arg>
+</arguments>
+<status status="PASS" endtime="20181125 06:57:27.772" starttime="20181125 06:57:27.704"></status>
+</kw>
+<status status="PASS" endtime="20181125 06:57:27.772" critical="yes" starttime="20181125 06:57:25.802"></status>
+</test>
+<test id="s1-t10" name="TC10 : Edit Facebook Profile">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="notifications"]/img</arg>
+</arguments>
+<msg timestamp="20181125 06:57:27.776" level="INFO">Clicking element '//*[@id="notifications"]/img'.</msg>
+<status status="PASS" endtime="20181125 06:57:27.982" starttime="20181125 06:57:27.776"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>http://localhost/AtomGame/public/editProfile</arg>
+</arguments>
+<msg timestamp="20181125 06:57:27.983" level="INFO">Opening url 'http://localhost/AtomGame/public/editProfile'</msg>
+<status status="PASS" endtime="20181125 06:57:28.455" starttime="20181125 06:57:27.982"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>inputFacebook</arg>
+<arg>https://www.facebook.com/NutSupreme</arg>
+</arguments>
+<msg timestamp="20181125 06:57:28.456" level="INFO">Typing text 'https://www.facebook.com/NutSupreme' into text field 'inputFacebook'.</msg>
+<status status="PASS" endtime="20181125 06:57:28.933" starttime="20181125 06:57:28.455"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>บันทึก</arg>
+</arguments>
+<msg timestamp="20181125 06:57:28.934" level="INFO">Clicking button 'บันทึก'.</msg>
+<status status="PASS" endtime="20181125 06:57:29.802" starttime="20181125 06:57:28.934"></status>
+</kw>
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains ``expected``.</doc>
+<arguments>
+<arg>${EDITPROFILE URL}</arg>
+</arguments>
+<msg timestamp="20181125 06:57:29.858" level="INFO">Current location contains 'http://localhost/AtomGame/public/profile'.</msg>
+<status status="PASS" endtime="20181125 06:57:29.858" starttime="20181125 06:57:29.803"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>แก้ไขข้อมูลส่วนตัวสำเร็จ</arg>
+</arguments>
+<status status="PASS" endtime="20181125 06:57:29.922" starttime="20181125 06:57:29.859"></status>
+</kw>
+<status status="PASS" endtime="20181125 06:57:29.922" critical="yes" starttime="20181125 06:57:27.774"></status>
+</test>
+<test id="s1-t11" name="TC11 : Edit E-mail Profile">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="notifications"]/img</arg>
+</arguments>
+<msg timestamp="20181125 06:57:29.926" level="INFO">Clicking element '//*[@id="notifications"]/img'.</msg>
+<status status="PASS" endtime="20181125 06:57:30.107" starttime="20181125 06:57:29.925"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>http://localhost/AtomGame/public/editProfile</arg>
+</arguments>
+<msg timestamp="20181125 06:57:30.108" level="INFO">Opening url 'http://localhost/AtomGame/public/editProfile'</msg>
+<status status="PASS" endtime="20181125 06:57:30.552" starttime="20181125 06:57:30.107"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>E-mail</arg>
+<arg>porinut12345@gmail.com</arg>
+</arguments>
+<msg timestamp="20181125 06:57:30.553" level="INFO">Typing text 'porinut12345@gmail.com' into text field 'E-mail'.</msg>
+<status status="PASS" endtime="20181125 06:57:30.979" starttime="20181125 06:57:30.552"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>บันทึก</arg>
+</arguments>
+<msg timestamp="20181125 06:57:30.979" level="INFO">Clicking button 'บันทึก'.</msg>
+<status status="PASS" endtime="20181125 06:57:31.830" starttime="20181125 06:57:30.979"></status>
+</kw>
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains ``expected``.</doc>
+<arguments>
+<arg>${EDITPROFILE URL}</arg>
+</arguments>
+<msg timestamp="20181125 06:57:31.886" level="INFO">Current location contains 'http://localhost/AtomGame/public/profile'.</msg>
+<status status="PASS" endtime="20181125 06:57:31.887" starttime="20181125 06:57:31.830"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>แก้ไขข้อมูลส่วนตัวสำเร็จ</arg>
+</arguments>
+<status status="PASS" endtime="20181125 06:57:31.953" starttime="20181125 06:57:31.887"></status>
+</kw>
+<status status="PASS" endtime="20181125 06:57:31.953" critical="yes" starttime="20181125 06:57:29.924"></status>
+</test>
+<test id="s1-t12" name="TC12 : Edit Type Of Attendees Profile">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="notifications"]/img</arg>
+</arguments>
+<msg timestamp="20181125 06:57:31.956" level="INFO">Clicking element '//*[@id="notifications"]/img'.</msg>
+<status status="PASS" endtime="20181125 06:57:32.134" starttime="20181125 06:57:31.956"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>http://localhost/AtomGame/public/editProfile</arg>
+</arguments>
+<msg timestamp="20181125 06:57:32.135" level="INFO">Opening url 'http://localhost/AtomGame/public/editProfile'</msg>
+<status status="PASS" endtime="20181125 06:57:32.598" starttime="20181125 06:57:32.135"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>//*[@id="inputType"]</arg>
+<arg>SA</arg>
+</arguments>
+<msg timestamp="20181125 06:57:32.599" level="INFO">Selecting options from selection list '//*[@id="inputType"]' by value SA.</msg>
+<status status="PASS" endtime="20181125 06:57:32.976" starttime="20181125 06:57:32.599"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>บันทึก</arg>
+</arguments>
+<msg timestamp="20181125 06:57:32.977" level="INFO">Clicking button 'บันทึก'.</msg>
+<status status="PASS" endtime="20181125 06:57:33.839" starttime="20181125 06:57:32.977"></status>
+</kw>
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains ``expected``.</doc>
+<arguments>
+<arg>${EDITPROFILE URL}</arg>
+</arguments>
+<msg timestamp="20181125 06:57:33.895" level="INFO">Current location contains 'http://localhost/AtomGame/public/profile'.</msg>
+<status status="PASS" endtime="20181125 06:57:33.895" starttime="20181125 06:57:33.839"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>แก้ไขข้อมูลส่วนตัวสำเร็จ</arg>
+</arguments>
+<status status="PASS" endtime="20181125 06:57:33.961" starttime="20181125 06:57:33.896"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181125 06:57:36.234" starttime="20181125 06:57:33.962"></status>
+</kw>
+<status status="PASS" endtime="20181125 06:57:36.234" critical="yes" starttime="20181125 06:57:31.955"></status>
+</test>
+<status status="PASS" endtime="20181125 06:57:36.238" starttime="20181125 06:57:03.663"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="12">Critical Tests</stat>
+<stat fail="0" pass="12">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="UAT007" pass="12">UAT007</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -11,7 +11,6 @@ TC002 : Login Success:
 TC003 : View Profile : 
     Click Element    xpath=//a[@id='notifications']/img
     Click Element    xpath=//a/strong
-    Wait Until Page Contains    ${NutLogin}
 
 TC004 : View Sport Schedule
     Click Element    //*[@id="side-main-menu"]/li[3]/a
@@ -31,3 +30,4 @@ TC007 : View Activities Schedule Result :
 
 TC008 : View SumMedal :
     Click Element    //*[@id="side-main-menu"]/li[5]/a
+    [Teardown]    Close Browser
