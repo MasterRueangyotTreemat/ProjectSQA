@@ -147,6 +147,21 @@ TC017 : Check Register Sports and Athletics Competition No Success 15: Choose Sp
     Wait Until Page Contains    ${ERROR PLEASE SELECT A COMPETITION}
     Wait Until Page Contains    ${ERROR PLEASE SELECT A COMPETITION}
 
+TC018 : Check Register Sports and Athletics Competition No Success 16: Choose Sport Match Format Sports And Athletics And Match Type Male And Match Title But Enter 1:
+    Click Element    //*[@id="side-main-menu"]/li[2]/a
+    Click Element    //*[@id="pages-nav-list0"]/li[2]/a
+    Click Element    //*[@id="ShowFormat"]/label[1]
+    Click Element    //*[@id="ShowGender"]/label[2]
+    #Click Element    //*[@id="ShowGender"]/label[3]
+    Click Element    //*[@id="inputName"]
+    Select From List By Value    //*[@id="inputName"]    ${FOOTBALL}
+    #Click Element    //*[@id="inputREAL"]
+    #Select From List By Value    //*[@id="inputREAL"]    ${ON GROUND PLAYER}
+    #Select From List By Value    //*[@id="inputREAL"]    ${ALTERNATE}
+    Click Button    add
+    Wait Until Page Contains    ${ERROR PLEASE SELECT A ROLE}
+    
+
 
 
 
