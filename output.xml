@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20181125 05:09:20.021" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<robot generated="20181125 05:34:18.013" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
 <suite source="D:\SQA\ProjectSQA\UAT006.robot" id="s1" name="UAT006">
 <test id="s1-t1" name="TC001 : Open Event Registration Page">
 <kw name="Open Event Registration Page" library="UAT006_resources">
@@ -9,31 +9,31 @@
 <arg>${HOME URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20181125 05:09:20.451" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/AtomGame/public/home'.</msg>
-<status status="PASS" endtime="20181125 05:09:28.633" starttime="20181125 05:09:20.450"></status>
+<msg timestamp="20181125 05:34:18.829" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/AtomGame/public/home'.</msg>
+<status status="PASS" endtime="20181125 05:34:28.346" starttime="20181125 05:34:18.828"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20181125 05:09:29.993" starttime="20181125 05:09:28.634"></status>
+<status status="PASS" endtime="20181125 05:34:29.867" starttime="20181125 05:34:28.346"></status>
 </kw>
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>${DELAY}</arg>
 </arguments>
-<status status="PASS" endtime="20181125 05:09:29.994" starttime="20181125 05:09:29.994"></status>
+<status status="PASS" endtime="20181125 05:34:29.868" starttime="20181125 05:34:29.867"></status>
 </kw>
 <kw name="Location Should Be" library="Selenium2Library">
 <doc>Verifies that current URL is exactly ``url`.</doc>
 <arguments>
 <arg>${HOME URL}</arg>
 </arguments>
-<msg timestamp="20181125 05:09:30.102" level="INFO">Current location is 'http://localhost/AtomGame/public/home'.</msg>
-<status status="PASS" endtime="20181125 05:09:30.102" starttime="20181125 05:09:29.995"></status>
+<msg timestamp="20181125 05:34:30.034" level="INFO">Current location is 'http://localhost/AtomGame/public/home'.</msg>
+<status status="PASS" endtime="20181125 05:34:30.034" starttime="20181125 05:34:29.869"></status>
 </kw>
-<status status="PASS" endtime="20181125 05:09:30.102" starttime="20181125 05:09:20.449"></status>
+<status status="PASS" endtime="20181125 05:34:30.034" starttime="20181125 05:34:18.827"></status>
 </kw>
-<status status="PASS" endtime="20181125 05:09:30.125" critical="yes" starttime="20181125 05:09:20.437"></status>
+<status status="PASS" endtime="20181125 05:34:30.036" critical="yes" starttime="20181125 05:34:18.816"></status>
 </test>
 <test id="s1-t2" name="TCOO2 : Login Fail : (Username ถูก Password ผิด)">
 <kw name="Click Element" library="Selenium2Library">
@@ -41,16 +41,16 @@
 <arguments>
 <arg>//*[@id="loginBtn"]</arg>
 </arguments>
-<msg timestamp="20181125 05:09:30.363" level="INFO">Clicking element '//*[@id="loginBtn"]'.</msg>
-<status status="PASS" endtime="20181125 05:09:30.707" starttime="20181125 05:09:30.362"></status>
+<msg timestamp="20181125 05:34:30.041" level="INFO">Clicking element '//*[@id="loginBtn"]'.</msg>
+<status status="PASS" endtime="20181125 05:34:30.383" starttime="20181125 05:34:30.040"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="Username"]</arg>
 </arguments>
-<msg timestamp="20181125 05:09:30.718" level="INFO">Clicking element '//*[@id="Username"]'.</msg>
-<status status="PASS" endtime="20181125 05:09:31.219" starttime="20181125 05:09:30.718"></status>
+<msg timestamp="20181125 05:34:30.402" level="INFO">Clicking element '//*[@id="Username"]'.</msg>
+<status status="PASS" endtime="20181125 05:34:30.828" starttime="20181125 05:34:30.401"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -58,16 +58,16 @@
 <arg>Username</arg>
 <arg>porinut</arg>
 </arguments>
-<msg timestamp="20181125 05:09:31.223" level="INFO">Typing text 'porinut' into text field 'Username'.</msg>
-<status status="PASS" endtime="20181125 05:09:31.793" starttime="20181125 05:09:31.222"></status>
+<msg timestamp="20181125 05:34:30.846" level="INFO">Typing text 'porinut' into text field 'Username'.</msg>
+<status status="PASS" endtime="20181125 05:34:31.396" starttime="20181125 05:34:30.845"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="Password"]</arg>
 </arguments>
-<msg timestamp="20181125 05:09:31.813" level="INFO">Clicking element '//*[@id="Password"]'.</msg>
-<status status="PASS" endtime="20181125 05:09:32.087" starttime="20181125 05:09:31.813"></status>
+<msg timestamp="20181125 05:34:31.397" level="INFO">Clicking element '//*[@id="Password"]'.</msg>
+<status status="PASS" endtime="20181125 05:34:31.667" starttime="20181125 05:34:31.396"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -75,25 +75,25 @@
 <arg>Password</arg>
 <arg>1234</arg>
 </arguments>
-<msg timestamp="20181125 05:09:32.250" level="INFO">Typing text '1234' into text field 'Password'.</msg>
-<status status="PASS" endtime="20181125 05:09:32.634" starttime="20181125 05:09:32.249"></status>
+<msg timestamp="20181125 05:34:31.677" level="INFO">Typing text '1234' into text field 'Password'.</msg>
+<status status="PASS" endtime="20181125 05:34:32.116" starttime="20181125 05:34:31.677"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>login</arg>
 </arguments>
-<msg timestamp="20181125 05:09:32.688" level="INFO">Clicking button 'login'.</msg>
-<status status="PASS" endtime="20181125 05:09:35.014" starttime="20181125 05:09:32.687"></status>
+<msg timestamp="20181125 05:34:32.117" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" endtime="20181125 05:34:34.327" starttime="20181125 05:34:32.116"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>Username หรือ Password ไม่ถูกต้อง</arg>
 </arguments>
-<status status="PASS" endtime="20181125 05:09:35.143" starttime="20181125 05:09:35.018"></status>
+<status status="PASS" endtime="20181125 05:34:34.505" starttime="20181125 05:34:34.327"></status>
 </kw>
-<status status="PASS" endtime="20181125 05:09:35.147" critical="yes" starttime="20181125 05:09:30.289"></status>
+<status status="PASS" endtime="20181125 05:34:34.505" critical="yes" starttime="20181125 05:34:30.038"></status>
 </test>
 <test id="s1-t3" name="TCOO3 : Login Fail : (Username ผิด Password ถูก)">
 <kw name="Click Element" library="Selenium2Library">
@@ -101,8 +101,8 @@
 <arguments>
 <arg>//*[@id="Username"]</arg>
 </arguments>
-<msg timestamp="20181125 05:09:35.151" level="INFO">Clicking element '//*[@id="Username"]'.</msg>
-<status status="PASS" endtime="20181125 05:09:35.522" starttime="20181125 05:09:35.151"></status>
+<msg timestamp="20181125 05:34:34.510" level="INFO">Clicking element '//*[@id="Username"]'.</msg>
+<status status="PASS" endtime="20181125 05:34:34.891" starttime="20181125 05:34:34.509"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -110,16 +110,16 @@
 <arg>Username</arg>
 <arg>abcd</arg>
 </arguments>
-<msg timestamp="20181125 05:09:35.523" level="INFO">Typing text 'abcd' into text field 'Username'.</msg>
-<status status="PASS" endtime="20181125 05:09:35.928" starttime="20181125 05:09:35.523"></status>
+<msg timestamp="20181125 05:34:34.901" level="INFO">Typing text 'abcd' into text field 'Username'.</msg>
+<status status="PASS" endtime="20181125 05:34:35.367" starttime="20181125 05:34:34.901"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="Password"]</arg>
 </arguments>
-<msg timestamp="20181125 05:09:35.929" level="INFO">Clicking element '//*[@id="Password"]'.</msg>
-<status status="PASS" endtime="20181125 05:09:36.191" starttime="20181125 05:09:35.928"></status>
+<msg timestamp="20181125 05:34:35.369" level="INFO">Clicking element '//*[@id="Password"]'.</msg>
+<status status="PASS" endtime="20181125 05:34:35.763" starttime="20181125 05:34:35.369"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -127,25 +127,25 @@
 <arg>Password</arg>
 <arg>12345678</arg>
 </arguments>
-<msg timestamp="20181125 05:09:36.192" level="INFO">Typing text '12345678' into text field 'Password'.</msg>
-<status status="PASS" endtime="20181125 05:09:36.728" starttime="20181125 05:09:36.191"></status>
+<msg timestamp="20181125 05:34:35.764" level="INFO">Typing text '12345678' into text field 'Password'.</msg>
+<status status="PASS" endtime="20181125 05:34:36.212" starttime="20181125 05:34:35.764"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>login</arg>
 </arguments>
-<msg timestamp="20181125 05:09:36.729" level="INFO">Clicking button 'login'.</msg>
-<status status="PASS" endtime="20181125 05:09:38.449" starttime="20181125 05:09:36.728"></status>
+<msg timestamp="20181125 05:34:36.213" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" endtime="20181125 05:34:38.059" starttime="20181125 05:34:36.212"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>Username หรือ Password ไม่ถูกต้อง</arg>
 </arguments>
-<status status="PASS" endtime="20181125 05:09:38.604" starttime="20181125 05:09:38.469"></status>
+<status status="PASS" endtime="20181125 05:34:38.164" starttime="20181125 05:34:38.059"></status>
 </kw>
-<status status="PASS" endtime="20181125 05:09:38.610" critical="yes" starttime="20181125 05:09:35.149"></status>
+<status status="PASS" endtime="20181125 05:34:38.164" critical="yes" starttime="20181125 05:34:34.508"></status>
 </test>
 <test id="s1-t4" name="TC004 : Login Fail : (Username ผิด Password ผิด)">
 <kw name="Click Element" library="Selenium2Library">
@@ -153,8 +153,8 @@
 <arguments>
 <arg>//*[@id="Username"]</arg>
 </arguments>
-<msg timestamp="20181125 05:09:38.686" level="INFO">Clicking element '//*[@id="Username"]'.</msg>
-<status status="PASS" endtime="20181125 05:09:39.170" starttime="20181125 05:09:38.685"></status>
+<msg timestamp="20181125 05:34:38.171" level="INFO">Clicking element '//*[@id="Username"]'.</msg>
+<status status="PASS" endtime="20181125 05:34:38.512" starttime="20181125 05:34:38.170"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -162,16 +162,16 @@
 <arg>Username</arg>
 <arg>abcd</arg>
 </arguments>
-<msg timestamp="20181125 05:09:39.174" level="INFO">Typing text 'abcd' into text field 'Username'.</msg>
-<status status="PASS" endtime="20181125 05:09:39.579" starttime="20181125 05:09:39.174"></status>
+<msg timestamp="20181125 05:34:38.513" level="INFO">Typing text 'abcd' into text field 'Username'.</msg>
+<status status="PASS" endtime="20181125 05:34:38.947" starttime="20181125 05:34:38.512"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="Password"]</arg>
 </arguments>
-<msg timestamp="20181125 05:09:39.580" level="INFO">Clicking element '//*[@id="Password"]'.</msg>
-<status status="PASS" endtime="20181125 05:09:39.790" starttime="20181125 05:09:39.579"></status>
+<msg timestamp="20181125 05:34:38.948" level="INFO">Clicking element '//*[@id="Password"]'.</msg>
+<status status="PASS" endtime="20181125 05:34:39.226" starttime="20181125 05:34:38.947"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -179,34 +179,69 @@
 <arg>Password</arg>
 <arg>1234</arg>
 </arguments>
-<msg timestamp="20181125 05:09:39.792" level="INFO">Typing text '1234' into text field 'Password'.</msg>
-<status status="PASS" endtime="20181125 05:09:40.164" starttime="20181125 05:09:39.791"></status>
+<msg timestamp="20181125 05:34:39.234" level="INFO">Typing text '1234' into text field 'Password'.</msg>
+<status status="PASS" endtime="20181125 05:34:39.608" starttime="20181125 05:34:39.233"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>login</arg>
 </arguments>
-<msg timestamp="20181125 05:09:40.174" level="INFO">Clicking button 'login'.</msg>
-<status status="PASS" endtime="20181125 05:09:41.720" starttime="20181125 05:09:40.174"></status>
+<msg timestamp="20181125 05:34:39.610" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" endtime="20181125 05:34:41.119" starttime="20181125 05:34:39.610"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>Username หรือ Password ไม่ถูกต้อง</arg>
 </arguments>
-<status status="PASS" endtime="20181125 05:09:41.813" starttime="20181125 05:09:41.721"></status>
+<status status="PASS" endtime="20181125 05:34:41.231" starttime="20181125 05:34:41.131"></status>
 </kw>
-<status status="PASS" endtime="20181125 05:09:41.824" critical="yes" starttime="20181125 05:09:38.683"></status>
+<status status="PASS" endtime="20181125 05:34:41.237" critical="yes" starttime="20181125 05:34:38.167"></status>
 </test>
-<test id="s1-t5" name="TC005 : Login Fail : ( Empty Username )">
+<test id="s1-t5" name="TC005 : Login Fail : ( Empty Password )">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="Username"]</arg>
+</arguments>
+<msg timestamp="20181125 05:34:41.241" level="INFO">Clicking element '//*[@id="Username"]'.</msg>
+<status status="PASS" endtime="20181125 05:34:41.605" starttime="20181125 05:34:41.240"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>Username</arg>
+<arg>porinut</arg>
+</arguments>
+<msg timestamp="20181125 05:34:41.606" level="INFO">Typing text 'porinut' into text field 'Username'.</msg>
+<status status="PASS" endtime="20181125 05:34:42.362" starttime="20181125 05:34:41.605"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>login</arg>
+</arguments>
+<msg timestamp="20181125 05:34:42.363" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" endtime="20181125 05:34:42.818" starttime="20181125 05:34:42.362"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>กรุณากรอก Password</arg>
+</arguments>
+<status status="PASS" endtime="20181125 05:34:42.972" starttime="20181125 05:34:42.818"></status>
+</kw>
+<status status="PASS" endtime="20181125 05:34:42.991" critical="yes" starttime="20181125 05:34:41.239"></status>
+</test>
+<test id="s1-t6" name="TC006 : Login Fail : ( Empty Username )">
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="Password"]</arg>
 </arguments>
-<msg timestamp="20181125 05:09:41.914" level="INFO">Clicking element '//*[@id="Password"]'.</msg>
-<status status="PASS" endtime="20181125 05:09:42.336" starttime="20181125 05:09:41.912"></status>
+<msg timestamp="20181125 05:34:42.995" level="INFO">Clicking element '//*[@id="Password"]'.</msg>
+<status status="PASS" endtime="20181125 05:34:43.549" starttime="20181125 05:34:42.994"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -214,37 +249,37 @@
 <arg>Password</arg>
 <arg>12345678</arg>
 </arguments>
-<msg timestamp="20181125 05:09:42.370" level="INFO">Typing text '12345678' into text field 'Password'.</msg>
-<status status="PASS" endtime="20181125 05:09:42.811" starttime="20181125 05:09:42.370"></status>
+<msg timestamp="20181125 05:34:43.550" level="INFO">Typing text '12345678' into text field 'Password'.</msg>
+<status status="PASS" endtime="20181125 05:34:43.965" starttime="20181125 05:34:43.549"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>login</arg>
 </arguments>
-<msg timestamp="20181125 05:09:42.898" level="INFO">Clicking button 'login'.</msg>
-<status status="PASS" endtime="20181125 05:09:43.411" starttime="20181125 05:09:42.897"></status>
+<msg timestamp="20181125 05:34:43.980" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" endtime="20181125 05:34:45.463" starttime="20181125 05:34:43.979"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>กรุณากรอก Username</arg>
 </arguments>
-<status status="PASS" endtime="20181125 05:09:43.544" starttime="20181125 05:09:43.419"></status>
+<status status="PASS" endtime="20181125 05:34:45.549" starttime="20181125 05:34:45.463"></status>
 </kw>
-<status status="PASS" endtime="20181125 05:09:43.640" critical="yes" starttime="20181125 05:09:41.910"></status>
+<status status="PASS" endtime="20181125 05:34:45.549" critical="yes" starttime="20181125 05:34:42.993"></status>
 </test>
-<status status="PASS" endtime="20181125 05:09:44.089" starttime="20181125 05:09:20.025"></status>
+<status status="PASS" endtime="20181125 05:34:45.553" starttime="20181125 05:34:18.017"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="5">Critical Tests</stat>
-<stat fail="0" pass="5">All Tests</stat>
+<stat fail="0" pass="6">Critical Tests</stat>
+<stat fail="0" pass="6">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="UAT006" pass="5">UAT006</stat>
+<stat fail="0" id="s1" name="UAT006" pass="6">UAT006</stat>
 </suite>
 </statistics>
 <errors>
