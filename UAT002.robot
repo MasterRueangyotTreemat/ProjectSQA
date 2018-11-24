@@ -8,27 +8,22 @@ Open Event Registration Page
 TC002 : Register No Success With Id Card Empty Gender
     Input Register No Success With Id Card   ${EMPTY}    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${ID CARD}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD} 
     Location Should Contain    ${REGISTER URL}
-    Capture Page Screenshot   filename=test.png
 
 TC003 : Register No Success With Id Card Empty Title Name
     Input Register No Success With Id Card   ${GENDER}    ${EMPTY}    ${FULL NAME}     ${BIRTHDAY}     ${ID CARD}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD} 
     Location Should Contain    ${REGISTER URL}
-    Capture Page Screenshot   filename=test.png
 
 TC004 : Register No Success With Id Card Empty Full Name
     Input Register No Success With Id Card   ${GENDER}    ${TITLE NAME}    ${EMPTY}     ${BIRTHDAY}     ${ID CARD}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD} 
     Location Should Contain    ${REGISTER URL}
-    Capture Page Screenshot   filename=test.png
 
 TC005 : Register No Success With Id Card Empty ID card
     Input Register No Success With Id Card   ${GENDER}    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${EMPTY}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD} 
     Location Should Contain    ${REGISTER URL}
-    Capture Page Screenshot   filename=test.png
 
 TC006 : Register No Success With Id Card Empty Telephone Number
     Input Register No Success With Id Card   ${GENDER}    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${ID CARD}     ${STUDENT ID}     ${EMPTY}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD} 
     Location Should Contain    ${REGISTER URL}
-    Capture Page Screenshot   filename=test.png
 
 TC007 : Register No Success With Id Card Empty Profile Image
     Input Register No Success With Id Card   ${GENDER}    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${ID CARD}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${EMPTY}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD} 
