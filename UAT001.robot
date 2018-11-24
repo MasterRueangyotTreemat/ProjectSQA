@@ -1,8 +1,24 @@
 *** Settings ***
 Resource          UAT001_resources.robot
 
+
 *** Test Cases ***
 TC001 : Open Event Registration Page
+<<<<<<< HEAD
+  Open Event Registration Page
+
+    
+TC002 : Register Success With Id Card 
+    Input Register Success    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${ID CARD}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD}     
+    Location Should Contain    ${REGISTER URL}
+    Wait Until Page Contains    ลงทะเบียนสำเร็จ
+TC003 : Register Success With Id Card No Birthday
+    Input Register Success    ${TITLE NAME}    ${FULL NAME}     ${EMPTY}     ${ID CARD}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD}     
+    Location Should Contain    ${REGISTER URL}
+    Wait Until Page Contains    ลงทะเบียนสำเร็จ
+TC004 : Register Success With Id Card No Studetn Id
+    TC004 : Input Register Success With Id Card No Studetn Id    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${ID CARD}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD}     
+=======
     Open Event Registration Page
     Location Should Be     ${HOME URL}
     
@@ -11,17 +27,6 @@ TC002 : Register Success With Id Card
     Location Should Contain    ${REGISTER URL}
     Wait Until Page Contains    ลงทะเบียนสำเร็จ
 
-TC003 : Register Success With Id Card No Birthday
-    Input Registration Page    ${TITLE NAME}    ${FULL NAME}     ${EMPTY}     ${ID CARD PATH}    ${ID CARD ID PATH}    ${VALID ID CARD}     ${VALID STUDENT ID}     ${VALID TELEPHONE NUMBER}     ${VALID PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${VALID PASSWORD}     ${VALID REPEAT PASSWORD}
-    Location Should Contain    ${REGISTER URL}
-    Wait Until Page Contains    ${ERROR MESSAGE ALEADY HAVE ID CARD}
-    Wait Until Page Contains    ${ERROR MESSAGE ALEADY HAVE USERNAME}
-
-TC004 : Register Success With Id Card No Student Id
-    Input Registration Page    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${ID CARD PATH}    ${ID CARD ID PATH}    ${EMPTY}     ${VALID STUDENT ID}     ${VALID TELEPHONE NUMBER}     ${VALID PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${VALID PASSWORD}     ${VALID REPEAT PASSWORD}
-    Location Should Contain    ${REGISTER URL}
-    Wait Until Page Contains    ${ERROR MESSAGE ALEADY HAVE ID CARD}
-    Wait Until Page Contains    ${ERROR MESSAGE ALEADY HAVE USERNAME}
 
 TC005 : Register Success With Id Card No Parent Phone Number
     Input Registration Page    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${ID CARD PATH}    ${ID CARD ID PATH}    ${VALID ID CARD}     ${VALID STUDENT ID}     ${EMPTY}     ${VALID PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${VALID PASSWORD}     ${VALID REPEAT PASSWORD}
