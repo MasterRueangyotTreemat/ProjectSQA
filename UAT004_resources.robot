@@ -61,6 +61,12 @@ ${ERROR MESSAGE INVALID PHONE}    เบอร์โทรติดต่อต�
 ${ERROR PLEASE SELECT SPORTS}    กรุณาเลือกรูปแบบการแข่งขัน
 ${ERROR PLEASE SELECT A COMPETITION}    กรุณาเลือกชื่อรายการแข่งขัน
 ${NO TITLE IN THE CATEGORY AND FORMAT YOU SELECTED}    ไม่มีชื่อรายการแข่งขันในประเภทและรูปแบบที่ท่านเลือก
+${ERROR PLEASE SELECT A ROLE}    กรุณาเลือกบทบาท
+${FOOTBALL}    S2019003
+${BADMINTON}    S2019006
+${ESPAK MUZZLE}    S2019007
+${FUTSAL}    S2019013
+${RUN 200 M}    S2019015
 
 *** Keywords ***
 Open Event Registration Page
