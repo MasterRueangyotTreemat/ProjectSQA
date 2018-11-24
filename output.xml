@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20181124 23:08:50.170">
+<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20181124 23:11:42.076">
 <suite id="s1" name="UAT004" source="D:\1work\year3\SQA\project\ProjectSQA\UAT004.robot">
 <test id="s1-t1" name="TC001 : Open Event Registration Page">
 <kw name="Open Event Registration Page" library="UAT004_resources">
@@ -9,23 +9,23 @@
 <arg>${HOME URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20181124 23:08:50.392" level="INFO">Opening browser 'chrome' to base url 'http://localhost/AtomGame/public/home'.</msg>
-<status status="PASS" starttime="20181124 23:08:50.392" endtime="20181124 23:08:55.725"></status>
+<msg timestamp="20181124 23:11:42.259" level="INFO">Opening browser 'chrome' to base url 'http://localhost/AtomGame/public/home'.</msg>
+<status status="PASS" starttime="20181124 23:11:42.259" endtime="20181124 23:11:46.708"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20181124 23:08:55.725" endtime="20181124 23:08:56.931"></status>
+<status status="PASS" starttime="20181124 23:11:46.708" endtime="20181124 23:11:47.834"></status>
 </kw>
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>${DELAY}</arg>
 </arguments>
-<status status="PASS" starttime="20181124 23:08:56.931" endtime="20181124 23:08:56.931"></status>
+<status status="PASS" starttime="20181124 23:11:47.835" endtime="20181124 23:11:47.836"></status>
 </kw>
-<status status="PASS" starttime="20181124 23:08:50.392" endtime="20181124 23:08:56.931"></status>
+<status status="PASS" starttime="20181124 23:11:42.259" endtime="20181124 23:11:47.837"></status>
 </kw>
-<status status="PASS" starttime="20181124 23:08:50.390" endtime="20181124 23:08:56.931" critical="yes"></status>
+<status status="PASS" starttime="20181124 23:11:42.258" endtime="20181124 23:11:47.837" critical="yes"></status>
 </test>
 <test id="s1-t2" name="TC002 : Open Register Sports and Athletics Competition Page">
 <kw name="Click Element" library="Selenium2Library">
@@ -33,24 +33,24 @@
 <arguments>
 <arg>//*[@id="side-main-menu"]/li[2]/a</arg>
 </arguments>
-<msg timestamp="20181124 23:08:56.936" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
-<status status="PASS" starttime="20181124 23:08:56.936" endtime="20181124 23:08:57.427"></status>
+<msg timestamp="20181124 23:11:47.850" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<status status="PASS" starttime="20181124 23:11:47.850" endtime="20181124 23:11:48.378"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="pages-nav-list0"]/li[2]/a</arg>
 </arguments>
-<msg timestamp="20181124 23:08:57.428" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[2]/a'.</msg>
-<status status="PASS" starttime="20181124 23:08:57.428" endtime="20181124 23:08:57.801"></status>
+<msg timestamp="20181124 23:11:48.381" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[2]/a'.</msg>
+<status status="PASS" starttime="20181124 23:11:48.380" endtime="20181124 23:11:48.791"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="Username"]</arg>
 </arguments>
-<msg timestamp="20181124 23:08:57.806" level="INFO">Clicking element '//*[@id="Username"]'.</msg>
-<status status="PASS" starttime="20181124 23:08:57.805" endtime="20181124 23:08:58.142"></status>
+<msg timestamp="20181124 23:11:48.793" level="INFO">Clicking element '//*[@id="Username"]'.</msg>
+<status status="PASS" starttime="20181124 23:11:48.792" endtime="20181124 23:11:49.150"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -58,16 +58,16 @@
 <arg>Username</arg>
 <arg>porinut</arg>
 </arguments>
-<msg timestamp="20181124 23:08:58.146" level="INFO">Typing text 'porinut' into text field 'Username'.</msg>
-<status status="PASS" starttime="20181124 23:08:58.145" endtime="20181124 23:08:58.620"></status>
+<msg timestamp="20181124 23:11:49.151" level="INFO">Typing text 'porinut' into text field 'Username'.</msg>
+<status status="PASS" starttime="20181124 23:11:49.151" endtime="20181124 23:11:49.657"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="Password"]</arg>
 </arguments>
-<msg timestamp="20181124 23:08:58.620" level="INFO">Clicking element '//*[@id="Password"]'.</msg>
-<status status="PASS" starttime="20181124 23:08:58.620" endtime="20181124 23:08:59.110"></status>
+<msg timestamp="20181124 23:11:49.657" level="INFO">Clicking element '//*[@id="Password"]'.</msg>
+<status status="PASS" starttime="20181124 23:11:49.657" endtime="20181124 23:11:50.026"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -75,41 +75,41 @@
 <arg>Password</arg>
 <arg>12345678</arg>
 </arguments>
-<msg timestamp="20181124 23:08:59.111" level="INFO">Typing text '12345678' into text field 'Password'.</msg>
-<status status="PASS" starttime="20181124 23:08:59.111" endtime="20181124 23:08:59.582"></status>
+<msg timestamp="20181124 23:11:50.027" level="INFO">Typing text '12345678' into text field 'Password'.</msg>
+<status status="PASS" starttime="20181124 23:11:50.026" endtime="20181124 23:11:50.558"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>login</arg>
 </arguments>
-<msg timestamp="20181124 23:08:59.582" level="INFO">Clicking button 'login'.</msg>
-<status status="PASS" starttime="20181124 23:08:59.582" endtime="20181124 23:09:01.196"></status>
+<msg timestamp="20181124 23:11:50.562" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" starttime="20181124 23:11:50.558" endtime="20181124 23:11:52.130"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="side-main-menu"]/li[2]/a</arg>
 </arguments>
-<msg timestamp="20181124 23:09:01.196" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
-<status status="PASS" starttime="20181124 23:09:01.196" endtime="20181124 23:09:01.562"></status>
+<msg timestamp="20181124 23:11:52.133" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<status status="PASS" starttime="20181124 23:11:52.133" endtime="20181124 23:11:52.425"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="pages-nav-list0"]/li[2]/a</arg>
 </arguments>
-<msg timestamp="20181124 23:09:01.563" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[2]/a'.</msg>
-<status status="PASS" starttime="20181124 23:09:01.562" endtime="20181124 23:09:02.482"></status>
+<msg timestamp="20181124 23:11:52.426" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[2]/a'.</msg>
+<status status="PASS" starttime="20181124 23:11:52.425" endtime="20181124 23:11:53.231"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>ลงทะเบียนแข่งขันกีฬาและกิจกรรม</arg>
 </arguments>
-<status status="PASS" starttime="20181124 23:09:02.485" endtime="20181124 23:09:02.620"></status>
+<status status="PASS" starttime="20181124 23:11:53.231" endtime="20181124 23:11:53.345"></status>
 </kw>
-<status status="PASS" starttime="20181124 23:08:56.935" endtime="20181124 23:09:02.620" critical="yes"></status>
+<status status="PASS" starttime="20181124 23:11:47.845" endtime="20181124 23:11:53.348" critical="yes"></status>
 </test>
 <test id="s1-t3" name="TC003 : Check Register Sports and Athletics Competition No Success 1: Empty All But Enter :">
 <kw name="Click Button" library="Selenium2Library">
@@ -117,26 +117,26 @@
 <arguments>
 <arg>add</arg>
 </arguments>
-<msg timestamp="20181124 23:09:02.624" level="INFO">Clicking button 'add'.</msg>
-<status status="PASS" starttime="20181124 23:09:02.624" endtime="20181124 23:09:03.111"></status>
+<msg timestamp="20181124 23:11:53.352" level="INFO">Clicking button 'add'.</msg>
+<status status="PASS" starttime="20181124 23:11:53.351" endtime="20181124 23:11:53.837"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>${Empty All But Enter}</arg>
 </arguments>
-<status status="PASS" starttime="20181124 23:09:03.111" endtime="20181124 23:09:03.230"></status>
+<status status="PASS" starttime="20181124 23:11:53.837" endtime="20181124 23:11:53.956"></status>
 </kw>
-<status status="PASS" starttime="20181124 23:09:02.623" endtime="20181124 23:09:03.230" critical="yes"></status>
+<status status="PASS" starttime="20181124 23:11:53.351" endtime="20181124 23:11:53.959" critical="yes"></status>
 </test>
-<test id="s1-t4" name="TC004 : Check Register Sports and Athletics Competition No Success 2: Choose Sport Role Only But Enter 1:">
+<test id="s1-t4" name="TC004 : Check Register Sports and Athletics Competition No Success 2: Choose Sport Role Only But Enter 1 :">
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="inputREAL"]</arg>
 </arguments>
-<msg timestamp="20181124 23:09:03.234" level="INFO">Clicking element '//*[@id="inputREAL"]'.</msg>
-<status status="PASS" starttime="20181124 23:09:03.234" endtime="20181124 23:09:03.554"></status>
+<msg timestamp="20181124 23:11:53.961" level="INFO">Clicking element '//*[@id="inputREAL"]'.</msg>
+<status status="PASS" starttime="20181124 23:11:53.961" endtime="20181124 23:11:54.291"></status>
 </kw>
 <kw name="Select From List By Value" library="Selenium2Library">
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
@@ -144,27 +144,27 @@
 <arg>//*[@id="inputREAL"]</arg>
 <arg>${ROLE PLAYER}</arg>
 </arguments>
-<msg timestamp="20181124 23:09:03.555" level="INFO">Selecting options from selection list '//*[@id="inputREAL"]' by value T.</msg>
-<status status="PASS" starttime="20181124 23:09:03.554" endtime="20181124 23:09:04.295"></status>
+<msg timestamp="20181124 23:11:54.292" level="INFO">Selecting options from selection list '//*[@id="inputREAL"]' by value T.</msg>
+<status status="PASS" starttime="20181124 23:11:54.292" endtime="20181124 23:11:55.022"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>add</arg>
 </arguments>
-<msg timestamp="20181124 23:09:04.296" level="INFO">Clicking button 'add'.</msg>
-<status status="PASS" starttime="20181124 23:09:04.295" endtime="20181124 23:09:04.741"></status>
+<msg timestamp="20181124 23:11:55.023" level="INFO">Clicking button 'add'.</msg>
+<status status="PASS" starttime="20181124 23:11:55.023" endtime="20181124 23:11:55.453"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>${Empty All But Enter}</arg>
 </arguments>
-<status status="PASS" starttime="20181124 23:09:04.741" endtime="20181124 23:09:04.845"></status>
+<status status="PASS" starttime="20181124 23:11:55.453" endtime="20181124 23:11:55.562"></status>
 </kw>
-<status status="PASS" starttime="20181124 23:09:03.232" endtime="20181124 23:09:04.845" critical="yes"></status>
+<status status="PASS" starttime="20181124 23:11:53.960" endtime="20181124 23:11:55.562" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20181124 23:08:50.171" endtime="20181124 23:09:04.847"></status>
+<status status="PASS" starttime="20181124 23:11:42.078" endtime="20181124 23:11:55.564"></status>
 </suite>
 <statistics>
 <total>

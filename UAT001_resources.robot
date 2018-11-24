@@ -58,7 +58,7 @@ ${ERROR MESSAGE INVALID PASSWORD}     Password ต้องประกอบด
 ${ERROR MESSAGE INVALID PHONE}    เบอร์โทรติดต่อต้องอยู่ในรูปแบบตัวเลข 10 หลัก และสามารถมีขีด (-) ได้ หลังหลักที่ 3 และหลักที่ 6
 
 *** Keywords ***
-Open Event Registration Page
+Open Home Page
     Open Browser    ${HOME URL}    ${BROWSER} 
     Maximize Browser Window
     Set Selenium Speed    ${DELAY} 
