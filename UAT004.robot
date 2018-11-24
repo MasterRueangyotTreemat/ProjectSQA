@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    UAT001_resources.robot
+Resource    UAT004_resources.robot
 
 
 *** Test Cases ***
@@ -21,11 +21,8 @@ TC002 : Open Register Sports and Athletics Competition Page
 
 TC003 : Check Register Sports and Athletics Competition No 
 Empty All But Enter :
-    Click Element     ${Empty}
-    Click Element     ${Empty}
-    Click Element     ${Empty}
     Click Button    add
-    Wait Until Page Contains    ${ERROR MESSAGE}
+    Wait Until Page Contains    กรุณาเลือกรูปแบบการแข่งขัน
 
 
     
