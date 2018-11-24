@@ -21,8 +21,10 @@ TC002 : Open Register Sports and Athletics Competition Page
 
 TC003 : Check Register Sports and Athletics Competition No 
 Empty All But Enter :
-    Click Element    //*[@id="ShowFormat"]/label[1]   ${Empty}
-    Click Element    
+    Click Element     ${Empty}
+    Click Element     ${Empty}
+    Click Element     ${Empty}
+    Click Button    add
     Wait Until Page Contains    ${ERROR MESSAGE}
 
 

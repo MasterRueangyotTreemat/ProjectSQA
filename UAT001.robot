@@ -4,6 +4,7 @@ Resource          UAT001_resources.robot
 
 *** Test Cases ***
 TC001 : Open Event Registration Page
+<<<<<<< HEAD
   Open Event Registration Page
 
     
@@ -17,32 +18,67 @@ TC003 : Register Success With Id Card No Birthday
     Wait Until Page Contains    ลงทะเบียนสำเร็จ
 TC004 : Register Success With Id Card No Studetn Id
     TC004 : Input Register Success With Id Card No Studetn Id    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${ID CARD}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD}     
+=======
+    Open Event Registration Page
+    Location Should Be     ${HOME URL}
+    
+TC002 : Register Success With Id Card 
+    Input Registration Page    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${ID CARD PATH}    ${ID CARD ID PATH}    ${VALID ID CARD}     ${VALID STUDENT ID}     ${VALID TELEPHONE NUMBER}     ${VALID PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${VALID PASSWORD}     ${VALID REPEAT PASSWORD}
+    Location Should Contain    ${REGISTER URL}
+    Wait Until Page Contains    ลงทะเบียนสำเร็จ
+
+TC003 : Register Success With Id Card No Birthday
+    Input Registration Page    ${TITLE NAME}    ${FULL NAME}     ${EMPTY}     ${ID CARD PATH}    ${ID CARD ID PATH}    ${VALID ID CARD}     ${VALID STUDENT ID}     ${VALID TELEPHONE NUMBER}     ${VALID PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${VALID PASSWORD}     ${VALID REPEAT PASSWORD}
+    Location Should Contain    ${REGISTER URL}
+    Wait Until Page Contains    ลงทะเบียนสำเร็จ
+
+TC004 : Register Success With Id Card No Student Id
+    Input Registration Page    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${ID CARD PATH}    ${ID CARD ID PATH}    ${EMPTY}     ${VALID STUDENT ID}     ${VALID TELEPHONE NUMBER}     ${VALID PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${VALID PASSWORD}     ${VALID REPEAT PASSWORD}
+    Location Should Contain    ${REGISTER URL}
+    Wait Until Page Contains    ลงทะเบียนสำเร็จ
+>>>>>>> 80ba026de8798bb7a2dc723ddcf8056ad2a4eb62
 
 TC005 : Register Success With Id Card No Parent Phone Number
-    TC005 : Input Register Success With Id Card No Parent Phone Number    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${ID CARD}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD}     
+    Input Registration Page    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${ID CARD PATH}    ${ID CARD ID PATH}    ${VALID ID CARD}     ${VALID STUDENT ID}     ${EMPTY}     ${VALID PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${VALID PASSWORD}     ${VALID REPEAT PASSWORD}
+    Location Should Contain    ${REGISTER URL}
+    Wait Until Page Contains    ลงทะเบียนสำเร็จ
 
 TC006 : Register Success With Id Card No Facebook
-    TC006 : Input Register Success With Id Card No Facebook    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${ID CARD}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD}     
+    Input Registration Page    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${ID CARD PATH}    ${ID CARD ID PATH}    ${VALID ID CARD}     ${VALID STUDENT ID}     ${VALID TELEPHONE NUMBER}     ${VALID PARENT PHONE NUMBER}     ${EMPTY}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${VALID PASSWORD}     ${VALID REPEAT PASSWORD}
+    Location Should Contain    ${REGISTER URL}
+    Wait Until Page Contains    ลงทะเบียนสำเร็จ
 
-TC007 : Register Success With Id Card No Birthday No Studetn Id No Parent Phone Number No Facebook
-    TC007 : Input Register Success With Id Card No Birthday No Studetn Id No Parent Phone Number No Facebook    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${ID CARD}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD}     
+TC007 : Register Success With Id Card No Birthday No Student Id No Parent Phone Number No Facebook
+    Input Registration Page    ${TITLE NAME}    ${FULL NAME}     ${EMPTY}     ${ID CARD PATH}    ${ID CARD ID PATH}    ${VALID ID CARD}     ${EMPTY}     ${VALID TELEPHONE NUMBER}     ${EMPTY}     ${EMPTY}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${VALID PASSWORD}     ${VALID REPEAT PASSWORD}
+    Location Should Contain    ${REGISTER URL}
+    Wait Until Page Contains    ลงทะเบียนสำเร็จ
 
 TC008 : Register Success With Passport
-    TC008 : Input Register Success With Passport     ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${PASSPORT}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD}     
+    Input Registration Page    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${PASSPORT PATH}    ${PASSPORT ID PATH}    ${VALID PASSPORT}     ${VALID STUDENT ID}     ${VALID TELEPHONE NUMBER}     ${VALID PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${VALID PASSWORD}     ${VALID REPEAT PASSWORD}
+    Location Should Contain    ${REGISTER URL}
+    Wait Until Page Contains    ลงทะเบียนสำเร็จ
 
 TC009 : Register Success With Passport No Birthday
-    TC009 : Input Register Success With Passport No Birthday    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${PASSPORT}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD}     
+    Input Registration Page    ${TITLE NAME}    ${FULL NAME}     ${EMPTY}     ${PASSPORT PATH}    ${PASSPORT ID PATH}    ${VALID PASSPORT}     ${VALID STUDENT ID}     ${VALID TELEPHONE NUMBER}     ${VALID PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${VALID PASSWORD}     ${VALID REPEAT PASSWORD}
+    Location Should Contain    ${REGISTER URL}
+    Wait Until Page Contains    ลงทะเบียนสำเร็จ
 
-TC010 : Register Success With Passport No Studetn Id
-    TC010 : Input Register Success With Passport No Studetn Id    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${PASSPORT}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD}     
-
+TC010 : Register Success With Passport No Student Id
+    Input Registration Page    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${PASSPORT PATH}    ${PASSPORT ID PATH}    ${VALID PASSPORT}     ${EMPTY}     ${VALID TELEPHONE NUMBER}     ${VALID PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${VALID PASSWORD}     ${VALID REPEAT PASSWORD}
+    Location Should Contain    ${REGISTER URL}
+    Wait Until Page Contains    ลงทะเบียนสำเร็จ
+    
 TC011 : Register Success With Passport No Parent Phone Number
-    TC011 : Input Register Success With Passport No Parent Phone Number    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${PASSPORT}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD}     
+    Input Registration Page    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${PASSPORT PATH}    ${PASSPORT ID PATH}    ${VALID PASSPORT}     ${VALID STUDENT ID}     ${VALID TELEPHONE NUMBER}     ${EMPTY}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${VALID PASSWORD}     ${VALID REPEAT PASSWORD}
+    Location Should Contain    ${REGISTER URL}
+    Wait Until Page Contains    ลงทะเบียนสำเร็จ
 
 TC012 : Register Success With Passport No Facebook
-    TC012 : Input Register Success With Passport No Facebook    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${PASSPORT}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD}
+    Input Registration Page    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${PASSPORT PATH}    ${PASSPORT ID PATH}    ${VALID PASSPORT}     ${VALID STUDENT ID}     ${VALID TELEPHONE NUMBER}     ${VALID PARENT PHONE NUMBER}     ${EMPTY}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${VALID PASSWORD}     ${VALID REPEAT PASSWORD}
+    Location Should Contain    ${REGISTER URL}
+    Wait Until Page Contains    ลงทะเบียนสำเร็จ
 
-TC013 : Register Success With Passport No Birthday No Studetn Id No Parent Phone Number No Facebook
-    TC013 : Input Register Success With Passport No Birthday No Studetn Id No Parent Phone Number No Facebook    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${PASSPORT}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD}
-    [Teardown]    Close Browser
-
+TC013 : Register Success With Passport No Birthday No Student Id No Parent Phone Number No Facebook
+    Input Registration Page    ${TITLE NAME}    ${FULL NAME}     ${EMPTY}     ${PASSPORT PATH}    ${PASSPORT ID PATH}    ${VALID PASSPORT}     ${EMPTY}     ${VALID TELEPHONE NUMBER}     ${EMPTY}     ${EMPTY}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${VALID PASSWORD}     ${VALID REPEAT PASSWORD}
+    Location Should Contain    ${REGISTER URL}
+    Wait Until Page Contains    ลงทะเบียนสำเร็จ
