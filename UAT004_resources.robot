@@ -58,7 +58,9 @@ ${ERROR MESSAGE EMPTY REPEAT PASSWORD}
 ${ERROR MESSAGE EMPTY LASTNAME}    ชื่อ - นามสกุล ต้องเป็นตัวอักษรที่ไม่ใช่ตัวเลข และมีวรรคระหว่างชื่อกับนามสกุล
 ${ERROR MESSAGE INVALID PASSWORD}     Password ต้องประกอบด้วยตัวเลขหรือตัวอักษร 8-14 หลัก
 ${ERROR MESSAGE INVALID PHONE}    เบอร์โทรติดต่อต้องอยู่ในรูปแบบตัวเลข 10 หลัก และสามารถมีขีด (-) ได้ หลังหลักที่ 3 และหลักที่ 6
-${Empty All But Enter}    กรุณาเลือกรูปแบบการแข่งขัน
+${ERROR PLEASE SELECT SPORTS}    กรุณาเลือกรูปแบบการแข่งขัน
+${ERROR PLEASE SELECT A COMPETITION}    กรุณาเลือกชื่อรายการแข่งขัน
+${NO TITLE IN THE CATEGORY AND FORMAT YOU SELECTED}    ไม่มีชื่อรายการแข่งขันในประเภทและรูปแบบที่ท่านเลือก
 
 *** Keywords ***
 Open Event Registration Page
