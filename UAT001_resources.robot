@@ -24,17 +24,7 @@ ${INVALID TELEPHONE NUMBER}    08123
 ${VALID PARENT PHONE NUMBER}    0898765432
 ${INVALID PARENT PHONE NUMBER}    089876
 ${FACEBOOK}    https://www.facebook.com/NutNinlaong
-<<<<<<< HEAD
-${IMAGE}    d://SQA/Pic.jpg 
-<<<<<<< HEAD
-=======
-${IMAGE}    D:/1work/year3/SQA/project/ProjectSQA/web.jpg
->>>>>>> 8a508a3b69ec8b40d19b845bcc4ca1b6e98e1baa
-=======
->>>>>>> 1afa6cdc846035fe1c9ac4aac27ec936a71a0f70
-=======
 ${IMAGE}    C:/Users/Mr'Nut/Desktop/ProjectSQA/web.jpg 
->>>>>>> 3e3823b082b36e6f6189124d29e3c98264e0df87
 ${TYPE OF ATTENDEES}    SA
 ${UNIVERSITY}    มหาวิทยาลัยขอนแก่น
 ${EMAIL}    testuat@gmail.com
@@ -43,7 +33,29 @@ ${VALID PASSWORD}    12345678
 ${INVALID PASSWORD}    1234
 ${VALID REPEAT PASSWORD}    12345678
 ${INVALID REPEAT PASSWORD}    1234
-${DELAY}    0.05
+${DELAY}    0.09
+${ERROR MESSAGE EMPTY GENDER}    กรุณาเลือกเพศและเลือกคำนำหน้า
+${ERROR MESSAGE EMPTY TITLE NAME}    กรุณาเลือกคำนำหน้าชื่อ
+${ERROR MESSAGE EMPTY FULL NAME}     กรุณากรอก ชื่อ - นามสกุล
+${ERROR MESSAGE EMPTY BIRTHDAY}     
+${ERROR MESSAGE EMPTY ID CARD}    รหัสบัตรประจำตัวประชาชนต้องเป็นตัวเลขทั้งหมด 13 หลัก
+${ERROR MESSAGE ALEADY HAVE ID CARD}    รหัสบัตรประจำตัวประชาชนนี้ มีผู้อื่นใช้งานแล้ว    
+${ERROR MESSAGE EMPTY PASSPORT}
+${ERROR MESSAGE ALEADY HAVE PASSPORT}    รหัสบัตรประจำตัวประชาชนนี้ มีผู้อื่นใช้งานแล้ว   
+${ERROR MESSAGE EMPTY STUDENT ID}     
+${ERROR MESSAGE EMPTY TELEPHONE NUMBER}     
+${ERROR MESSAGE EMPTY PARENT PHONE NUMBER}      
+${ERROR MESSAGE EMPTY IMAGE}     กรุณาเลือกรูปภาพ
+${ERROR MESSAGE EMPTY TYPE OF ATTENDEES}     กรุณาเลือกประเภทผู้เข้าร่วมงาน
+${ERROR MESSAGE EMPTY UNIVERSITY}     กรุณาเลือกมหาวิทยาลัย
+${ERROR MESSAGE EMPTY EMAIL}     
+${ERROR MESSAGE EMPTY USERNAME} 
+${ERROR MESSAGE ALEADY HAVE USERNAME}    Username นี้มีผู้อื่นใช้งานแล้ว
+${ERROR MESSAGE EMPTY PASSWORD}     
+${ERROR MESSAGE EMPTY REPEAT PASSWORD} 
+${ERROR MESSAGE EMPTY LASTNAME}    ชื่อ - นามสกุล ต้องเป็นตัวอักษรที่ไม่ใช่ตัวเลข และมีวรรคระหว่างชื่อกับนามสกุล
+${ERROR MESSAGE INVALID PASSWORD}     Password ต้องประกอบด้วยตัวเลขหรือตัวอักษร 8-14 หลัก
+${ERROR MESSAGE INVALID PHONE}    เบอร์โทรติดต่อต้องอยู่ในรูปแบบตัวเลข 10 หลัก และสามารถมีขีด (-) ได้ หลังหลักที่ 3 และหลักที่ 6
 
 *** Keywords ***
 Open Event Registration Page
@@ -66,7 +78,7 @@ Input Registration Page
   Input Text    tell    ${telephone number}
   Input Text    inputTelephoneP    ${parent phone number}
   Input Text    inputFacebook    ${facebook}
-  Choose File    xpath=//input[@id='inputImg']    ${image}
+  Choose File   //*[@id="inputImg"]    ${image} 
   Select From List By Value     //*[@id="inputType"]    ${type of attendees}
   Select From List By Value     //*[@id="inputUNS"]    ${university}
   Input Text    E-mail    ${email}
@@ -74,3 +86,10 @@ Input Registration Page
   Input Text    inputPassword    ${password}
   Input Text    inputCPassword    ${repeat password}
   Click Button    ลงทะเบียน
+<<<<<<< HEAD
+  
+
+
+
+=======
+>>>>>>> 80ba026de8798bb7a2dc723ddcf8056ad2a4eb62
