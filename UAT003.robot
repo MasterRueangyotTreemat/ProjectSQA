@@ -15,12 +15,17 @@ TC001 : Open Event Registration Page
   Set Selenium Speed    ${DELAY}
   Maximize Browser Window
   
+  
 TC002 : Login Success:
   Click Element    //*[@id="loginBtn"]
   Click Element    //*[@id="Username"]
   Input Text    Username    porinut 
   Click Element    //*[@id="Password"]
   Input Text    Password    12345678
+<<<<<<< HEAD
+
+=======
+>>>>>>> 1afa6cdc846035fe1c9ac4aac27ec936a71a0f70
   Click Button    login
 
 TC003 : Open Register Sports and Athletics Competition Page:
