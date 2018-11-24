@@ -22,8 +22,8 @@ ${BADMINTON}    S2019006
 ${ESPAK_MUZZLE}    S2019007 
 ${FUTSAL}    S2019013
 ${200M}    S2019015
-${T}    T
-${S}    S
+${ON GROUND PLAYER}    T
+${ALTERNATE}    S
 *** Keywords ***
 Open Event Registration Page
   Open Browser    ${HOME URL}    ${BROWSER} 
@@ -49,12 +49,12 @@ Input Register Sports and Athletics Competition Page
   Location Should Be    ${REGISTER URL} 
   
 Input Register Sports Competition Success 1
-  [Arguments]    ${REGISTER URL}    ${SPORT}    ${GENDER_MALE}    ${FOOTBALL}    ${T}    ${SHOW REGISTER SUCCSESS}
+  [Arguments]    ${REGISTER URL}    ${SPORT}    ${GENDER_MALE}    ${FOOTBALL}    ${ON GROUND PLAYER}     ${SHOW REGISTER SUCCSESS}
   Location Should Be    ${REGISTER URL} 
   Click Element    ${SPORT}
   Click Element    ${GENDER_MALE}
   Select From List By Value    //*[@id="inputName"]    ${FOOTBALL}
-  Select From List By Value    //*[@id="inputREAL"]    ${T}
+  Select From List By Value    //*[@id="inputREAL"]    ${ON GROUND PLAYER} 
   Click Button    เพิ่ม
   Wait Until Page Contains    ${SHOW REGISTER SUCCSESS}
   Wait Until Page Contains    ฟุตบอล(football)
@@ -63,6 +63,10 @@ Input Register Sports Competition Success 1
   Wait Until Page Contains    ตัวจริง (on ground player)
 
 Input Register Sports Competition Success 2
-  [Arguments]
-  Location Should Be    ${REGISTER URL
-  }
+  [Arguments]    ${REGISTER URL}    ${SPORT}    ${GENDER_MALE}    ${FOOTBALL}    ${ALTERNATE}
+  Location Should Be    ${REGISTER URL}
+  Click Element    ${SPORT}
+  Click Element    ${GENDER_MALE}
+  Select From List By Value    //*[@id="inputName"]    ${FOOTBALL}
+  Select From List By Value    //*[@id="inputREAL"]    ${ALTERNATE}
+  Click Button    เพิ่ม
