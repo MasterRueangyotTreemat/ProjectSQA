@@ -30,10 +30,18 @@ TC004 : Login Fail : (Username ผิด Password ผิด)
   Click Button    login
   Wait Until Page Contains    Username หรือ Password ไม่ถูกต้อง
 
-TC005 : Login Fail : ( Empty Username )
+TC005 : Login Fail : ( Empty Password )
+  Click Element    //*[@id="Username"]
+  Input Text    Username    porinut
+  Click Button    login
+  Wait Until Page Contains    กรุณากรอก Password
+
+TC006 : Login Fail : ( Empty Username )
   Click Element    //*[@id="Password"]
   Input Text    Password    12345678
   Click Button    login
   Wait Until Page Contains    กรุณากรอก Username
 
-TC006 : Login Fail : ( Empty Password )
+TC007 : Login Fail : ( Empty Username And Password )
+  Click Button    login
+  Wait Until Page Contains    กรุณากรอก Username
