@@ -86,3 +86,7 @@ Input Registration Page
   Input Text    inputPassword    ${password}
   Input Text    inputCPassword    ${repeat password}
   Click Button    ลงทะเบียน
+  
+
+
+
