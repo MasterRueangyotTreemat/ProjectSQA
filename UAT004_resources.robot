@@ -9,6 +9,7 @@ ${REGISTER URL}    http://${SERVER}/AtomGame/public/register
 ${TITLE NAME}    P001
 ${FULL NAME}    Somnut Naja
 ${BIRTHDAY}    12/31/1997
+${ROLE PLAYER}    T
 ${VALID ID CARD}    1409901718605
 ${INVALID ID CARD}    14099017
 ${ID CARD PATH}    //*[@id="ShowIDcardNPass"]/div[1]/label
@@ -56,9 +57,10 @@ ${ERROR MESSAGE EMPTY REPEAT PASSWORD}
 ${ERROR MESSAGE EMPTY LASTNAME}    ชื่อ - นามสกุล ต้องเป็นตัวอักษรที่ไม่ใช่ตัวเลข และมีวรรคระหว่างชื่อกับนามสกุล
 ${ERROR MESSAGE INVALID PASSWORD}     Password ต้องประกอบด้วยตัวเลขหรือตัวอักษร 8-14 หลัก
 ${ERROR MESSAGE INVALID PHONE}    เบอร์โทรติดต่อต้องอยู่ในรูปแบบตัวเลข 10 หลัก และสามารถมีขีด (-) ได้ หลังหลักที่ 3 และหลักที่ 6
+${Empty All But Enter}    กรุณาเลือกรูปแบบการแข่งขัน
 
 *** Keywords ***
-Open Home Page
+Open Event Registration Page
     Open Browser    ${HOME URL}    ${BROWSER} 
     Maximize Browser Window
     Set Selenium Speed    ${DELAY} 
@@ -86,7 +88,3 @@ Input Registration Page
   Input Text    inputPassword    ${password}
   Input Text    inputCPassword    ${repeat password}
   Click Button    ลงทะเบียน
-  
-
-
-
