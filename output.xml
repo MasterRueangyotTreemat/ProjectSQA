@@ -1,56 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20181125 05:45:20.906" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
-<suite source="D:\SQA\ProjectSQA\UAT006.robot" id="s1" name="UAT006">
-<test id="s1-t1" name="TC001 : Open Event Registration Page">
-<kw name="Open Event Registration Page" library="UAT006_resources">
+<robot generated="20181125 06:33:02.061" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<suite source="D:\SQA\ProjectSQA\UAT008.robot" id="s1" name="UAT008">
+<test id="s1-t1" name="TC01 : Open Event EditProfile Page">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
 <arg>${HOME URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20181125 05:45:21.247" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/AtomGame/public/home'.</msg>
-<status status="PASS" endtime="20181125 05:45:28.099" starttime="20181125 05:45:21.246"></status>
+<msg timestamp="20181125 06:33:04.818" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/AtomGame/public/home'.</msg>
+<status status="PASS" endtime="20181125 06:33:10.221" starttime="20181125 06:33:04.818"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20181125 05:45:29.232" starttime="20181125 05:45:28.100"></status>
+<status status="PASS" endtime="20181125 06:33:11.475" starttime="20181125 06:33:10.223"></status>
 </kw>
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>${DELAY}</arg>
 </arguments>
-<status status="PASS" endtime="20181125 05:45:29.233" starttime="20181125 05:45:29.233"></status>
+<status status="PASS" endtime="20181125 06:33:11.503" starttime="20181125 06:33:11.502"></status>
 </kw>
-<kw name="Location Should Be" library="Selenium2Library">
-<doc>Verifies that current URL is exactly ``url`.</doc>
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains ``expected``.</doc>
 <arguments>
 <arg>${HOME URL}</arg>
 </arguments>
-<msg timestamp="20181125 05:45:29.372" level="INFO">Current location is 'http://localhost/AtomGame/public/home'.</msg>
-<status status="PASS" endtime="20181125 05:45:29.372" starttime="20181125 05:45:29.234"></status>
+<msg timestamp="20181125 06:33:11.585" level="INFO">Current location contains 'http://localhost/AtomGame/public/home'.</msg>
+<status status="PASS" endtime="20181125 06:33:11.585" starttime="20181125 06:33:11.512"></status>
 </kw>
-<status status="PASS" endtime="20181125 05:45:29.373" starttime="20181125 05:45:21.245"></status>
-</kw>
-<status status="PASS" endtime="20181125 05:45:29.484" critical="yes" starttime="20181125 05:45:21.244"></status>
+<status status="PASS" endtime="20181125 06:33:11.586" critical="yes" starttime="20181125 06:33:04.815"></status>
 </test>
-<test id="s1-t2" name="TCOO2 : Login Fail : (Username ถูก Password ผิด)">
+<test id="s1-t2" name="TC02 : Login">
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
-<arg>//*[@id="loginBtn"]</arg>
+<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
 </arguments>
-<msg timestamp="20181125 05:45:29.528" level="INFO">Clicking element '//*[@id="loginBtn"]'.</msg>
-<status status="PASS" endtime="20181125 05:45:29.795" starttime="20181125 05:45:29.528"></status>
+<msg timestamp="20181125 06:33:11.602" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20181125 06:33:11.972" starttime="20181125 06:33:11.601"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="pages-nav-list0"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181125 06:33:11.974" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20181125 06:33:12.317" starttime="20181125 06:33:11.973"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="Username"]</arg>
 </arguments>
-<msg timestamp="20181125 05:45:29.815" level="INFO">Clicking element '//*[@id="Username"]'.</msg>
-<status status="PASS" endtime="20181125 05:45:30.120" starttime="20181125 05:45:29.814"></status>
+<msg timestamp="20181125 06:33:12.326" level="INFO">Clicking element '//*[@id="Username"]'.</msg>
+<status status="PASS" endtime="20181125 06:33:12.664" starttime="20181125 06:33:12.326"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -58,68 +63,16 @@
 <arg>Username</arg>
 <arg>porinut</arg>
 </arguments>
-<msg timestamp="20181125 05:45:30.121" level="INFO">Typing text 'porinut' into text field 'Username'.</msg>
-<status status="PASS" endtime="20181125 05:45:30.622" starttime="20181125 05:45:30.121"></status>
+<msg timestamp="20181125 06:33:12.668" level="INFO">Typing text 'porinut' into text field 'Username'.</msg>
+<status status="PASS" endtime="20181125 06:33:13.132" starttime="20181125 06:33:12.668"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="Password"]</arg>
 </arguments>
-<msg timestamp="20181125 05:45:30.625" level="INFO">Clicking element '//*[@id="Password"]'.</msg>
-<status status="PASS" endtime="20181125 05:45:30.872" starttime="20181125 05:45:30.624"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>Password</arg>
-<arg>1234</arg>
-</arguments>
-<msg timestamp="20181125 05:45:30.874" level="INFO">Typing text '1234' into text field 'Password'.</msg>
-<status status="PASS" endtime="20181125 05:45:31.266" starttime="20181125 05:45:30.873"></status>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>login</arg>
-</arguments>
-<msg timestamp="20181125 05:45:31.267" level="INFO">Clicking button 'login'.</msg>
-<status status="PASS" endtime="20181125 05:45:33.337" starttime="20181125 05:45:31.266"></status>
-</kw>
-<kw name="Wait Until Page Contains" library="Selenium2Library">
-<doc>Waits until ``text`` appears on current page.</doc>
-<arguments>
-<arg>Username หรือ Password ไม่ถูกต้อง</arg>
-</arguments>
-<status status="PASS" endtime="20181125 05:45:33.492" starttime="20181125 05:45:33.337"></status>
-</kw>
-<status status="PASS" endtime="20181125 05:45:33.492" critical="yes" starttime="20181125 05:45:29.519"></status>
-</test>
-<test id="s1-t3" name="TCOO3 : Login Fail : (Username ผิด Password ถูก)">
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="Username"]</arg>
-</arguments>
-<msg timestamp="20181125 05:45:33.497" level="INFO">Clicking element '//*[@id="Username"]'.</msg>
-<status status="PASS" endtime="20181125 05:45:33.821" starttime="20181125 05:45:33.496"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>Username</arg>
-<arg>abcd</arg>
-</arguments>
-<msg timestamp="20181125 05:45:33.836" level="INFO">Typing text 'abcd' into text field 'Username'.</msg>
-<status status="PASS" endtime="20181125 05:45:34.277" starttime="20181125 05:45:33.835"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="Password"]</arg>
-</arguments>
-<msg timestamp="20181125 05:45:34.279" level="INFO">Clicking element '//*[@id="Password"]'.</msg>
-<status status="PASS" endtime="20181125 05:45:34.515" starttime="20181125 05:45:34.278"></status>
+<msg timestamp="20181125 06:33:13.133" level="INFO">Clicking element '//*[@id="Password"]'.</msg>
+<status status="PASS" endtime="20181125 06:33:13.415" starttime="20181125 06:33:13.132"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -127,182 +80,62 @@
 <arg>Password</arg>
 <arg>12345678</arg>
 </arguments>
-<msg timestamp="20181125 05:45:34.521" level="INFO">Typing text '12345678' into text field 'Password'.</msg>
-<status status="PASS" endtime="20181125 05:45:35.007" starttime="20181125 05:45:34.521"></status>
+<msg timestamp="20181125 06:33:13.435" level="INFO">Typing text '12345678' into text field 'Password'.</msg>
+<status status="PASS" endtime="20181125 06:33:13.789" starttime="20181125 06:33:13.435"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>login</arg>
 </arguments>
-<msg timestamp="20181125 05:45:35.010" level="INFO">Clicking button 'login'.</msg>
-<status status="PASS" endtime="20181125 05:45:36.870" starttime="20181125 05:45:35.010"></status>
+<msg timestamp="20181125 06:33:13.791" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" endtime="20181125 06:33:15.417" starttime="20181125 06:33:13.790"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
-<arg>Username หรือ Password ไม่ถูกต้อง</arg>
+<arg>ผู้เข้าใช้งาน Somnut Naja ได้เข้าสู่ระบบ</arg>
 </arguments>
-<status status="PASS" endtime="20181125 05:45:37.274" starttime="20181125 05:45:37.023"></status>
+<status status="PASS" endtime="20181125 06:33:15.506" starttime="20181125 06:33:15.420"></status>
 </kw>
-<status status="PASS" endtime="20181125 05:45:37.278" critical="yes" starttime="20181125 05:45:33.495"></status>
+<status status="PASS" endtime="20181125 06:33:15.507" critical="yes" starttime="20181125 06:33:11.600"></status>
 </test>
-<test id="s1-t4" name="TC004 : Login Fail : (Username ผิด Password ผิด)">
+<test id="s1-t3" name="TC03 : Open Edit Profile Page">
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
-<arg>//*[@id="Username"]</arg>
+<arg>//*[@id="notifications"]/img</arg>
 </arguments>
-<msg timestamp="20181125 05:45:37.283" level="INFO">Clicking element '//*[@id="Username"]'.</msg>
-<status status="PASS" endtime="20181125 05:45:37.641" starttime="20181125 05:45:37.283"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>Username</arg>
-<arg>abcd</arg>
-</arguments>
-<msg timestamp="20181125 05:45:37.652" level="INFO">Typing text 'abcd' into text field 'Username'.</msg>
-<status status="PASS" endtime="20181125 05:45:38.074" starttime="20181125 05:45:37.651"></status>
+<msg timestamp="20181125 06:33:15.510" level="INFO">Clicking element '//*[@id="notifications"]/img'.</msg>
+<status status="PASS" endtime="20181125 06:33:15.802" starttime="20181125 06:33:15.510"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
-<arg>//*[@id="Password"]</arg>
+<arg>/html/body/div[1]/header/nav/div/div/ul/li[1]/ul/li[2]/a</arg>
 </arguments>
-<msg timestamp="20181125 05:45:38.079" level="INFO">Clicking element '//*[@id="Password"]'.</msg>
-<status status="PASS" endtime="20181125 05:45:38.358" starttime="20181125 05:45:38.079"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>Password</arg>
-<arg>1234</arg>
-</arguments>
-<msg timestamp="20181125 05:45:38.360" level="INFO">Typing text '1234' into text field 'Password'.</msg>
-<status status="PASS" endtime="20181125 05:45:38.860" starttime="20181125 05:45:38.360"></status>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>login</arg>
-</arguments>
-<msg timestamp="20181125 05:45:38.867" level="INFO">Clicking button 'login'.</msg>
-<status status="PASS" endtime="20181125 05:45:40.712" starttime="20181125 05:45:38.866"></status>
-</kw>
-<kw name="Wait Until Page Contains" library="Selenium2Library">
-<doc>Waits until ``text`` appears on current page.</doc>
-<arguments>
-<arg>Username หรือ Password ไม่ถูกต้อง</arg>
-</arguments>
-<status status="PASS" endtime="20181125 05:45:40.821" starttime="20181125 05:45:40.727"></status>
-</kw>
-<status status="PASS" endtime="20181125 05:45:40.947" critical="yes" starttime="20181125 05:45:37.281"></status>
-</test>
-<test id="s1-t5" name="TC005 : Login Fail : ( Empty Password )">
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="Username"]</arg>
-</arguments>
-<msg timestamp="20181125 05:45:40.969" level="INFO">Clicking element '//*[@id="Username"]'.</msg>
-<status status="PASS" endtime="20181125 05:45:41.403" starttime="20181125 05:45:40.968"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>Username</arg>
-<arg>porinut</arg>
-</arguments>
-<msg timestamp="20181125 05:45:41.422" level="INFO">Typing text 'porinut' into text field 'Username'.</msg>
-<status status="PASS" endtime="20181125 05:45:42.091" starttime="20181125 05:45:41.422"></status>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>login</arg>
-</arguments>
-<msg timestamp="20181125 05:45:42.092" level="INFO">Clicking button 'login'.</msg>
-<status status="PASS" endtime="20181125 05:45:42.576" starttime="20181125 05:45:42.092"></status>
-</kw>
-<kw name="Wait Until Page Contains" library="Selenium2Library">
-<doc>Waits until ``text`` appears on current page.</doc>
-<arguments>
-<arg>กรุณากรอก Password</arg>
-</arguments>
-<status status="PASS" endtime="20181125 05:45:42.733" starttime="20181125 05:45:42.595"></status>
-</kw>
-<status status="PASS" endtime="20181125 05:45:42.822" critical="yes" starttime="20181125 05:45:40.967"></status>
-</test>
-<test id="s1-t6" name="TC006 : Login Fail : ( Empty Username )">
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="Password"]</arg>
-</arguments>
-<msg timestamp="20181125 05:45:43.222" level="INFO">Clicking element '//*[@id="Password"]'.</msg>
-<status status="PASS" endtime="20181125 05:45:43.603" starttime="20181125 05:45:43.221"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>Password</arg>
-<arg>12345678</arg>
-</arguments>
-<msg timestamp="20181125 05:45:43.605" level="INFO">Typing text '12345678' into text field 'Password'.</msg>
-<status status="PASS" endtime="20181125 05:45:44.495" starttime="20181125 05:45:43.604"></status>
-</kw>
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>login</arg>
-</arguments>
-<msg timestamp="20181125 05:45:44.498" level="INFO">Clicking button 'login'.</msg>
-<status status="PASS" endtime="20181125 05:45:46.662" starttime="20181125 05:45:44.498"></status>
-</kw>
-<kw name="Wait Until Page Contains" library="Selenium2Library">
-<doc>Waits until ``text`` appears on current page.</doc>
-<arguments>
-<arg>กรุณากรอก Username</arg>
-</arguments>
-<status status="PASS" endtime="20181125 05:45:46.767" starttime="20181125 05:45:46.680"></status>
-</kw>
-<status status="PASS" endtime="20181125 05:45:46.767" critical="yes" starttime="20181125 05:45:43.219"></status>
-</test>
-<test id="s1-t7" name="TC007 : Login Fail : ( Empty Username And Password )">
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>login</arg>
-</arguments>
-<msg timestamp="20181125 05:45:46.771" level="INFO">Clicking button 'login'.</msg>
+<msg timestamp="20181125 06:33:15.803" level="INFO">Clicking element '/html/body/div[1]/header/nav/div/div/ul/li[1]/ul/li[2]/a'.</msg>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181125 05:45:48.132" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181125 05:45:48.132" starttime="20181125 05:45:47.187"></status>
+<msg timestamp="20181125 06:33:16.671" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20181125 06:33:16.671" starttime="20181125 06:33:15.889"></status>
 </kw>
-<msg timestamp="20181125 05:45:48.138" level="FAIL">ElementNotVisibleException: Message: element not interactable
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
-</msg>
-<status status="FAIL" endtime="20181125 05:45:48.138" starttime="20181125 05:45:46.771"></status>
+<msg timestamp="20181125 06:33:16.675" level="FAIL">Element with locator '/html/body/div[1]/header/nav/div/div/ul/li[1]/ul/li[2]/a' not found.</msg>
+<status status="FAIL" endtime="20181125 06:33:16.675" starttime="20181125 06:33:15.802"></status>
 </kw>
-<status status="FAIL" endtime="20181125 05:45:48.230" critical="yes" starttime="20181125 05:45:46.770">ElementNotVisibleException: Message: element not interactable
-  (Session info: chrome=70.0.3538.102)
-  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
-</status>
+<status status="FAIL" endtime="20181125 06:33:16.676" critical="yes" starttime="20181125 06:33:15.509">Element with locator '/html/body/div[1]/header/nav/div/div/ul/li[1]/ul/li[2]/a' not found.</status>
 </test>
-<status status="FAIL" endtime="20181125 05:45:48.252" starttime="20181125 05:45:20.910"></status>
+<status status="FAIL" endtime="20181125 06:33:16.680" starttime="20181125 06:33:02.065"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="6">Critical Tests</stat>
-<stat fail="1" pass="6">All Tests</stat>
+<stat fail="1" pass="2">Critical Tests</stat>
+<stat fail="1" pass="2">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="UAT006" pass="6">UAT006</stat>
+<stat fail="1" id="s1" name="UAT008" pass="2">UAT008</stat>
 </suite>
 </statistics>
 <errors>
