@@ -10,54 +10,57 @@ ${GENDER}    //*[@id="ShowGender"]/div[1]/label
 ${TITLE NAME}    P001
 ${FULL NAME}    Somnut Naja
 ${NO LASTNAME}    Somnut
-${BIRTHDAY}    12-31-1997
-${INVALID BIRTHDAY}    12/31/1997
+${BIRTHDAY}    12/31/1997
 ${ID CARD}    1409901718605
 ${PASSPORT}    AA7505011
 ${STUDENT ID}    593020804-3
 ${TELEPHONE NUMBER}    0812345678
-${INVALID TELEPHONE NUMBER}    081234
 ${PARENT PHONE NUMBER}    0898765432
 ${FACEBOOK}    https://www.facebook.com/NutNinlaong
-${IMAGE}    E:/ProjectsTeam/ProjectSQA/web.JPG
+${IMAGE}    C:/Users/Mr'Nut/Desktop/ProjectSQA/web.jpg 
 ${TYPE OF ATTENDEES}    SA
 ${UNIVERSITY}    มหาวิทยาลัยขอนแก่น
 ${EMAIL}    testuat@gmail.com
 ${USERNAME}    porinut
 ${PASSWORD}    12345678
-${INVALID PASSWORD}    1234
 ${REPEAT PASSWORD}    12345678
+${INVALID TELEPHONE NUMBER}    08123
+${INVALID ID CARD}    14099017
+${INVALID BIRTHDAY}    12/31/123123
+${INVALID PARENT PHONE NUMBER}    089876
+${INVALID PASSWORD}    1234
+${INVALID REPEAT PASSWORD}    1234
+${INVALID PASSPORT}    AA75050
 ${DELAY}    0.05
 ${ERROR MESSAGE EMPTY GENDER}    กรุณาเลือกเพศและเลือกคำนำหน้า
 ${ERROR MESSAGE EMPTY TITLE NAME}    กรุณาเลือกคำนำหน้าชื่อ
-${ERROR MESSAGE EMPTY FULL NAME}     กรุณากรอก ชื่อ - นามสกุล
-${ERROR MESSAGE EMPTY BIRTHDAY}     
+${ERROR MESSAGE EMPTY FULL NAME}     กรุณากรอก ชื่อ - นามสกุล   
 ${ERROR MESSAGE EMPTY ID CARD}    รหัสบัตรประจำตัวประชาชนต้องเป็นตัวเลขทั้งหมด 13 หลัก
 ${ERROR MESSAGE ALEADY HAVE ID CARD}    รหัสบัตรประจำตัวประชาชนนี้ มีผู้อื่นใช้งานแล้ว    
-${ERROR MESSAGE EMPTY PASSPORT}
-${ERROR MESSAGE ALEADY HAVE PASSPORT}    รหัสบัตรประจำตัวประชาชนนี้ มีผู้อื่นใช้งานแล้ว   
-${ERROR MESSAGE EMPTY STUDENT ID}     
-${ERROR MESSAGE EMPTY TELEPHONE NUMBER}     
-${ERROR MESSAGE EMPTY PARENT PHONE NUMBER}      
+${ERROR MESSAGE ALEADY HAVE PASSPORT}    รหัสบัตรประจำตัวประชาชนนี้ มีผู้อื่นใช้งานแล้ว      
+${ERROR MESSAGE EMPTY TELEPHONE NUMBER}    กรุณากรอกหมายเลขโทรศัพท์      
 ${ERROR MESSAGE EMPTY IMAGE}     กรุณาเลือกรูปภาพ
 ${ERROR MESSAGE EMPTY TYPE OF ATTENDEES}     กรุณาเลือกประเภทผู้เข้าร่วมงาน
 ${ERROR MESSAGE EMPTY UNIVERSITY}     กรุณาเลือกมหาวิทยาลัย
-${ERROR MESSAGE EMPTY EMAIL}     
-${ERROR MESSAGE EMPTY USERNAME} 
+${ERROR MESSAGE EMPTY EMAIL}    E-mail ของท่านใช้งานไม่ได้ ต้องอยู่ในรูปแบบของ E-mail ที่ใช้งานได้เท่านั้น    
+${ERROR MESSAGE EMPTY USERNAME}    Username ต้องประกอบด้วยตัวเลขหรือตัวอักษร 4-14 หลัก
 ${ERROR MESSAGE ALEADY HAVE USERNAME}    Username นี้มีผู้อื่นใช้งานแล้ว
-${ERROR MESSAGE EMPTY PASSWORD}     
-${ERROR MESSAGE EMPTY REPEAT PASSWORD} 
+${ERROR MESSAGE EMPTY PASSWORD}    กรุณากรอก Password   
+${ERROR MESSAGE EMPTY REPEAT PASSWORD}    กรุณากรอก Password (อีกครั้ง)
 ${ERROR MESSAGE EMPTY LASTNAME}    ชื่อ - นามสกุล ต้องเป็นตัวอักษรที่ไม่ใช่ตัวเลข และมีวรรคระหว่างชื่อกับนามสกุล
 ${ERROR MESSAGE INVALID PASSWORD}     Password ต้องประกอบด้วยตัวเลขหรือตัวอักษร 8-14 หลัก
 ${ERROR MESSAGE INVALID PHONE}    เบอร์โทรติดต่อต้องอยู่ในรูปแบบตัวเลข 10 หลัก และสามารถมีขีด (-) ได้ หลังหลักที่ 3 และหลักที่ 6
+${ERROR MESSAGE INVALID REPEAT PASSWORD}    Password ไม่ถูกต้อง
+${ERROR MESSAGE INVALID PASSPORT}    หมายเลขหนังสือเดินทางจะต้องมีตัวอักษรภาษาอังกฤษนำหน้า 1-2 หลัก
+${ERROR MESSAGE INVALID ID CARD}    รหัสบัตรประจำตัวประชาชนต้องเป็นตัวเลขทั้งหมด 13 หลัก
+${ERROR MESSAGE INVALID BIRTHDAY}    วันเดือนปีเกิดไม่ถูกต้อง
 
 *** Keywords ***
-Open Event Registration Page
+Open Home Page
     Open Browser    ${HOME URL}    ${BROWSER} 
     Maximize Browser Window
     Set Selenium Speed    ${DELAY} 
-    Location Should Be     ${HOME URL}
-
+    
 Input Register No Success With Id Card
   [Arguments]    ${gender}    ${title name}    ${full name}    ${birthday}    ${id card}    ${student id}    ${telephone number}    ${parent phone number}    ${facebook}    ${image}    ${type of attendees}    ${university}    ${email}    ${username}    ${password}     ${repeat password}     
   Click Element    //*[@id="side-main-menu"]/li[2]/a
