@@ -15,11 +15,13 @@ ${STUDENT ID}    593020804-3
 ${TELEPHONE NUMBER}    0812345678
 ${PARENT PHONE NUMBER}    0898765432
 ${FACEBOOK}    https://www.facebook.com/NutNinlaong
-<<<<<<< HEAD
 ${IMAGE}    d://SQA/Pic.jpg 
+<<<<<<< HEAD
 =======
 ${IMAGE}    D:/1work/year3/SQA/project/ProjectSQA/web.jpg
 >>>>>>> 8a508a3b69ec8b40d19b845bcc4ca1b6e98e1baa
+=======
+>>>>>>> 1afa6cdc846035fe1c9ac4aac27ec936a71a0f70
 ${TYPE OF ATTENDEES}    SA
 ${UNIVERSITY}    มหาวิทยาลัยขอนแก่น
 ${EMAIL}    testuat@gmail.com
