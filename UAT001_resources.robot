@@ -86,10 +86,3 @@ Input Registration Page
   Input Text    inputPassword    ${password}
   Input Text    inputCPassword    ${repeat password}
   Click Button    ลงทะเบียน
-<<<<<<< HEAD
-  
-
-
-
-=======
->>>>>>> 80ba026de8798bb7a2dc723ddcf8056ad2a4eb62
