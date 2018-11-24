@@ -9,7 +9,12 @@ ${REGISTER URL}    http://${SERVER}/AtomGame/public/register
 ${TITLE NAME}    P001
 ${FULL NAME}    Somnut Naja
 ${BIRTHDAY}    12/31/1997
+<<<<<<< HEAD
 ${ROLE PLAYER}    T
+=======
+${ON GROUND PLAYER}    T
+${ALTERNATE}    S
+>>>>>>> e1f12589b70a133547c9431ed681b08d40f78fa8
 ${VALID ID CARD}    1409901718605
 ${INVALID ID CARD}    14099017
 ${ID CARD PATH}    //*[@id="ShowIDcardNPass"]/div[1]/label
@@ -57,7 +62,21 @@ ${ERROR MESSAGE EMPTY REPEAT PASSWORD}
 ${ERROR MESSAGE EMPTY LASTNAME}    ชื่อ - นามสกุล ต้องเป็นตัวอักษรที่ไม่ใช่ตัวเลข และมีวรรคระหว่างชื่อกับนามสกุล
 ${ERROR MESSAGE INVALID PASSWORD}     Password ต้องประกอบด้วยตัวเลขหรือตัวอักษร 8-14 หลัก
 ${ERROR MESSAGE INVALID PHONE}    เบอร์โทรติดต่อต้องอยู่ในรูปแบบตัวเลข 10 หลัก และสามารถมีขีด (-) ได้ หลังหลักที่ 3 และหลักที่ 6
+<<<<<<< HEAD
 ${Empty All But Enter}    กรุณาเลือกรูปแบบการแข่งขัน
+=======
+${ERROR PLEASE SELECT A COMPETITION TYPE}    กรุณาเลือกประเภทการแข่งขัน
+${ERROR PLEASE SELECT A COMPETITION}    กรุณาเลือกชื่อรายการแข่งขัน
+${NO TITLE IN THE CATEGORY AND FORMAT YOU SELECTED}    ไม่มีชื่อรายการแข่งขันในประเภทและรูปแบบที่ท่านเลือก
+${ERROR PLEASE SELECT A ROLE}    กรุณาเลือกบทบาท
+${FOOTBALL}    S2019003
+${BADMINTON}    S2019006
+${SESPAK MUZZLE}    S2019007
+${FUTSAL}    S2019013
+${RUN 200 M}    S2019015
+${BOY GIRL AND BOMB AMBASSADOR OF SCIENCE STAR}    S2019005
+${RUMWOMG}    S2019017
+>>>>>>> e1f12589b70a133547c9431ed681b08d40f78fa8
 
 *** Keywords ***
 Open Event Registration Page
