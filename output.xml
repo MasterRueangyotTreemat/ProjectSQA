@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20181124 21:44:45.233" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<robot generated="20181124 21:49:06.874" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
 <suite source="C:\Users\Mr'Nut\Desktop\ProjectSQA\UAT001.robot" id="s1" name="UAT001">
 <test id="s1-t1" name="TC001 : Open Event Registration Page">
-<status status="FAIL" endtime="20181124 21:44:45.496" critical="yes" starttime="20181124 21:44:45.495">Test case contains no keywords.</status>
-</test>
-<test id="s1-t2" name="&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD">
 <kw name="Open Event Registration Page" library="UAT001_resources">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -12,165 +9,1134 @@
 <arg>${HOME URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20181124 21:44:45.499" level="INFO">Opening browser 'chrome' to base url 'http://localhost/AtomGame/public/home'.</msg>
-<status status="PASS" endtime="20181124 21:44:49.193" starttime="20181124 21:44:45.499"></status>
+<msg timestamp="20181124 21:49:07.119" level="INFO">Opening browser 'chrome' to base url 'http://localhost/AtomGame/public/home'.</msg>
+<status status="PASS" endtime="20181124 21:49:12.117" starttime="20181124 21:49:07.119"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20181124 21:49:13.303" starttime="20181124 21:49:12.118"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20181124 21:49:13.304" starttime="20181124 21:49:13.303"></status>
+</kw>
+<status status="PASS" endtime="20181124 21:49:13.305" starttime="20181124 21:49:07.119"></status>
+</kw>
+<status status="PASS" endtime="20181124 21:49:13.307" critical="yes" starttime="20181124 21:49:07.119"></status>
+</test>
+<test id="s1-t2" name="TC002 : Register Success With Id Card">
+<kw name="Input Register Success" library="UAT001_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:13.331" level="FAIL">Variable '${ID CARD}' not found. Did you mean:
+    ${ID CARD PATH}
+    ${VALID ID CARD}</msg>
+<status status="FAIL" endtime="20181124 21:49:13.332" starttime="20181124 21:49:13.325"></status>
+</kw>
+<status status="FAIL" endtime="20181124 21:49:13.333" critical="yes" starttime="20181124 21:49:13.320">Variable '${ID CARD}' not found. Did you mean:
+    ${ID CARD PATH}
+    ${VALID ID CARD}</status>
+</test>
+<test id="s1-t3" name="TC003 : Register Success With Id Card No Birthday">
+<kw name="Input Register Success" library="UAT001_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${EMPTY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:13.345" level="FAIL">Variable '${ID CARD}' not found. Did you mean:
+    ${ID CARD PATH}
+    ${VALID ID CARD}</msg>
+<status status="FAIL" endtime="20181124 21:49:13.345" starttime="20181124 21:49:13.338"></status>
+</kw>
+<status status="FAIL" endtime="20181124 21:49:13.346" critical="yes" starttime="20181124 21:49:13.336">Variable '${ID CARD}' not found. Did you mean:
+    ${ID CARD PATH}
+    ${VALID ID CARD}</status>
+</test>
+<test id="s1-t4" name="TC004 : Register Success With Id Card No Studetn Id">
+<kw name="TC004 : Input Register Success With Id Card No Studetn Id">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD}</arg>
+<arg>${STUDENT ID}</arg>
+<arg>${TELEPHONE NUMBER}</arg>
+<arg>${PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${REPEAT PASSWORD}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:13.362" level="FAIL">No keyword with name 'TC004 : Input Register Success With Id Card No Studetn Id' found.</msg>
+<status status="FAIL" endtime="20181124 21:49:13.362" starttime="20181124 21:49:13.362"></status>
+</kw>
+<status status="FAIL" endtime="20181124 21:49:13.363" critical="yes" starttime="20181124 21:49:13.349">No keyword with name 'TC004 : Input Register Success With Id Card No Studetn Id' found.</status>
+</test>
+<test id="s1-t5" name="TC002 : Register Success With Id Card">
+<kw name="Input Registration Page" library="UAT001_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD PATH}</arg>
+<arg>${ID CARD ID PATH}</arg>
+<arg>${VALID ID CARD}</arg>
+<arg>${VALID STUDENT ID}</arg>
+<arg>${VALID TELEPHONE NUMBER}</arg>
+<arg>${VALID PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${VALID PASSWORD}</arg>
+<arg>${VALID REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181124 21:49:13.375" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20181124 21:49:13.762" starttime="20181124 21:49:13.375"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="pages-nav-list0"]/li[1]/a</arg>
+</arguments>
+<msg timestamp="20181124 21:49:13.762" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[1]/a'.</msg>
+<status status="PASS" endtime="20181124 21:49:14.827" starttime="20181124 21:49:13.762"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="ShowGender"]/div[1]/label</arg>
+</arguments>
+<msg timestamp="20181124 21:49:14.828" level="INFO">Clicking element '//*[@id="ShowGender"]/div[1]/label'.</msg>
+<status status="PASS" endtime="20181124 21:49:15.114" starttime="20181124 21:49:14.827"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181124 21:49:15.114" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<status status="PASS" endtime="20181124 21:49:15.461" starttime="20181124 21:49:15.114"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+<arg>${title name}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:15.462" level="INFO">Selecting options from selection list '//*[@id="prename"]' by value P001.</msg>
+<status status="PASS" endtime="20181124 21:49:16.236" starttime="20181124 21:49:15.461"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>inputfullname</arg>
+<arg>${full name}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:16.236" level="INFO">Typing text 'Somnut Naja' into text field 'inputfullname'.</msg>
+<status status="PASS" endtime="20181124 21:49:16.928" starttime="20181124 21:49:16.236"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='inputBD']</arg>
+<arg>${birthday}</arg>
+</arguments>
+<status status="PASS" endtime="20181124 21:49:17.246" starttime="20181124 21:49:16.928"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${path}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:17.247" level="INFO">Clicking element '//*[@id="ShowIDcardNPass"]/div[1]/label'.</msg>
+<status status="PASS" endtime="20181124 21:49:17.556" starttime="20181124 21:49:17.246"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${id path}</arg>
+<arg>${card}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:17.557" level="INFO">Typing text '1409901718605' into text field 'IDcard'.</msg>
+<status status="PASS" endtime="20181124 21:49:18.347" starttime="20181124 21:49:17.556"></status>
+</kw>
+<status status="PASS" endtime="20181124 21:49:18.347" starttime="20181124 21:49:13.371"></status>
+</kw>
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains ``expected``.</doc>
+<arguments>
+<arg>${REGISTER URL}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:18.446" level="INFO">Current location contains 'http://localhost/AtomGame/public/register'.</msg>
+<status status="PASS" endtime="20181124 21:49:18.446" starttime="20181124 21:49:18.347"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${ERROR MESSAGE ALEADY HAVE ID CARD}</arg>
+</arguments>
+<status status="PASS" endtime="20181124 21:49:18.589" starttime="20181124 21:49:18.447"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${ERROR MESSAGE ALEADY HAVE USERNAME}</arg>
+</arguments>
+<status status="PASS" endtime="20181124 21:49:18.724" starttime="20181124 21:49:18.589"></status>
+</kw>
+<status status="PASS" endtime="20181124 21:49:18.724" critical="yes" starttime="20181124 21:49:13.369"></status>
+</test>
+<test id="s1-t6" name="TC005 : Register Success With Id Card No Parent Phone Number">
+<kw name="Input Registration Page" library="UAT001_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD PATH}</arg>
+<arg>${ID CARD ID PATH}</arg>
+<arg>${VALID ID CARD}</arg>
+<arg>${VALID STUDENT ID}</arg>
+<arg>${EMPTY}</arg>
+<arg>${VALID PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${VALID PASSWORD}</arg>
+<arg>${VALID REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181124 21:49:18.732" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20181124 21:49:19.001" starttime="20181124 21:49:18.731"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="pages-nav-list0"]/li[1]/a</arg>
+</arguments>
+<msg timestamp="20181124 21:49:19.002" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[1]/a'.</msg>
+<status status="PASS" endtime="20181124 21:49:19.897" starttime="20181124 21:49:19.001"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="ShowGender"]/div[1]/label</arg>
+</arguments>
+<msg timestamp="20181124 21:49:19.897" level="INFO">Clicking element '//*[@id="ShowGender"]/div[1]/label'.</msg>
+<status status="PASS" endtime="20181124 21:49:20.187" starttime="20181124 21:49:19.897"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181124 21:49:20.188" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<status status="PASS" endtime="20181124 21:49:20.497" starttime="20181124 21:49:20.187"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+<arg>${title name}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:20.498" level="INFO">Selecting options from selection list '//*[@id="prename"]' by value P001.</msg>
+<status status="PASS" endtime="20181124 21:49:21.258" starttime="20181124 21:49:20.497"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>inputfullname</arg>
+<arg>${full name}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:21.259" level="INFO">Typing text 'Somnut Naja' into text field 'inputfullname'.</msg>
+<status status="PASS" endtime="20181124 21:49:21.775" starttime="20181124 21:49:21.258"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='inputBD']</arg>
+<arg>${birthday}</arg>
+</arguments>
+<status status="PASS" endtime="20181124 21:49:22.057" starttime="20181124 21:49:21.775"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${path}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:22.057" level="INFO">Clicking element '//*[@id="ShowIDcardNPass"]/div[1]/label'.</msg>
+<status status="PASS" endtime="20181124 21:49:22.324" starttime="20181124 21:49:22.057"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${id path}</arg>
+<arg>${card}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:22.325" level="INFO">Typing text '1409901718605' into text field 'IDcard'.</msg>
+<status status="PASS" endtime="20181124 21:49:22.890" starttime="20181124 21:49:22.324"></status>
+</kw>
+<status status="PASS" endtime="20181124 21:49:22.890" starttime="20181124 21:49:18.728"></status>
+</kw>
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains ``expected``.</doc>
+<arguments>
+<arg>${REGISTER URL}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:22.986" level="INFO">Current location contains 'http://localhost/AtomGame/public/register'.</msg>
+<status status="PASS" endtime="20181124 21:49:22.986" starttime="20181124 21:49:22.890"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${ERROR MESSAGE ALEADY HAVE ID CARD}</arg>
+</arguments>
+<status status="PASS" endtime="20181124 21:49:23.096" starttime="20181124 21:49:22.986"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${ERROR MESSAGE ALEADY HAVE USERNAME}</arg>
+</arguments>
+<status status="PASS" endtime="20181124 21:49:23.200" starttime="20181124 21:49:23.096"></status>
+</kw>
+<status status="PASS" endtime="20181124 21:49:23.200" critical="yes" starttime="20181124 21:49:18.727"></status>
+</test>
+<test id="s1-t7" name="TC006 : Register Success With Id Card No Facebook">
+<kw name="Input Registration Page" library="UAT001_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${ID CARD PATH}</arg>
+<arg>${ID CARD ID PATH}</arg>
+<arg>${VALID ID CARD}</arg>
+<arg>${VALID STUDENT ID}</arg>
+<arg>${VALID TELEPHONE NUMBER}</arg>
+<arg>${VALID PARENT PHONE NUMBER}</arg>
+<arg>${EMPTY}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${VALID PASSWORD}</arg>
+<arg>${VALID REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181124 21:49:23.205" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20181124 21:49:23.488" starttime="20181124 21:49:23.205"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="pages-nav-list0"]/li[1]/a</arg>
+</arguments>
+<msg timestamp="20181124 21:49:23.489" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[1]/a'.</msg>
+<status status="PASS" endtime="20181124 21:49:24.640" starttime="20181124 21:49:23.489"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="ShowGender"]/div[1]/label</arg>
+</arguments>
+<msg timestamp="20181124 21:49:24.641" level="INFO">Clicking element '//*[@id="ShowGender"]/div[1]/label'.</msg>
+<status status="PASS" endtime="20181124 21:49:24.913" starttime="20181124 21:49:24.641"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181124 21:49:24.914" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<status status="PASS" endtime="20181124 21:49:25.233" starttime="20181124 21:49:24.913"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+<arg>${title name}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:25.233" level="INFO">Selecting options from selection list '//*[@id="prename"]' by value P001.</msg>
+<status status="PASS" endtime="20181124 21:49:25.999" starttime="20181124 21:49:25.233"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>inputfullname</arg>
+<arg>${full name}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:25.999" level="INFO">Typing text 'Somnut Naja' into text field 'inputfullname'.</msg>
+<status status="PASS" endtime="20181124 21:49:26.490" starttime="20181124 21:49:25.999"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='inputBD']</arg>
+<arg>${birthday}</arg>
+</arguments>
+<status status="PASS" endtime="20181124 21:49:26.764" starttime="20181124 21:49:26.490"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${path}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:26.768" level="INFO">Clicking element '//*[@id="ShowIDcardNPass"]/div[1]/label'.</msg>
+<status status="PASS" endtime="20181124 21:49:27.031" starttime="20181124 21:49:26.765"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${id path}</arg>
+<arg>${card}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:27.032" level="INFO">Typing text '1409901718605' into text field 'IDcard'.</msg>
+<status status="PASS" endtime="20181124 21:49:27.607" starttime="20181124 21:49:27.031"></status>
+</kw>
+<status status="PASS" endtime="20181124 21:49:27.607" starttime="20181124 21:49:23.203"></status>
+</kw>
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains ``expected``.</doc>
+<arguments>
+<arg>${REGISTER URL}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:27.704" level="INFO">Current location contains 'http://localhost/AtomGame/public/register'.</msg>
+<status status="PASS" endtime="20181124 21:49:27.704" starttime="20181124 21:49:27.608"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${ERROR MESSAGE ALEADY HAVE ID CARD}</arg>
+</arguments>
+<status status="PASS" endtime="20181124 21:49:27.837" starttime="20181124 21:49:27.705"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${ERROR MESSAGE ALEADY HAVE USERNAME}</arg>
+</arguments>
+<status status="PASS" endtime="20181124 21:49:27.943" starttime="20181124 21:49:27.838"></status>
+</kw>
+<status status="PASS" endtime="20181124 21:49:27.943" critical="yes" starttime="20181124 21:49:23.202"></status>
+</test>
+<test id="s1-t8" name="TC007 : Register Success With Id Card No Birthday No Student Id No Parent Phone Number No Facebook">
+<kw name="Input Registration Page" library="UAT001_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${EMPTY}</arg>
+<arg>${ID CARD PATH}</arg>
+<arg>${ID CARD ID PATH}</arg>
+<arg>${VALID ID CARD}</arg>
+<arg>${EMPTY}</arg>
+<arg>${VALID TELEPHONE NUMBER}</arg>
+<arg>${EMPTY}</arg>
+<arg>${EMPTY}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${VALID PASSWORD}</arg>
+<arg>${VALID REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181124 21:49:27.950" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20181124 21:49:28.207" starttime="20181124 21:49:27.950"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="pages-nav-list0"]/li[1]/a</arg>
+</arguments>
+<msg timestamp="20181124 21:49:28.208" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[1]/a'.</msg>
+<status status="PASS" endtime="20181124 21:49:28.975" starttime="20181124 21:49:28.208"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="ShowGender"]/div[1]/label</arg>
+</arguments>
+<msg timestamp="20181124 21:49:28.975" level="INFO">Clicking element '//*[@id="ShowGender"]/div[1]/label'.</msg>
+<status status="PASS" endtime="20181124 21:49:29.230" starttime="20181124 21:49:28.975"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181124 21:49:29.230" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<status status="PASS" endtime="20181124 21:49:29.541" starttime="20181124 21:49:29.230"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+<arg>${title name}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:29.542" level="INFO">Selecting options from selection list '//*[@id="prename"]' by value P001.</msg>
+<status status="PASS" endtime="20181124 21:49:30.324" starttime="20181124 21:49:29.541"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>inputfullname</arg>
+<arg>${full name}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:30.324" level="INFO">Typing text 'Somnut Naja' into text field 'inputfullname'.</msg>
+<status status="PASS" endtime="20181124 21:49:30.815" starttime="20181124 21:49:30.324"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='inputBD']</arg>
+<arg>${birthday}</arg>
+</arguments>
+<status status="PASS" endtime="20181124 21:49:31.055" starttime="20181124 21:49:30.815"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${path}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:31.055" level="INFO">Clicking element '//*[@id="ShowIDcardNPass"]/div[1]/label'.</msg>
+<status status="PASS" endtime="20181124 21:49:31.336" starttime="20181124 21:49:31.055"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${id path}</arg>
+<arg>${card}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:31.336" level="INFO">Typing text '1409901718605' into text field 'IDcard'.</msg>
+<status status="PASS" endtime="20181124 21:49:31.913" starttime="20181124 21:49:31.336"></status>
+</kw>
+<status status="PASS" endtime="20181124 21:49:31.913" starttime="20181124 21:49:27.948"></status>
+</kw>
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains ``expected``.</doc>
+<arguments>
+<arg>${REGISTER URL}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:32.009" level="INFO">Current location contains 'http://localhost/AtomGame/public/register'.</msg>
+<status status="PASS" endtime="20181124 21:49:32.009" starttime="20181124 21:49:31.913"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${ERROR MESSAGE ALEADY HAVE ID CARD}</arg>
+</arguments>
+<status status="PASS" endtime="20181124 21:49:32.116" starttime="20181124 21:49:32.009"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${ERROR MESSAGE ALEADY HAVE USERNAME}</arg>
+</arguments>
+<status status="PASS" endtime="20181124 21:49:32.220" starttime="20181124 21:49:32.116"></status>
+</kw>
+<status status="PASS" endtime="20181124 21:49:32.220" critical="yes" starttime="20181124 21:49:27.946"></status>
+</test>
+<test id="s1-t9" name="TC008 : Register Success With Passport">
+<kw name="Input Registration Page" library="UAT001_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${PASSPORT PATH}</arg>
+<arg>${PASSPORT ID PATH}</arg>
+<arg>${VALID PASSPORT}</arg>
+<arg>${VALID STUDENT ID}</arg>
+<arg>${VALID TELEPHONE NUMBER}</arg>
+<arg>${VALID PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${VALID PASSWORD}</arg>
+<arg>${VALID REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181124 21:49:32.226" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20181124 21:49:32.503" starttime="20181124 21:49:32.226"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="pages-nav-list0"]/li[1]/a</arg>
+</arguments>
+<msg timestamp="20181124 21:49:32.503" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[1]/a'.</msg>
+<status status="PASS" endtime="20181124 21:49:33.238" starttime="20181124 21:49:32.503"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="ShowGender"]/div[1]/label</arg>
+</arguments>
+<msg timestamp="20181124 21:49:33.238" level="INFO">Clicking element '//*[@id="ShowGender"]/div[1]/label'.</msg>
+<status status="PASS" endtime="20181124 21:49:33.503" starttime="20181124 21:49:33.238"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181124 21:49:33.503" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<status status="PASS" endtime="20181124 21:49:33.792" starttime="20181124 21:49:33.503"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+<arg>${title name}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:33.792" level="INFO">Selecting options from selection list '//*[@id="prename"]' by value P001.</msg>
+<status status="PASS" endtime="20181124 21:49:34.553" starttime="20181124 21:49:33.792"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>inputfullname</arg>
+<arg>${full name}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:34.553" level="INFO">Typing text 'Somnut Naja' into text field 'inputfullname'.</msg>
+<status status="PASS" endtime="20181124 21:49:35.211" starttime="20181124 21:49:34.553"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='inputBD']</arg>
+<arg>${birthday}</arg>
+</arguments>
+<status status="PASS" endtime="20181124 21:49:35.527" starttime="20181124 21:49:35.211"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${path}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:35.528" level="INFO">Clicking element '//*[@id="ShowIDcardNPass"]/div[3]/label'.</msg>
+<status status="PASS" endtime="20181124 21:49:35.814" starttime="20181124 21:49:35.527"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${id path}</arg>
+<arg>${card}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:35.815" level="INFO">Typing text 'AA7505011' into text field 'Passport'.</msg>
+<status status="PASS" endtime="20181124 21:49:36.373" starttime="20181124 21:49:35.814"></status>
+</kw>
+<status status="PASS" endtime="20181124 21:49:36.373" starttime="20181124 21:49:32.224"></status>
+</kw>
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains ``expected``.</doc>
+<arguments>
+<arg>${REGISTER URL}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:36.471" level="INFO">Current location contains 'http://localhost/AtomGame/public/register'.</msg>
+<status status="PASS" endtime="20181124 21:49:36.472" starttime="20181124 21:49:36.374"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${ERROR MESSAGE ALEADY HAVE USERNAME}</arg>
+</arguments>
+<status status="PASS" endtime="20181124 21:49:36.594" starttime="20181124 21:49:36.474"></status>
+</kw>
+<status status="PASS" endtime="20181124 21:49:36.594" critical="yes" starttime="20181124 21:49:32.223"></status>
+</test>
+<test id="s1-t10" name="TC009 : Register Success With Passport No Birthday">
+<kw name="Input Registration Page" library="UAT001_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${EMPTY}</arg>
+<arg>${PASSPORT PATH}</arg>
+<arg>${PASSPORT ID PATH}</arg>
+<arg>${VALID PASSPORT}</arg>
+<arg>${VALID STUDENT ID}</arg>
+<arg>${VALID TELEPHONE NUMBER}</arg>
+<arg>${VALID PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${VALID PASSWORD}</arg>
+<arg>${VALID REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181124 21:49:36.599" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20181124 21:49:36.873" starttime="20181124 21:49:36.599"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="pages-nav-list0"]/li[1]/a</arg>
+</arguments>
+<msg timestamp="20181124 21:49:36.874" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[1]/a'.</msg>
+<status status="PASS" endtime="20181124 21:49:37.666" starttime="20181124 21:49:36.873"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="ShowGender"]/div[1]/label</arg>
+</arguments>
+<msg timestamp="20181124 21:49:37.666" level="INFO">Clicking element '//*[@id="ShowGender"]/div[1]/label'.</msg>
+<status status="PASS" endtime="20181124 21:49:37.931" starttime="20181124 21:49:37.666"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181124 21:49:37.932" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<status status="PASS" endtime="20181124 21:49:38.226" starttime="20181124 21:49:37.931"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+<arg>${title name}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:38.227" level="INFO">Selecting options from selection list '//*[@id="prename"]' by value P001.</msg>
+<status status="PASS" endtime="20181124 21:49:38.968" starttime="20181124 21:49:38.226"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>inputfullname</arg>
+<arg>${full name}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:38.968" level="INFO">Typing text 'Somnut Naja' into text field 'inputfullname'.</msg>
+<status status="PASS" endtime="20181124 21:49:39.444" starttime="20181124 21:49:38.968"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='inputBD']</arg>
+<arg>${birthday}</arg>
+</arguments>
+<status status="PASS" endtime="20181124 21:49:39.673" starttime="20181124 21:49:39.444"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${path}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:39.674" level="INFO">Clicking element '//*[@id="ShowIDcardNPass"]/div[3]/label'.</msg>
+<status status="PASS" endtime="20181124 21:49:39.938" starttime="20181124 21:49:39.673"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${id path}</arg>
+<arg>${card}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:39.938" level="INFO">Typing text 'AA7505011' into text field 'Passport'.</msg>
+<status status="PASS" endtime="20181124 21:49:40.561" starttime="20181124 21:49:39.938"></status>
+</kw>
+<status status="PASS" endtime="20181124 21:49:40.561" starttime="20181124 21:49:36.597"></status>
+</kw>
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains ``expected``.</doc>
+<arguments>
+<arg>${REGISTER URL}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:40.676" level="INFO">Current location contains 'http://localhost/AtomGame/public/register'.</msg>
+<status status="PASS" endtime="20181124 21:49:40.676" starttime="20181124 21:49:40.563"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${ERROR MESSAGE ALEADY HAVE USERNAME}</arg>
+</arguments>
+<status status="PASS" endtime="20181124 21:49:40.809" starttime="20181124 21:49:40.678"></status>
+</kw>
+<status status="PASS" endtime="20181124 21:49:40.809" critical="yes" starttime="20181124 21:49:36.596"></status>
+</test>
+<test id="s1-t11" name="TC010 : Register Success With Passport No Student Id">
+<kw name="Input Registration Page" library="UAT001_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${PASSPORT PATH}</arg>
+<arg>${PASSPORT ID PATH}</arg>
+<arg>${VALID PASSPORT}</arg>
+<arg>${EMPTY}</arg>
+<arg>${VALID TELEPHONE NUMBER}</arg>
+<arg>${VALID PARENT PHONE NUMBER}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${VALID PASSWORD}</arg>
+<arg>${VALID REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181124 21:49:40.815" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20181124 21:49:41.101" starttime="20181124 21:49:40.815"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="pages-nav-list0"]/li[1]/a</arg>
+</arguments>
+<msg timestamp="20181124 21:49:41.101" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[1]/a'.</msg>
+<status status="PASS" endtime="20181124 21:49:41.844" starttime="20181124 21:49:41.101"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="ShowGender"]/div[1]/label</arg>
+</arguments>
+<msg timestamp="20181124 21:49:41.845" level="INFO">Clicking element '//*[@id="ShowGender"]/div[1]/label'.</msg>
+<status status="PASS" endtime="20181124 21:49:42.101" starttime="20181124 21:49:41.844"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+</arguments>
+<msg timestamp="20181124 21:49:42.101" level="INFO">Clicking element '//*[@id="prename"]'.</msg>
+<status status="PASS" endtime="20181124 21:49:42.386" starttime="20181124 21:49:42.101"></status>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+<arg>${title name}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:42.386" level="INFO">Selecting options from selection list '//*[@id="prename"]' by value P001.</msg>
+<status status="PASS" endtime="20181124 21:49:43.128" starttime="20181124 21:49:42.386"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>inputfullname</arg>
+<arg>${full name}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:43.128" level="INFO">Typing text 'Somnut Naja' into text field 'inputfullname'.</msg>
+<status status="PASS" endtime="20181124 21:49:43.854" starttime="20181124 21:49:43.128"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='inputBD']</arg>
+<arg>${birthday}</arg>
+</arguments>
+<status status="PASS" endtime="20181124 21:49:44.201" starttime="20181124 21:49:43.854"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${path}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:44.202" level="INFO">Clicking element '//*[@id="ShowIDcardNPass"]/div[3]/label'.</msg>
+<status status="PASS" endtime="20181124 21:49:44.488" starttime="20181124 21:49:44.202"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${id path}</arg>
+<arg>${card}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:44.490" level="INFO">Typing text 'AA7505011' into text field 'Passport'.</msg>
+<status status="PASS" endtime="20181124 21:49:45.084" starttime="20181124 21:49:44.488"></status>
+</kw>
+<status status="PASS" endtime="20181124 21:49:45.084" starttime="20181124 21:49:40.812"></status>
+</kw>
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains ``expected``.</doc>
+<arguments>
+<arg>${REGISTER URL}</arg>
+</arguments>
+<msg timestamp="20181124 21:49:45.182" level="INFO">Current location contains 'http://localhost/AtomGame/public/register'.</msg>
+<status status="PASS" endtime="20181124 21:49:45.182" starttime="20181124 21:49:45.085"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${ERROR MESSAGE ALEADY HAVE USERNAME}</arg>
+</arguments>
+<status status="PASS" endtime="20181124 21:49:45.289" starttime="20181124 21:49:45.182"></status>
+</kw>
+<status status="PASS" endtime="20181124 21:49:45.289" critical="yes" starttime="20181124 21:49:40.811"></status>
+</test>
+<test id="s1-t12" name="TC011 : Register Success With Passport No Parent Phone Number">
+<kw name="Input Registration Page" library="UAT001_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${PASSPORT PATH}</arg>
+<arg>${PASSPORT ID PATH}</arg>
+<arg>${VALID PASSPORT}</arg>
+<arg>${VALID STUDENT ID}</arg>
+<arg>${VALID TELEPHONE NUMBER}</arg>
+<arg>${EMPTY}</arg>
+<arg>${FACEBOOK}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${VALID PASSWORD}</arg>
+<arg>${VALID REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181124 21:49:45.295" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20181124 21:49:45.555" starttime="20181124 21:49:45.295"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="pages-nav-list0"]/li[1]/a</arg>
+</arguments>
+<msg timestamp="20181124 21:49:45.555" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[1]/a'.</msg>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<status status="FAIL" endtime="20181124 21:44:50.395" starttime="20181124 21:44:50.394"></status>
+<msg timestamp="20181124 21:49:57.740" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181124 21:49:57.740" starttime="20181124 21:49:51.702"></status>
 </kw>
-<msg timestamp="20181124 21:44:50.395" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
-<status status="FAIL" endtime="20181124 21:44:50.397" starttime="20181124 21:44:49.194"></status>
+<msg timestamp="20181124 21:49:57.740" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181124 21:49:57.740" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181124 21:49:57.740" starttime="20181124 21:49:45.555"></status>
 </kw>
-<status status="FAIL" endtime="20181124 21:44:50.397" starttime="20181124 21:44:45.498"></status>
+<status status="FAIL" endtime="20181124 21:49:57.740" starttime="20181124 21:49:45.293"></status>
 </kw>
-<status status="FAIL" endtime="20181124 21:44:50.398" critical="yes" starttime="20181124 21:44:45.498">Execution terminated by signal</status>
+<status status="FAIL" endtime="20181124 21:49:57.740" critical="yes" starttime="20181124 21:49:45.292">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</status>
 </test>
-<test id="s1-t3" name="TC002 : Register Success With Id Card">
-<tags>
-<tag>robot-exit</tag>
-</tags>
-<status status="FAIL" endtime="20181124 21:44:50.402" critical="yes" starttime="20181124 21:44:50.401">Test execution stopped due to a fatal error.</status>
+<test id="s1-t13" name="TC012 : Register Success With Passport No Facebook">
+<kw name="Input Registration Page" library="UAT001_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${BIRTHDAY}</arg>
+<arg>${PASSPORT PATH}</arg>
+<arg>${PASSPORT ID PATH}</arg>
+<arg>${VALID PASSPORT}</arg>
+<arg>${VALID STUDENT ID}</arg>
+<arg>${VALID TELEPHONE NUMBER}</arg>
+<arg>${VALID PARENT PHONE NUMBER}</arg>
+<arg>${EMPTY}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${VALID PASSWORD}</arg>
+<arg>${VALID REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181124 21:49:57.754" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181124 21:50:07.815" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181124 21:50:07.815" starttime="20181124 21:50:01.795"></status>
+</kw>
+<msg timestamp="20181124 21:50:07.816" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181124 21:50:07.819" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181124 21:50:07.820" starttime="20181124 21:49:57.754"></status>
+</kw>
+<status status="FAIL" endtime="20181124 21:50:07.820" starttime="20181124 21:49:57.740"></status>
+</kw>
+<status status="FAIL" endtime="20181124 21:50:07.820" critical="yes" starttime="20181124 21:49:57.740">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</status>
 </test>
-<test id="s1-t4" name="TC003 : Register Success With Id Card No Birthday">
-<tags>
-<tag>robot-exit</tag>
-</tags>
-<status status="FAIL" endtime="20181124 21:44:50.406" critical="yes" starttime="20181124 21:44:50.405">Test execution stopped due to a fatal error.</status>
+<test id="s1-t14" name="TC013 : Register Success With Passport No Birthday No Student Id No Parent Phone Number No Facebook">
+<kw name="Input Registration Page" library="UAT001_resources">
+<arguments>
+<arg>${TITLE NAME}</arg>
+<arg>${FULL NAME}</arg>
+<arg>${EMPTY}</arg>
+<arg>${PASSPORT PATH}</arg>
+<arg>${PASSPORT ID PATH}</arg>
+<arg>${VALID PASSPORT}</arg>
+<arg>${EMPTY}</arg>
+<arg>${VALID TELEPHONE NUMBER}</arg>
+<arg>${EMPTY}</arg>
+<arg>${EMPTY}</arg>
+<arg>${IMAGE}</arg>
+<arg>${TYPE OF ATTENDEES}</arg>
+<arg>${UNIVERSITY}</arg>
+<arg>${EMAIL}</arg>
+<arg>${USERNAME}</arg>
+<arg>${VALID PASSWORD}</arg>
+<arg>${VALID REPEAT PASSWORD}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="side-main-menu"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20181124 21:50:07.821" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181124 21:50:19.912" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181124 21:50:19.912" starttime="20181124 21:50:13.875"></status>
+</kw>
+<msg timestamp="20181124 21:50:19.912" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181124 21:50:19.912" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" endtime="20181124 21:50:19.912" starttime="20181124 21:50:07.821"></status>
+</kw>
+<status status="FAIL" endtime="20181124 21:50:19.912" starttime="20181124 21:50:07.821"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181124 21:50:22.018" starttime="20181124 21:50:19.912"></status>
+</kw>
+<status status="FAIL" endtime="20181124 21:50:22.018" critical="yes" starttime="20181124 21:50:07.821">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</status>
 </test>
-<test id="s1-t5" name="TC004 : Register Success With Id Card No Studetn Id">
-<tags>
-<tag>robot-exit</tag>
-</tags>
-<status status="FAIL" endtime="20181124 21:44:50.411" critical="yes" starttime="20181124 21:44:50.410">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t6" name="=======">
-<tags>
-<tag>robot-exit</tag>
-</tags>
-<status status="FAIL" endtime="20181124 21:44:50.415" critical="yes" starttime="20181124 21:44:50.414">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t7" name="TC002 : Register Success With Id Card">
-<tags>
-<tag>robot-exit</tag>
-</tags>
-<status status="FAIL" endtime="20181124 21:44:50.421" critical="yes" starttime="20181124 21:44:50.419">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t8" name="TC003 : Register Success With Id Card No Birthday">
-<tags>
-<tag>robot-exit</tag>
-</tags>
-<status status="FAIL" endtime="20181124 21:44:50.427" critical="yes" starttime="20181124 21:44:50.426">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t9" name="TC004 : Register Success With Id Card No Student Id">
-<tags>
-<tag>robot-exit</tag>
-</tags>
-<status status="FAIL" endtime="20181124 21:44:50.437" critical="yes" starttime="20181124 21:44:50.435">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t10" name="&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD">
-<tags>
-<tag>robot-exit</tag>
-</tags>
-<status status="FAIL" endtime="20181124 21:44:50.442" critical="yes" starttime="20181124 21:44:50.440">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t11" name="=======">
-<tags>
-<tag>robot-exit</tag>
-</tags>
-<status status="FAIL" endtime="20181124 21:44:50.448" critical="yes" starttime="20181124 21:44:50.446">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t12" name="&gt;&gt;&gt;&gt;&gt;&gt;&gt; 80ba026de8798bb7a2dc723ddcf8056ad2a4eb62">
-<tags>
-<tag>robot-exit</tag>
-</tags>
-<status status="FAIL" endtime="20181124 21:44:50.451" critical="yes" starttime="20181124 21:44:50.450">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t13" name="&gt;&gt;&gt;&gt;&gt;&gt;&gt; a0097f09721b4a7a1002981772bfa83af6acf199">
-<tags>
-<tag>robot-exit</tag>
-</tags>
-<status status="FAIL" endtime="20181124 21:44:50.455" critical="yes" starttime="20181124 21:44:50.454">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t14" name="TC005 : Register Success With Id Card No Parent Phone Number">
-<tags>
-<tag>robot-exit</tag>
-</tags>
-<status status="FAIL" endtime="20181124 21:44:50.461" critical="yes" starttime="20181124 21:44:50.458">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t15" name="TC006 : Register Success With Id Card No Facebook">
-<tags>
-<tag>robot-exit</tag>
-</tags>
-<status status="FAIL" endtime="20181124 21:44:50.472" critical="yes" starttime="20181124 21:44:50.471">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t16" name="TC007 : Register Success With Id Card No Birthday No Student Id No Parent Phone Number No Facebook">
-<tags>
-<tag>robot-exit</tag>
-</tags>
-<status status="FAIL" endtime="20181124 21:44:50.477" critical="yes" starttime="20181124 21:44:50.475">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t17" name="TC008 : Register Success With Passport">
-<tags>
-<tag>robot-exit</tag>
-</tags>
-<status status="FAIL" endtime="20181124 21:44:50.481" critical="yes" starttime="20181124 21:44:50.480">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t18" name="TC009 : Register Success With Passport No Birthday">
-<tags>
-<tag>robot-exit</tag>
-</tags>
-<status status="FAIL" endtime="20181124 21:44:50.486" critical="yes" starttime="20181124 21:44:50.484">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t19" name="TC010 : Register Success With Passport No Student Id">
-<tags>
-<tag>robot-exit</tag>
-</tags>
-<status status="FAIL" endtime="20181124 21:44:50.492" critical="yes" starttime="20181124 21:44:50.490">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t20" name="TC011 : Register Success With Passport No Parent Phone Number">
-<tags>
-<tag>robot-exit</tag>
-</tags>
-<status status="FAIL" endtime="20181124 21:44:50.498" critical="yes" starttime="20181124 21:44:50.496">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t21" name="TC012 : Register Success With Passport No Facebook">
-<tags>
-<tag>robot-exit</tag>
-</tags>
-<status status="FAIL" endtime="20181124 21:44:50.504" critical="yes" starttime="20181124 21:44:50.501">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t22" name="TC013 : Register Success With Passport No Birthday No Student Id No Parent Phone Number No Facebook">
-<tags>
-<tag>robot-exit</tag>
-</tags>
-<status status="FAIL" endtime="20181124 21:44:50.516" critical="yes" starttime="20181124 21:44:50.514">Test execution stopped due to a fatal error.</status>
-</test>
-<status status="FAIL" endtime="20181124 21:44:50.522" starttime="20181124 21:44:45.233"></status>
+<status status="FAIL" endtime="20181124 21:50:22.024" starttime="20181124 21:49:06.874"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="22" pass="0">Critical Tests</stat>
-<stat fail="22" pass="0">All Tests</stat>
+<stat fail="6" pass="8">Critical Tests</stat>
+<stat fail="6" pass="8">All Tests</stat>
 </total>
 <tag>
-<stat info="combined" fail="2" combined="NOT robot-exit" pass="0">NOT robot-exit</stat>
-<stat fail="20" pass="0">robot-exit</stat>
 </tag>
 <suite>
-<stat fail="22" id="s1" name="UAT001" pass="0">UAT001</stat>
+<stat fail="6" id="s1" name="UAT001" pass="8">UAT001</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20181124 21:44:45.279" level="ERROR">Error in resource file 'C:\Users\Mr'Nut\Desktop\ProjectSQA\UAT001_resources.robot': Creating keyword '&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD' failed: Keyword with same name defined multiple times.</msg>
-<msg timestamp="20181124 21:44:45.279" level="ERROR">Error in resource file 'C:\Users\Mr'Nut\Desktop\ProjectSQA\UAT001_resources.robot': Creating keyword '=======' failed: Keyword with same name defined multiple times.</msg>
-<msg timestamp="20181124 21:44:45.279" level="ERROR">Error in resource file 'C:\Users\Mr'Nut\Desktop\ProjectSQA\UAT001_resources.robot': Creating keyword '&gt;&gt;&gt;&gt;&gt;&gt;&gt; 80ba026de8798bb7a2dc723ddcf8056ad2a4eb62' failed: Keyword with same name defined multiple times.</msg>
-<msg timestamp="20181124 21:44:50.395" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
-<msg timestamp="20181124 21:44:50.418" level="WARN">Multiple test cases with name 'TC002 : Register Success With Id Card' executed in test suite 'UAT001'.</msg>
-<msg timestamp="20181124 21:44:50.425" level="WARN">Multiple test cases with name 'TC003 : Register Success With Id Card No Birthday' executed in test suite 'UAT001'.</msg>
-<msg timestamp="20181124 21:44:50.440" level="WARN">Multiple test cases with name '&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD' executed in test suite 'UAT001'.</msg>
-<msg timestamp="20181124 21:44:50.445" level="WARN">Multiple test cases with name '=======' executed in test suite 'UAT001'.</msg>
+<msg timestamp="20181124 21:49:06.906" level="ERROR">Error in resource file 'C:\Users\Mr'Nut\Desktop\ProjectSQA\UAT001_resources.robot': Creating keyword '&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD' failed: Keyword with same name defined multiple times.</msg>
+<msg timestamp="20181124 21:49:06.906" level="ERROR">Error in resource file 'C:\Users\Mr'Nut\Desktop\ProjectSQA\UAT001_resources.robot': Creating keyword '=======' failed: Keyword with same name defined multiple times.</msg>
+<msg timestamp="20181124 21:49:06.906" level="ERROR">Error in resource file 'C:\Users\Mr'Nut\Desktop\ProjectSQA\UAT001_resources.robot': Creating keyword '&gt;&gt;&gt;&gt;&gt;&gt;&gt; 80ba026de8798bb7a2dc723ddcf8056ad2a4eb62' failed: Keyword with same name defined multiple times.</msg>
+<msg timestamp="20181124 21:49:13.368" level="WARN">Multiple test cases with name 'TC002 : Register Success With Id Card' executed in test suite 'UAT001'.</msg>
+<msg timestamp="20181124 21:49:57.740" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181124 21:50:07.816" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181124 21:50:19.912" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
 </errors>
 </robot>

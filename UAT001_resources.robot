@@ -63,21 +63,6 @@ Open Event Registration Page
     Maximize Browser Window
     Set Selenium Speed    ${DELAY} 
 
-<<<<<<< HEAD
-Input Register Success  
-  [Arguments]    ${title name}    ${full name}    ${birthday}    ${id card}    ${student id}    ${telephone number}    ${parent phone number}    ${facebook}    ${image}    ${type of attendees}    ${university}    ${email}    ${username}    ${password}     ${repeat password}     
-  Click Element    //*[@id="side-main-menu"]/li[2]/a  
-  Click Element    //*[@id="pages-nav-list0"]/li[1]/a  
-  Click Element    //*[@id="ShowGender"]/div[1]/label 
-  Click Element    //*[@id="prename"]
-  Select From List By Value    //*[@id="prename"]    ${title name}  
-  Wait Until Element Is Visible    //*[@id="prename"]    4s
-  Input Text    inputfullname    ${full name}
-  Press Key    //*[@id="inputBD"]    ${birthday}
-  Click Element    //*[@id="ShowIDcardNPass"]/div[1]/label
-  Wait Until Element Is Visible    //*[@id="IDcard"]    4s
-  Input Text    IDcard    ${id card}
-=======
 Input Registration Page
   [Arguments]    ${title name}    ${full name}    ${birthday}    ${path}    ${id path}    ${card}    ${student id}    ${telephone number}    ${parent phone number}    ${facebook}    ${image}    ${type of attendees}    ${university}    ${email}    ${username}    ${password}     ${repeat password}     
   Click Element    //*[@id="side-main-menu"]/li[2]/a
@@ -89,7 +74,6 @@ Input Registration Page
   Press Key    xpath=//input[@id='inputBD']    ${birthday}
   Click Element    ${path}
   Input Text    ${id path}    ${card}
->>>>>>> 80ba026de8798bb7a2dc723ddcf8056ad2a4eb62
   Input Text    inputSTD    ${student id}
   Input Text    tell    ${telephone number}
   Input Text    inputTelephoneP    ${parent phone number}
