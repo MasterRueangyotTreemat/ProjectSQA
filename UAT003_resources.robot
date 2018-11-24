@@ -10,6 +10,7 @@ ${USERNAME}    porinut
 ${PASSWORD}    12345678
 ${SHOW NAME}    ผู้เข้าใช้งาน Somnut Naja ได้เข้าสู่ระบบ
 ${SHOW REGISTER PAGE}    ลงทะเบียนแข่งขันกีฬาและกิจกรรม
+${SHOW REGISTER SUCCSESS}    ลงทะเบียนแข่งขันสำเร็จ
 ${DELAY}    0.05
 ${SPORT}    //*[@id="ShowFormat"]/label[1]
 ${ACTIVITIES}    //*[@id="ShowFormat"]/label[2]
@@ -41,14 +42,27 @@ Input Login Success
   Wait Until Page Contains    ${SHOW NAME}
 
 Input Register Sports and Athletics Competition Page
-  [Arguments]    ${REGISTER URL}    ${SPORT}    ${GENDER_FEMALE}    ${SPORT}    ${GENDER_MALE}    ${FOOTBALL}    ${T}
+  [Arguments]    ${SHOW REGISTER PAGE}    ${REGISTER URL}    
   Click Element    //*[@id="side-main-menu"]/li[2]/a
   Click Element    //*[@id="pages-nav-list0"]/li[2]/a
   Wait Until Page Contains    ${SHOW REGISTER PAGE}
+  Location Should Be    ${REGISTER URL} 
+  
+Input Register Sports Competition Success 1
+  [Arguments]    ${REGISTER URL}    ${SPORT}    ${GENDER_MALE}    ${FOOTBALL}    ${T}    ${SHOW REGISTER SUCCSESS}
   Location Should Be    ${REGISTER URL} 
   Click Element    ${SPORT}
   Click Element    ${GENDER_MALE}
   Select From List By Value    //*[@id="inputName"]    ${FOOTBALL}
   Select From List By Value    //*[@id="inputREAL"]    ${T}
   Click Button    เพิ่ม
-  
+  Wait Until Page Contains    ${SHOW REGISTER SUCCSESS}
+  Wait Until Page Contains    ฟุตบอล(football)
+  Wait Until Page Contains    ชาย(male)
+  Wait Until Page Contains    กีฬาและกรีฑา (sports and athletics)
+  Wait Until Page Contains    ตัวจริง (on ground player)
+
+Input Register Sports Competition Success 2
+  [Arguments]
+  Location Should Be    ${REGISTER URL
+  }

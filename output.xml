@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20181124 22:37:26.016" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<robot generated="20181124 23:11:58.885" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
 <suite source="D:\SQA\ProjectSQA\UAT003.robot" id="s1" name="UAT003">
 <test id="s1-t1" name="TC001 : Open Event Registration Page">
 <kw name="Open Event Registration Page" library="UAT003_resources">
@@ -9,31 +9,31 @@
 <arg>${HOME URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20181124 22:37:28.904" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/AtomGame/public/home'.</msg>
-<status status="PASS" endtime="20181124 22:37:35.958" starttime="20181124 22:37:28.904"></status>
+<msg timestamp="20181124 23:11:59.943" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/AtomGame/public/home'.</msg>
+<status status="PASS" endtime="20181124 23:12:06.650" starttime="20181124 23:11:59.943"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20181124 22:37:37.081" starttime="20181124 22:37:35.959"></status>
+<status status="PASS" endtime="20181124 23:12:08.170" starttime="20181124 23:12:06.651"></status>
 </kw>
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>${DELAY}</arg>
 </arguments>
-<status status="PASS" endtime="20181124 22:37:37.083" starttime="20181124 22:37:37.081"></status>
+<status status="PASS" endtime="20181124 23:12:08.171" starttime="20181124 23:12:08.170"></status>
 </kw>
 <kw name="Location Should Be" library="Selenium2Library">
 <doc>Verifies that current URL is exactly ``url`.</doc>
 <arguments>
 <arg>${HOME URL}</arg>
 </arguments>
-<msg timestamp="20181124 22:37:37.279" level="INFO">Current location is 'http://localhost/AtomGame/public/home'.</msg>
-<status status="PASS" endtime="20181124 22:37:37.279" starttime="20181124 22:37:37.083"></status>
+<msg timestamp="20181124 23:12:08.360" level="INFO">Current location is 'http://localhost/AtomGame/public/home'.</msg>
+<status status="PASS" endtime="20181124 23:12:08.361" starttime="20181124 23:12:08.172"></status>
 </kw>
-<status status="PASS" endtime="20181124 22:37:37.280" starttime="20181124 22:37:28.903"></status>
+<status status="PASS" endtime="20181124 23:12:08.361" starttime="20181124 23:11:59.942"></status>
 </kw>
-<status status="PASS" endtime="20181124 22:37:37.300" critical="yes" starttime="20181124 22:37:28.901"></status>
+<status status="PASS" endtime="20181124 23:12:08.362" critical="yes" starttime="20181124 23:11:59.941"></status>
 </test>
 <test id="s1-t2" name="TC002 : Login Success:">
 <kw name="Input Login Success" library="UAT003_resources">
@@ -46,16 +46,16 @@
 <arguments>
 <arg>//*[@id="loginBtn"]</arg>
 </arguments>
-<msg timestamp="20181124 22:37:37.306" level="INFO">Clicking element '//*[@id="loginBtn"]'.</msg>
-<status status="PASS" endtime="20181124 22:37:37.655" starttime="20181124 22:37:37.305"></status>
+<msg timestamp="20181124 23:12:08.367" level="INFO">Clicking element '//*[@id="loginBtn"]'.</msg>
+<status status="PASS" endtime="20181124 23:12:08.643" starttime="20181124 23:12:08.366"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="Username"]</arg>
 </arguments>
-<msg timestamp="20181124 22:37:37.656" level="INFO">Clicking element '//*[@id="Username"]'.</msg>
-<status status="PASS" endtime="20181124 22:37:37.945" starttime="20181124 22:37:37.655"></status>
+<msg timestamp="20181124 23:12:08.644" level="INFO">Clicking element '//*[@id="Username"]'.</msg>
+<status status="PASS" endtime="20181124 23:12:08.980" starttime="20181124 23:12:08.643"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -63,16 +63,16 @@
 <arg>Username</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20181124 22:37:37.946" level="INFO">Typing text 'porinut' into text field 'Username'.</msg>
-<status status="PASS" endtime="20181124 22:37:38.324" starttime="20181124 22:37:37.945"></status>
+<msg timestamp="20181124 23:12:08.981" level="INFO">Typing text 'porinut' into text field 'Username'.</msg>
+<status status="PASS" endtime="20181124 23:12:09.397" starttime="20181124 23:12:08.980"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="Password"]</arg>
 </arguments>
-<msg timestamp="20181124 22:37:38.325" level="INFO">Clicking element '//*[@id="Password"]'.</msg>
-<status status="PASS" endtime="20181124 22:37:38.545" starttime="20181124 22:37:38.324"></status>
+<msg timestamp="20181124 23:12:09.398" level="INFO">Clicking element '//*[@id="Password"]'.</msg>
+<status status="PASS" endtime="20181124 23:12:09.637" starttime="20181124 23:12:09.397"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -80,85 +80,102 @@
 <arg>Password</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20181124 22:37:38.546" level="INFO">Typing text '12345678' into text field 'Password'.</msg>
-<status status="PASS" endtime="20181124 22:37:38.890" starttime="20181124 22:37:38.545"></status>
+<msg timestamp="20181124 23:12:09.639" level="INFO">Typing text '12345678' into text field 'Password'.</msg>
+<status status="PASS" endtime="20181124 23:12:10.028" starttime="20181124 23:12:09.638"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>login</arg>
 </arguments>
-<msg timestamp="20181124 22:37:38.891" level="INFO">Clicking button 'login'.</msg>
-<status status="PASS" endtime="20181124 22:37:40.565" starttime="20181124 22:37:38.890"></status>
+<msg timestamp="20181124 23:12:10.028" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" endtime="20181124 23:12:11.662" starttime="20181124 23:12:10.028"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>${SHOW NAME}</arg>
 </arguments>
-<status status="PASS" endtime="20181124 22:37:40.648" starttime="20181124 22:37:40.565"></status>
+<status status="PASS" endtime="20181124 23:12:11.751" starttime="20181124 23:12:11.662"></status>
 </kw>
-<status status="PASS" endtime="20181124 22:37:40.648" starttime="20181124 22:37:37.304"></status>
+<status status="PASS" endtime="20181124 23:12:11.751" starttime="20181124 23:12:08.366"></status>
 </kw>
-<status status="PASS" endtime="20181124 22:37:40.649" critical="yes" starttime="20181124 22:37:37.303"></status>
+<status status="PASS" endtime="20181124 23:12:11.752" critical="yes" starttime="20181124 23:12:08.365"></status>
 </test>
 <test id="s1-t3" name="TC003 : Open Register Sports and Athletics Competition Page:">
 <kw name="Input Register Sports and Athletics Competition Page" library="UAT003_resources">
 <arguments>
+<arg>${SHOW REGISTER PAGE}</arg>
 <arg>${REGISTER URL}</arg>
-<arg>${SPORT}</arg>
-<arg>${GENDER_FEMALE}</arg>
-<arg>${SPORT}</arg>
-<arg>${GENDER_MALE}</arg>
-<arg>${FOOTBALL}</arg>
-<arg>${T}</arg>
 </arguments>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="side-main-menu"]/li[2]/a</arg>
 </arguments>
-<msg timestamp="20181124 22:37:40.654" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
-<status status="PASS" endtime="20181124 22:37:41.091" starttime="20181124 22:37:40.653"></status>
+<msg timestamp="20181124 23:12:11.757" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20181124 23:12:12.260" starttime="20181124 23:12:11.757"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="pages-nav-list0"]/li[2]/a</arg>
 </arguments>
-<msg timestamp="20181124 22:37:41.091" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[2]/a'.</msg>
-<status status="PASS" endtime="20181124 22:37:42.259" starttime="20181124 22:37:41.091"></status>
+<msg timestamp="20181124 23:12:12.261" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20181124 23:12:13.553" starttime="20181124 23:12:12.260"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>${SHOW REGISTER PAGE}</arg>
 </arguments>
-<status status="PASS" endtime="20181124 22:37:42.380" starttime="20181124 22:37:42.259"></status>
+<status status="PASS" endtime="20181124 23:12:13.648" starttime="20181124 23:12:13.553"></status>
 </kw>
 <kw name="Location Should Be" library="Selenium2Library">
 <doc>Verifies that current URL is exactly ``url`.</doc>
 <arguments>
 <arg>${REGISTER URL}</arg>
 </arguments>
-<msg timestamp="20181124 22:37:42.440" level="INFO">Current location is 'http://localhost/AtomGame/public/registerSNA'.</msg>
-<status status="PASS" endtime="20181124 22:37:42.440" starttime="20181124 22:37:42.380"></status>
+<msg timestamp="20181124 23:12:13.705" level="INFO">Current location is 'http://localhost/AtomGame/public/registerSNA'.</msg>
+<status status="PASS" endtime="20181124 23:12:13.705" starttime="20181124 23:12:13.648"></status>
+</kw>
+<status status="PASS" endtime="20181124 23:12:13.705" starttime="20181124 23:12:11.756"></status>
+</kw>
+<status status="PASS" endtime="20181124 23:12:13.706" critical="yes" starttime="20181124 23:12:11.755"></status>
+</test>
+<test id="s1-t4" name="TC004 : Register Sports Competition Success 1:">
+<kw name="Input Register Sports Competition Success 1" library="UAT003_resources">
+<arguments>
+<arg>${REGISTER URL}</arg>
+<arg>${SPORT}</arg>
+<arg>${GENDER_MALE}</arg>
+<arg>${FOOTBALL}</arg>
+<arg>${T}</arg>
+<arg>${SHOW REGISTER SUCCSESS}</arg>
+</arguments>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly ``url`.</doc>
+<arguments>
+<arg>${REGISTER URL}</arg>
+</arguments>
+<msg timestamp="20181124 23:12:13.768" level="INFO">Current location is 'http://localhost/AtomGame/public/registerSNA'.</msg>
+<status status="PASS" endtime="20181124 23:12:13.768" starttime="20181124 23:12:13.710"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${SPORT}</arg>
 </arguments>
-<msg timestamp="20181124 22:37:42.441" level="INFO">Clicking element '//*[@id="ShowFormat"]/label[1]'.</msg>
-<status status="PASS" endtime="20181124 22:37:42.693" starttime="20181124 22:37:42.440"></status>
+<msg timestamp="20181124 23:12:13.769" level="INFO">Clicking element '//*[@id="ShowFormat"]/label[1]'.</msg>
+<status status="PASS" endtime="20181124 23:12:14.040" starttime="20181124 23:12:13.768"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${GENDER_MALE}</arg>
 </arguments>
-<msg timestamp="20181124 22:37:42.694" level="INFO">Clicking element '//*[@id="ShowGender"]/label[2]'.</msg>
-<status status="PASS" endtime="20181124 22:37:42.946" starttime="20181124 22:37:42.693"></status>
+<msg timestamp="20181124 23:12:14.042" level="INFO">Clicking element '//*[@id="ShowGender"]/label[2]'.</msg>
+<status status="PASS" endtime="20181124 23:12:14.286" starttime="20181124 23:12:14.041"></status>
 </kw>
 <kw name="Select From List By Value" library="Selenium2Library">
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
@@ -166,8 +183,8 @@
 <arg>//*[@id="inputName"]</arg>
 <arg>${FOOTBALL}</arg>
 </arguments>
-<msg timestamp="20181124 22:37:42.947" level="INFO">Selecting options from selection list '//*[@id="inputName"]' by value S2019003.</msg>
-<status status="PASS" endtime="20181124 22:37:43.491" starttime="20181124 22:37:42.946"></status>
+<msg timestamp="20181124 23:12:14.287" level="INFO">Selecting options from selection list '//*[@id="inputName"]' by value S2019003.</msg>
+<status status="PASS" endtime="20181124 23:12:14.892" starttime="20181124 23:12:14.286"></status>
 </kw>
 <kw name="Select From List By Value" library="Selenium2Library">
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
@@ -175,32 +192,67 @@
 <arg>//*[@id="inputREAL"]</arg>
 <arg>${T}</arg>
 </arguments>
-<msg timestamp="20181124 22:37:43.492" level="INFO">Selecting options from selection list '//*[@id="inputREAL"]' by value T.</msg>
-<status status="PASS" endtime="20181124 22:37:44.060" starttime="20181124 22:37:43.491"></status>
+<msg timestamp="20181124 23:12:14.893" level="INFO">Selecting options from selection list '//*[@id="inputREAL"]' by value T.</msg>
+<status status="PASS" endtime="20181124 23:12:15.462" starttime="20181124 23:12:14.892"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>เพิ่ม</arg>
 </arguments>
-<msg timestamp="20181124 22:37:44.060" level="INFO">Clicking button 'เพิ่ม'.</msg>
-<status status="PASS" endtime="20181124 22:37:45.761" starttime="20181124 22:37:44.060"></status>
+<msg timestamp="20181124 23:12:15.463" level="INFO">Clicking button 'เพิ่ม'.</msg>
+<status status="PASS" endtime="20181124 23:12:16.733" starttime="20181124 23:12:15.462"></status>
 </kw>
-<status status="PASS" endtime="20181124 22:37:45.761" starttime="20181124 22:37:40.652"></status>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${SHOW REGISTER SUCCSESS}</arg>
+</arguments>
+<status status="PASS" endtime="20181124 23:12:16.813" starttime="20181124 23:12:16.733"></status>
 </kw>
-<status status="PASS" endtime="20181124 22:37:45.762" critical="yes" starttime="20181124 22:37:40.651"></status>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>ฟุตบอล(football)</arg>
+</arguments>
+<status status="PASS" endtime="20181124 23:12:16.900" starttime="20181124 23:12:16.813"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>ชาย(male)</arg>
+</arguments>
+<status status="PASS" endtime="20181124 23:12:16.982" starttime="20181124 23:12:16.900"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>กีฬาและกรีฑา (sports and athletics)</arg>
+</arguments>
+<status status="PASS" endtime="20181124 23:12:17.070" starttime="20181124 23:12:16.982"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>ตัวจริง (on ground player)</arg>
+</arguments>
+<status status="PASS" endtime="20181124 23:12:17.163" starttime="20181124 23:12:17.070"></status>
+</kw>
+<status status="PASS" endtime="20181124 23:12:17.163" starttime="20181124 23:12:13.709"></status>
+</kw>
+<status status="PASS" endtime="20181124 23:12:17.164" critical="yes" starttime="20181124 23:12:13.708"></status>
 </test>
-<status status="PASS" endtime="20181124 22:37:45.764" starttime="20181124 22:37:26.020"></status>
+<status status="PASS" endtime="20181124 23:12:17.166" starttime="20181124 23:11:58.890"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="3">Critical Tests</stat>
-<stat fail="0" pass="3">All Tests</stat>
+<stat fail="0" pass="4">Critical Tests</stat>
+<stat fail="0" pass="4">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="UAT003" pass="3">UAT003</stat>
+<stat fail="0" id="s1" name="UAT003" pass="4">UAT003</stat>
 </suite>
 </statistics>
 <errors>
