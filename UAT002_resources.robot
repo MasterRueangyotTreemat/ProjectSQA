@@ -16,7 +16,7 @@ ${TELEPHONE NUMBER}    0812345678
 ${PARENT PHONE NUMBER}    0898765432
 ${FACEBOOK}    https://www.facebook.com/NutNinlaong
 ${IMAGE}    E:/ProjectsTeam/ProjectSQA/web.JPG
-${TYPE OF ATTENDEES}    VT
+${TYPE OF ATTENDEES}    SA
 ${UNIVERSITY}    มหาวิทยาลัยขอนแก่น
 ${EMAIL}    testuat@gmail.com
 ${USERNAME}    porinut

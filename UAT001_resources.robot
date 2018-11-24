@@ -20,7 +20,7 @@ ${IMAGE}    d://SQA/Pic.jpg
 =======
 ${IMAGE}    D:/1work/year3/SQA/project/ProjectSQA/web.jpg
 >>>>>>> 8a508a3b69ec8b40d19b845bcc4ca1b6e98e1baa
-${TYPE OF ATTENDEES}    VT
+${TYPE OF ATTENDEES}    SA
 ${UNIVERSITY}    มหาวิทยาลัยขอนแก่น
 ${EMAIL}    testuat@gmail.com
 ${USERNAME}    porinut
