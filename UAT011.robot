@@ -7,32 +7,18 @@ TC001 : Open Event Donor Page
     Location Should Be    ${DONOR URL}
     Wait Until Page Contains    
     
-TC002 : Register No Success With Id Card Empty Gender
-    Input Register No Success With Id Card   ${EMPTY}    ${TITLE NAME}    ${FULL NAME}     ${BIRTHDAY}     ${ID CARD}     ${STUDENT ID}     ${TELEPHONE NUMBER}     ${PARENT PHONE NUMBER}     ${FACEBOOK}     ${IMAGE}     ${TYPE OF ATTENDEES}     ${UNIVERSITY}     ${EMAIL}     ${USERNAME}     ${PASSWORD}     ${REPEAT PASSWORD} 
-    Location Should Contain    ${REGISTER URL}
-    Capture Page Screenshot   filename=test.png
-    
-Donate Success :
-1.	กดที่เมนูการบริจาค
-2.	กดที่เมนูการยืนยันข้อมูลและหลักฐานการ                บริจาค
-3.	กดเลือกเพศ (gender) = “ชาย”
-4.	กดเลือกคำนำหน้า(name title) = “Mr.”
-5.	กรอกข้อมูลที่ช่อง ชื่อ-สกุล (full name) = “Somnut Naja”
-6.	กรอกข้อมูลชื่อมหาวิทยาลัยหรือองค์กร (organization) = “มหาวิทยาลัยขอนแก่น”
-7.	กรอกข้อมูลเบอร์โทรศัพท์ติดต่อ 
-(telephone number)  = “Number”
-8.	กรอกข้อมูล E-mail = “testuat@gmail.com”
-9.	กรอกข้อมูลวันที่บริจาค (donation day) = “10/04/2018”
-10.	กรอกข้อมูลช่องทางการบริจาค 
-(donation channel) = “โอนเงิน”
-11.	กรอกข้อมูลมูลค่าหรือจำนวนเงินที่บริจาค 
-(donation amount) = “200”
-12.	อัปโหลดรูปภาพหลักฐานการบริจาค 
-(picture of donation) 
-13.	อัปโหลดรูปภาพสัญลักษณ์มหาวิทยาลัยหรือองค์กร 
-(logo of organization)
-14.	กดเลือกการรับใบเสร็จ 
-(receive receipt by on-carrier) = 
-“รับด้วยตนเองที่การบัญชี คณะวิทยาศาสตร์ 
-(receive a receipt directly from accounting, faculty of science)”
-15.	กดปุ่มยืนยันหลักฐานการบริจาค
+TC002 : Donate Success
+    Input Donor Success    ${GENDER}    ${TITLE NAME}    ${FULL NAME}    ${ORGANIZATION NAME}    ${TELEPHONE NUMBER}    ${EMAIL}    ${DONATION DAY}    ${DONATION CHANNEL}    ${DONATION AMOUNT}    ${PICTURE OF DONATION}    ${LOGO OF ORGANIZATION}     ${RECEIVE A RECEIPT DIRECTLY FROM ACCOUNTING, FACULTY OF SCIENCE}    ${EMPTY}
+    Location Should Contain    ${DONOR URL}
+
+TC002 : Donate Success No Logo 
+    Input Donor Success    ${GENDER}    ${TITLE NAME}    ${FULL NAME}    ${ORGANIZATION NAME}    ${TELEPHONE NUMBER}    ${EMAIL}    ${DONATION DAY}    ${DONATION CHANNEL}    ${DONATION AMOUNT}    ${PICTURE OF DONATION}    ${EMPTY}     ${RECEIVE A RECEIPT DIRECTLY FROM ACCOUNTING, FACULTY OF SCIENCE}    ${EMPTY}
+    Location Should Contain    ${DONOR URL}
+
+TC003 : Donate Success Receive Receipt By Shipment
+    Input Donor Success    ${GENDER}    ${TITLE NAME}    ${FULL NAME}    ${ORGANIZATION NAME}    ${TELEPHONE NUMBER}    ${EMAIL}    ${DONATION DAY}    ${DONATION CHANNEL}    ${DONATION AMOUNT}    ${PICTURE OF DONATION}     ${LOGO OF ORGANIZATION}     ${EMPTY}    ${RECEIVE RECEIPT BY SHIPMENT}    ${RECEIVE RECEIPT BY SHIPMENT TEXTAREA}
+    Location Should Contain    ${DONOR URL}
+
+TC004 : Donate Success No Logo Receive Receipt By Shipment
+    Input Donor Success    ${GENDER}    ${TITLE NAME}    ${FULL NAME}    ${ORGANIZATION NAME}    ${TELEPHONE NUMBER}    ${EMAIL}    ${DONATION DAY}    ${DONATION CHANNEL}    ${DONATION AMOUNT}    ${PICTURE OF DONATION}    ${EMPTY}    ${EMPTY}    ${RECEIVE RECEIPT BY SHIPMENT}    ${RECEIVE RECEIPT BY SHIPMENT TEXTAREA}
+    Location Should Contain    ${DONOR URL}

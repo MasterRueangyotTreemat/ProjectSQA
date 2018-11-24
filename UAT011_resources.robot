@@ -7,22 +7,21 @@ ${BROWSER}    chrome
 ${HOME URL}    http://${SERVER}/AtomGame/public/home
 ${DONOR URL}    http://${SERVER}/AtomGame/public/donor
 ${GENDER}    //*[@id="ShowGender"]/div[1]/label
-${TITLE NAME}    P001
+${TITLE NAME}    P005
 ${FULL NAME}    Somnut Naja
 ${NO LASTNAME}    Somnut
 ${ORGANIZATION NAME}     Thai Sport
-${BIRTHDAY}    12-31-1997
-${INVALID BIRTHDAY}    12/31/1997
-${DONATION CHANNEL}donation channel
-${DONATION AMOUNT}donation amount
+${DONATION DAY}    10/04/2018
+${INVALID DONATION DAY}    10/04/
+${DONATION CHANNEL}    โอนเงิน
+${DONATION AMOUNT}    200
 ${PICTURE OF DONATION}     E:/ProjectsTeam/ProjectSQA/web.JPG
 ${LOGO OF ORGANIZATION}     E:/ProjectsTeam/ProjectSQA/web.JPG
-${RECEIVE A RECEIPT DIRECTLY FROM ACCOUNTING, FACULTY OF SCIENCE}
-${RECEIVE RECEIPT BY SHIPMENT}    123/2002 Moo 16 tumbon NaiMueang
+${RECEIVE A RECEIPT DIRECTLY FROM ACCOUNTING, FACULTY OF SCIENCE}    //*[@id="ShowReceipt"]/div/div[1]/label
+${RECEIVE RECEIPT BY SHIPMENT}    //*[@id="ShowReceipt"]/div/div[2]/label
+${RECEIVE RECEIPT BY SHIPMENT TEXTAREA}     ห้อง 214 หอ16 มหาวิทยาลัยขอนแก่น ตำบลในเมือง อำเภอเมือง จังหวัดขอนแก่น 40002
 ${TELEPHONE NUMBER}    0812345678
 ${INVALID TELEPHONE NUMBER}    081234
-${PARENT PHONE NUMBER}    0898765432
-${FACEBOOK}    https://www.facebook.com/NutNinlaong
 ${PICTURE OF DONATION}     E:/ProjectsTeam/ProjectSQA/web.JPG
 ${LOGO OF ORGANIZATION}     E:/ProjectsTeam/ProjectSQA/web.JPG
 ${EMAIL}    testuat@gmail.com
@@ -30,7 +29,7 @@ ${USERNAME}    porinut
 ${PASSWORD}    12345678
 ${INVALID PASSWORD}    1234
 ${REPEAT PASSWORD}    12345678
-${DELAY}    0.05
+${DELAY}    0.09
 ${SUCCESS MESSAGE VERIFY DATA}    ยืนยันข้อมูลและหลักฐานการบริจาคสำเร็จ ทางคณะผู้จัดงานจะทำการตรวจสอบหลักฐานการบริจาคของท่านและติดต่อกลับไปเมื่อการตรวจสอบเสร็จสิ้น
 ${ERROR MESSAGE EMPTY GENDER}    กรุณาเลือกเพศและเลือกคำนำหน้า
 ${ERROR MESSAGE EMPTY TITLE NAME}    กรุณาเลือกคำนำหน้าชื่อ
@@ -54,8 +53,8 @@ Open Donor Page
     Set Selenium Speed    ${DELAY} 
     Location Should Be     ${DONOR URL}
 
-Input Register No Success With Id Card
-  [Arguments]    ${gender}    ${title name}    ${full name}    ${birthday}    ${id card}    ${student id}    ${telephone number}    ${parent phone number}    ${facebook}    ${image}    ${type of attendees}    ${university}    ${email}    ${username}    ${password}     ${repeat password}     
+Input Donor Success
+  [Arguments]    ${gender}    ${title name}    ${full name}    ${organization name}    ${telephone number}    ${email}    ${donation day}    ${donation channel}    ${donation amount}    ${picture of donation}    ${logo of organization}     ${receive a receipt directly from accounting, faculty of science}    ${receive receipt by shipment}
   Click Element    //*[@id="side-main-menu"]/li[2]/a
   Click Element    //*[@id="pages-nav-list0"]/li[1]/a
   Click Element    ${gender}
@@ -63,46 +62,37 @@ Input Register No Success With Id Card
   Select From List By Value    //*[@id="prename"]    ${title name}
   Wait Until Element Is Visible    //*[@id="prename"]    4s
   Input Text    inputfullname    ${full name}
-  Input Text    inputORG     
-
-  Press Key    xpath=//input[@id='inputBD']    ${birthday}
-  Click Element    //*[@id="ShowIDcardNPass"]/div[1]/label
-  Wait Until Element Is Visible    //*[@id="IDcard"]    4s
-  Input Text    IDcard    ${id card}
-  Input Text    inputSTD    ${student id}
+  Input Text    inputORG    ${organization name}
   Input Text    tell    ${telephone number}
-  Input Text    inputTelephoneP    ${parent phone number}
-  Input Text    inputFacebook    ${facebook}
-  Choose File    xpath=//input[@id='inputImg']    ${image}
-  Select From List By Value     //*[@id="inputType"]    ${type of attendees}
-  Select From List By Value     //*[@id="inputUNS"]    ${university}
   Input Text    E-mail    ${email}
-  Input Text    inputUsername    ${username}
-  Input Text    inputPassword    ${password}
-  Input Text    inputCPassword    ${repeat password}
-  Click Button    ลงทะเบียน
+  Press Key    //*[@id="inputDDay"]    ${donation day}
+  Input Text   //*[@id="inputDCha"]    ${donation channel}
+  Input Text   //*[@id="inputDAm"]    ${donation amount}    
+  Choose File    //*[@id="shownameimgD"]    ${picture of donation}
+  Choose File    //*[@id="shownameimgL"]    ${logo of organization}
+  Click Element   ${receive a receipt directly from accounting, faculty of science}
+  Click Element   ${receive receipt by shipment}
+  Input Text    //*[@id="address"]    ${receive receipt by shipment textarea}
+  Click Button    ยืนยันหลักฐานการบริจาค
 
-Input Register No Success With Passport
-  [Arguments]    ${gender}   ${title name}    ${full name}    ${birthday}    ${passport}    ${student id}    ${telephone number}    ${parent phone number}    ${facebook}    ${image}    ${type of attendees}    ${university}    ${email}    ${username}    ${password}     ${repeat password}     
+
+Input Donor No Success
+  [Arguments]    ${gender}    ${title name}    ${full name}    ${organization name}    ${telephone number}    ${email}    ${donation day}    ${donation channel}    ${donation amount}    ${picture of donation}    ${logo of organization}     ${receive a receipt directly from accounting, faculty of science}    ${receive receipt by shipment}
   Click Element    //*[@id="side-main-menu"]/li[2]/a
   Click Element    //*[@id="pages-nav-list0"]/li[1]/a
-  Click Element     ${gender}
+  Click Element    ${gender}
   Click Element    //*[@id="prename"]
   Select From List By Value    //*[@id="prename"]    ${title name}
+  Wait Until Element Is Visible    //*[@id="prename"]    4s
   Input Text    inputfullname    ${full name}
-  Press Key    xpath=//input[@id='inputBD']    ${birthday}
-  Click Element    //*[@id="ShowIDcardNPass"]/div[3]/label
-  Wait Until Element Is Visible    //*[@id="Passport"]    4s
-  Input Text    Passport    ${passport}
-  Input Text    inputSTD    ${student id}
+  Input Text    inputORG    ${organization name}
   Input Text    tell    ${telephone number}
-  Input Text    inputTelephoneP    ${parent phone number}
-  Input Text    inputFacebook    ${facebook}
-  Choose File    xpath=//input[@id='inputImg']    ${image}
-  Select From List By Value     //*[@id="inputType"]    ${type of attendees}
-  Select From List By Value     //*[@id="inputUNS"]    ${university}
   Input Text    E-mail    ${email}
-  Input Text    inputUsername    ${username}
-  Input Text    inputPassword    ${password}
-  Input Text    inputCPassword    ${repeat password}
-  Click Button    ลงทะเบียน
+  Press Key    //*[@id="inputDDay"]    ${donation day}
+  Input Text   //*[@id="inputDCha"]    ${donation channel}
+  Input Text   //*[@id="inputDAm"]    ${donation amount}    
+  Choose File    //*[@id="shownameimgD"]    ${picture of donation}
+  Choose File    //*[@id="shownameimgL"]    ${logo of organization}
+  Click Element   ${receive a receipt directly from accounting, faculty of science}
+  Click Element   ${receive receipt by shipment}
+  Click Button    ยืนยันหลักฐานการบริจาค
