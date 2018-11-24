@@ -123,6 +123,31 @@ TC015 : Check Register Sports and Athletics Competition No Success 13: Choose Sp
     #Select From List By Value    //*[@id="inputREAL"]    ${ALTERNATE}
     Click Button    add
     Wait Until Page Contains    ${ERROR PLEASE SELECT A COMPETITION}
+    Wait Until Page Contains    ${ERROR PLEASE SELECT A COMPETITION}
+
+TC016 : Check Register Sports and Athletics Competition No Success 14: Choose Sport Match Format Sports And Athletics And Match Type All And Role But Enter 2:
+    Click Element    //*[@id="ShowFormat"]/label[1]
+    #Click Element    //*[@id="ShowGender"]/label[2]
+    Click Element    //*[@id="ShowGender"]/label[3]
+    Click Element    //*[@id="inputREAL"]
+    Select From List By Value    //*[@id="inputREAL"]    ${ON GROUND PLAYER}
+    #Select From List By Value    //*[@id="inputREAL"]    ${ALTERNATE}
+    Click Button    add
+    Wait Until Page Contains    ${ERROR PLEASE SELECT A COMPETITION}
+    Wait Until Page Contains    ${ERROR PLEASE SELECT A COMPETITION}
+
+TC017 : Check Register Sports and Athletics Competition No Success 15: Choose Sport Match Format Sports And Athletics And Match Type All And Role But Enter 3:
+    Click Element    //*[@id="ShowFormat"]/label[1]
+    #Click Element    //*[@id="ShowGender"]/label[2]
+    Click Element    //*[@id="ShowGender"]/label[3]
+    Click Element    //*[@id="inputREAL"]
+    #Select From List By Value    //*[@id="inputREAL"]    ${ON GROUND PLAYER}
+    Select From List By Value    //*[@id="inputREAL"]    ${ALTERNATE}
+    Click Button    add
+    Wait Until Page Contains    ${ERROR PLEASE SELECT A COMPETITION}
+    Wait Until Page Contains    ${ERROR PLEASE SELECT A COMPETITION}
+
+
 
 
 
