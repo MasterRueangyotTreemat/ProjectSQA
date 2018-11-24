@@ -64,7 +64,7 @@ ${NO TITLE IN THE CATEGORY AND FORMAT YOU SELECTED}    ไม่มีชื่�
 ${ERROR PLEASE SELECT A ROLE}    กรุณาเลือกบทบาท
 ${FOOTBALL}    S2019003
 ${BADMINTON}    S2019006
-${ESPAK MUZZLE}    S2019007
+${SESPAK MUZZLE}    S2019007
 ${FUTSAL}    S2019013
 ${RUN 200 M}    S2019015
 
