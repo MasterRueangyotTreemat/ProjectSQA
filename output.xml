@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20181125 06:33:02.061" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<robot generated="20181125 07:10:15.079" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
 <suite source="D:\SQA\ProjectSQA\UAT008.robot" id="s1" name="UAT008">
-<test id="s1-t1" name="TC01 : Open Event EditProfile Page">
+<test id="s1-t1" name="TC01 : Open Home Page">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
 <arg>${HOME URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20181125 06:33:04.818" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/AtomGame/public/home'.</msg>
-<status status="PASS" endtime="20181125 06:33:10.221" starttime="20181125 06:33:04.818"></status>
+<msg timestamp="20181125 07:10:15.446" level="INFO">Opening browser 'chrome' to base url 'http://localhost/AtomGame/public/home'.</msg>
+<status status="PASS" endtime="20181125 07:10:20.963" starttime="20181125 07:10:15.445"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20181125 06:33:11.475" starttime="20181125 06:33:10.223"></status>
+<status status="PASS" endtime="20181125 07:10:22.228" starttime="20181125 07:10:20.964"></status>
 </kw>
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>${DELAY}</arg>
 </arguments>
-<status status="PASS" endtime="20181125 06:33:11.503" starttime="20181125 06:33:11.502"></status>
+<status status="PASS" endtime="20181125 07:10:22.242" starttime="20181125 07:10:22.241"></status>
 </kw>
 <kw name="Location Should Contain" library="Selenium2Library">
 <doc>Verifies that current URL contains ``expected``.</doc>
 <arguments>
-<arg>${HOME URL}</arg>
+<arg>http://localhost/AtomGame/public/home</arg>
 </arguments>
-<msg timestamp="20181125 06:33:11.585" level="INFO">Current location contains 'http://localhost/AtomGame/public/home'.</msg>
-<status status="PASS" endtime="20181125 06:33:11.585" starttime="20181125 06:33:11.512"></status>
+<msg timestamp="20181125 07:10:22.324" level="INFO">Current location contains 'http://localhost/AtomGame/public/home'.</msg>
+<status status="PASS" endtime="20181125 07:10:22.324" starttime="20181125 07:10:22.243"></status>
 </kw>
-<status status="PASS" endtime="20181125 06:33:11.586" critical="yes" starttime="20181125 06:33:04.815"></status>
+<status status="PASS" endtime="20181125 07:10:22.329" critical="yes" starttime="20181125 07:10:15.444"></status>
 </test>
 <test id="s1-t2" name="TC02 : Login">
 <kw name="Click Element" library="Selenium2Library">
@@ -38,24 +38,24 @@
 <arguments>
 <arg>//*[@id="side-main-menu"]/li[2]/a</arg>
 </arguments>
-<msg timestamp="20181125 06:33:11.602" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
-<status status="PASS" endtime="20181125 06:33:11.972" starttime="20181125 06:33:11.601"></status>
+<msg timestamp="20181125 07:10:22.343" level="INFO">Clicking element '//*[@id="side-main-menu"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20181125 07:10:22.715" starttime="20181125 07:10:22.342"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="pages-nav-list0"]/li[2]/a</arg>
 </arguments>
-<msg timestamp="20181125 06:33:11.974" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[2]/a'.</msg>
-<status status="PASS" endtime="20181125 06:33:12.317" starttime="20181125 06:33:11.973"></status>
+<msg timestamp="20181125 07:10:22.720" level="INFO">Clicking element '//*[@id="pages-nav-list0"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20181125 07:10:23.238" starttime="20181125 07:10:22.719"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="Username"]</arg>
 </arguments>
-<msg timestamp="20181125 06:33:12.326" level="INFO">Clicking element '//*[@id="Username"]'.</msg>
-<status status="PASS" endtime="20181125 06:33:12.664" starttime="20181125 06:33:12.326"></status>
+<msg timestamp="20181125 07:10:23.239" level="INFO">Clicking element '//*[@id="Username"]'.</msg>
+<status status="PASS" endtime="20181125 07:10:23.688" starttime="20181125 07:10:23.239"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -63,16 +63,16 @@
 <arg>Username</arg>
 <arg>porinut</arg>
 </arguments>
-<msg timestamp="20181125 06:33:12.668" level="INFO">Typing text 'porinut' into text field 'Username'.</msg>
-<status status="PASS" endtime="20181125 06:33:13.132" starttime="20181125 06:33:12.668"></status>
+<msg timestamp="20181125 07:10:23.689" level="INFO">Typing text 'porinut' into text field 'Username'.</msg>
+<status status="PASS" endtime="20181125 07:10:24.207" starttime="20181125 07:10:23.689"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="Password"]</arg>
 </arguments>
-<msg timestamp="20181125 06:33:13.133" level="INFO">Clicking element '//*[@id="Password"]'.</msg>
-<status status="PASS" endtime="20181125 06:33:13.415" starttime="20181125 06:33:13.132"></status>
+<msg timestamp="20181125 07:10:24.208" level="INFO">Clicking element '//*[@id="Password"]'.</msg>
+<status status="PASS" endtime="20181125 07:10:24.496" starttime="20181125 07:10:24.208"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -80,62 +80,134 @@
 <arg>Password</arg>
 <arg>12345678</arg>
 </arguments>
-<msg timestamp="20181125 06:33:13.435" level="INFO">Typing text '12345678' into text field 'Password'.</msg>
-<status status="PASS" endtime="20181125 06:33:13.789" starttime="20181125 06:33:13.435"></status>
+<msg timestamp="20181125 07:10:24.503" level="INFO">Typing text '12345678' into text field 'Password'.</msg>
+<status status="PASS" endtime="20181125 07:10:24.888" starttime="20181125 07:10:24.502"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>login</arg>
 </arguments>
-<msg timestamp="20181125 06:33:13.791" level="INFO">Clicking button 'login'.</msg>
-<status status="PASS" endtime="20181125 06:33:15.417" starttime="20181125 06:33:13.790"></status>
+<msg timestamp="20181125 07:10:24.891" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" endtime="20181125 07:10:26.783" starttime="20181125 07:10:24.891"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>ผู้เข้าใช้งาน Somnut Naja ได้เข้าสู่ระบบ</arg>
 </arguments>
-<status status="PASS" endtime="20181125 06:33:15.506" starttime="20181125 06:33:15.420"></status>
+<status status="PASS" endtime="20181125 07:10:26.879" starttime="20181125 07:10:26.788"></status>
 </kw>
-<status status="PASS" endtime="20181125 06:33:15.507" critical="yes" starttime="20181125 06:33:11.600"></status>
+<status status="PASS" endtime="20181125 07:10:26.886" critical="yes" starttime="20181125 07:10:22.339"></status>
 </test>
-<test id="s1-t3" name="TC03 : Open Edit Profile Page">
+<test id="s1-t3" name="TC03 : Empty Profile Image :">
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="notifications"]/img</arg>
 </arguments>
-<msg timestamp="20181125 06:33:15.510" level="INFO">Clicking element '//*[@id="notifications"]/img'.</msg>
-<status status="PASS" endtime="20181125 06:33:15.802" starttime="20181125 06:33:15.510"></status>
+<msg timestamp="20181125 07:10:26.891" level="INFO">Clicking element '//*[@id="notifications"]/img'.</msg>
+<status status="PASS" endtime="20181125 07:10:27.252" starttime="20181125 07:10:26.891"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>http://localhost/AtomGame/public/editProfile</arg>
+</arguments>
+<msg timestamp="20181125 07:10:27.253" level="INFO">Opening url 'http://localhost/AtomGame/public/editProfile'</msg>
+<status status="PASS" endtime="20181125 07:10:28.344" starttime="20181125 07:10:27.252"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
-<arg>/html/body/div[1]/header/nav/div/div/ul/li[1]/ul/li[2]/a</arg>
+<arg>//*[@id="ShowGender"]/div[1]/label</arg>
 </arguments>
-<msg timestamp="20181125 06:33:15.803" level="INFO">Clicking element '/html/body/div[1]/header/nav/div/div/ul/li[1]/ul/li[2]/a'.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181125 06:33:16.671" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20181125 06:33:16.671" starttime="20181125 06:33:15.889"></status>
+<msg timestamp="20181125 07:10:28.345" level="INFO">Clicking element '//*[@id="ShowGender"]/div[1]/label'.</msg>
+<status status="PASS" endtime="20181125 07:10:28.749" starttime="20181125 07:10:28.345"></status>
 </kw>
-<msg timestamp="20181125 06:33:16.675" level="FAIL">Element with locator '/html/body/div[1]/header/nav/div/div/ul/li[1]/ul/li[2]/a' not found.</msg>
-<status status="FAIL" endtime="20181125 06:33:16.675" starttime="20181125 06:33:15.802"></status>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>//*[@id="prename"]</arg>
+<arg>P001</arg>
+</arguments>
+<msg timestamp="20181125 07:10:28.764" level="INFO">Selecting options from selection list '//*[@id="prename"]' by value P001.</msg>
+<status status="PASS" endtime="20181125 07:10:29.390" starttime="20181125 07:10:28.764"></status>
 </kw>
-<status status="FAIL" endtime="20181125 06:33:16.676" critical="yes" starttime="20181125 06:33:15.509">Element with locator '/html/body/div[1]/header/nav/div/div/ul/li[1]/ul/li[2]/a' not found.</status>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>inputfullname</arg>
+<arg>Somnut Naja</arg>
+</arguments>
+<msg timestamp="20181125 07:10:29.392" level="INFO">Typing text 'Somnut Naja' into text field 'inputfullname'.</msg>
+<status status="PASS" endtime="20181125 07:10:30.440" starttime="20181125 07:10:29.391"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='inputBD']</arg>
+<arg>12/31/1997</arg>
+</arguments>
+<status status="PASS" endtime="20181125 07:10:30.921" starttime="20181125 07:10:30.445"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>inputSTD</arg>
+<arg>593456789-0</arg>
+</arguments>
+<msg timestamp="20181125 07:10:30.938" level="INFO">Typing text '593456789-0' into text field 'inputSTD'.</msg>
+<status status="PASS" endtime="20181125 07:10:31.884" starttime="20181125 07:10:30.938"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>tell</arg>
+<arg>0987654321</arg>
+</arguments>
+<msg timestamp="20181125 07:10:32.064" level="INFO">Typing text '0987654321' into text field 'tell'.</msg>
+<status status="PASS" endtime="20181125 07:10:32.721" starttime="20181125 07:10:32.063"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>inputTelephoneP</arg>
+<arg>0887654321</arg>
+</arguments>
+<msg timestamp="20181125 07:10:32.722" level="INFO">Typing text '0887654321' into text field 'inputTelephoneP'.</msg>
+<status status="PASS" endtime="20181125 07:10:33.200" starttime="20181125 07:10:32.721"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>inputFacebook</arg>
+<arg>https://www.facebook.com/NutSupreme</arg>
+</arguments>
+<msg timestamp="20181125 07:10:33.202" level="INFO">Typing text 'https://www.facebook.com/NutSupreme' into text field 'inputFacebook'.</msg>
+<status status="PASS" endtime="20181125 07:10:34.035" starttime="20181125 07:10:33.202"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>บันทึก</arg>
+</arguments>
+<msg timestamp="20181125 07:10:34.052" level="INFO">Clicking button 'บันทึก'.</msg>
+<status status="PASS" endtime="20181125 07:10:35.616" starttime="20181125 07:10:34.052"></status>
+</kw>
+<status status="PASS" endtime="20181125 07:10:35.616" critical="yes" starttime="20181125 07:10:26.889"></status>
 </test>
-<status status="FAIL" endtime="20181125 06:33:16.680" starttime="20181125 06:33:02.065"></status>
+<status status="PASS" endtime="20181125 07:10:35.619" starttime="20181125 07:10:15.083"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="2">Critical Tests</stat>
-<stat fail="1" pass="2">All Tests</stat>
+<stat fail="0" pass="3">Critical Tests</stat>
+<stat fail="0" pass="3">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="UAT008" pass="2">UAT008</stat>
+<stat fail="0" id="s1" name="UAT008" pass="3">UAT008</stat>
 </suite>
 </statistics>
 <errors>
