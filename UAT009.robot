@@ -1,5 +1,5 @@
 *** Settings ***
-Resource          UAT011_resources.robot
+Resource          UAT009_resources.robot
 
 *** Test Cases ***
 TC001 : Open Event Donor Page

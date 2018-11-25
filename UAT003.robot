@@ -6,17 +6,6 @@ TC001 : Open Event Registration Page
   Open Event Registration Page
   
 TC002 : Login Success:
-<<<<<<< HEAD
-  Input Login Success    ${USERNAME}   ${PASSWORD}    
-
-TC003 : Open Register Sports and Athletics Competition Page:
-  Input Register Sports and Athletics Competition Page    ${SHOW REGISTER PAGE}    ${REGISTER URL}  
-
-TC004 : Register Sports Competition Success 1:
-  Input Register Sports Competition Success 1    ${REGISTER URL}    ${SPORT}    ${GENDER_MALE}    ${FOOTBALL}    ${T}    ${SHOW REGISTER SUCCSESS}
-
-TC005 : Register Sports Competition Success 2: 
-=======
   Input Login Success    ${USERNAME}   ${PASSWORD}    ${SHOW NAME}
   Wait Until Page Contains    ${SHOW NAME}  
 
@@ -59,4 +48,3 @@ TC010 : Input Register Rumwomg Success :
   Input Register Rumwomg Success    ${REGISTER URL}    ${ACTIVITIES}    ${GENDER_ALL}    ${RUMWOMG}    ${ON GROUND PLAYER}     ${SHOW REGISTER SUCCSESS}
   Wait Until Page Contains    ${SHOW REGISTER SUCCSESS}
   Wait Until Page Contains    ${SHOW RUMWOMG TITLE}
->>>>>>> e1f12589b70a133547c9431ed681b08d40f78fa8
