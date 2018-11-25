@@ -2,5 +2,18 @@
 [1125/000855.561:ERROR:exception_snapshot_win.cc(88)] thread ID 8844 not found in process
 [1125/042129.624:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
 [1125/042129.648:ERROR:exception_snapshot_win.cc(88)] thread ID 20800 not found in process
+<<<<<<< HEAD
+[1125/055832.372:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1125/055832.418:ERROR:exception_snapshot_win.cc(88)] thread ID 11720 not found in process
+[1125/063537.984:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1125/063537.985:ERROR:exception_snapshot_win.cc(88)] thread ID 2876 not found in process
+[1125/063626.376:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1125/063626.377:ERROR:exception_snapshot_win.cc(88)] thread ID 10988 not found in process
+[1125/065602.909:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1125/065602.910:ERROR:exception_snapshot_win.cc(88)] thread ID 8108 not found in process
+[1125/065639.009:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1125/065639.012:ERROR:exception_snapshot_win.cc(88)] thread ID 21496 not found in process
+=======
 [1125/062145.128:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
 [1125/062145.131:ERROR:exception_snapshot_win.cc(88)] thread ID 2944 not found in process
+>>>>>>> 9aa72f0e6aaeed295bef2b07d231ef845fc05962
