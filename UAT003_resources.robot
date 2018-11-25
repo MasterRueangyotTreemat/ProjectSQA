@@ -8,7 +8,7 @@ ${HOME URL}    http://${SERVER}/AtomGame/public/home
 ${REGISTER URL}    http://${SERVER}/AtomGame/public/registerSNA
 ${USERNAME}    porinut
 ${PASSWORD}    12345678
-${SHOW NAME}    ผู้เข้าใช้งาน Somnut Naja ได้เข้าสู่ระบบ
+${SHOW NAME}    ผู้เข้าใช้งาน Somnut Ninlaong ได้เข้าสู่ระบบ
 ${SHOW REGISTER PAGE}    ลงทะเบียนแข่งขันกีฬาและกิจกรรม
 ${SHOW REGISTER SUCCSESS}    ลงทะเบียนแข่งขันสำเร็จ
 ${DELAY}    0.1
